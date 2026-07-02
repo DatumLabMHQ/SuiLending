@@ -1,0 +1,6 @@
+protocol,pooldaily_days,first,last,markets,defillama_days,missing_pooldaily_days
+alphalend,29,2026-06-02,2026-06-30,21,30,2026-06-01
+bucket,30,2026-06-01,2026-06-30,77,30,
+navi,30,2026-06-01,2026-06-30,34,30,
+scallop,29,2026-06-01,2026-06-30,17,30,2026-06-09
+suilend,30,2026-06-01,2026-06-30,18,30,

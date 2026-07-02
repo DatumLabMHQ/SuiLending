@@ -1,0 +1,3028 @@
+{
+  "generatedAt": "2026-07-02T18:58:14.608Z",
+  "window": {
+    "start": "2026-06-01",
+    "end": "2026-06-30"
+  },
+  "poolDailyCoverage": [
+    {
+      "protocol": "alphalend",
+      "days": 29,
+      "first": "2026-06-02",
+      "last": "2026-06-30",
+      "markets": 21
+    },
+    {
+      "protocol": "bucket",
+      "days": 30,
+      "first": "2026-06-01",
+      "last": "2026-06-30",
+      "markets": 77
+    },
+    {
+      "protocol": "navi",
+      "days": 30,
+      "first": "2026-06-01",
+      "last": "2026-06-30",
+      "markets": 34
+    },
+    {
+      "protocol": "scallop",
+      "days": 29,
+      "first": "2026-06-01",
+      "last": "2026-06-30",
+      "markets": 17
+    },
+    {
+      "protocol": "suilend",
+      "days": 30,
+      "first": "2026-06-01",
+      "last": "2026-06-30",
+      "markets": 18
+    }
+  ],
+  "poolDailyMissing": {
+    "alphalend": [
+      "2026-06-01"
+    ],
+    "scallop": [
+      "2026-06-09"
+    ]
+  },
+  "defillamaCoverage": [
+    {
+      "protocol": "alphalend",
+      "days": 30
+    },
+    {
+      "protocol": "bucket",
+      "days": 30
+    },
+    {
+      "protocol": "navi",
+      "days": 30
+    },
+    {
+      "protocol": "scallop",
+      "days": 30
+    },
+    {
+      "protocol": "suilend",
+      "days": 30
+    }
+  ],
+  "poolSnapshotCoverage": [
+    {
+      "protocol": "alphalend",
+      "days": 29,
+      "rows": 580
+    },
+    {
+      "protocol": "bucket",
+      "days": 30,
+      "rows": 2644
+    },
+    {
+      "protocol": "navi",
+      "days": 30,
+      "rows": 3201
+    },
+    {
+      "protocol": "scallop",
+      "days": 29,
+      "rows": 481
+    },
+    {
+      "protocol": "suilend",
+      "days": 30,
+      "rows": 552
+    }
+  ],
+  "tvlTrajectory": [
+    {
+      "protocol": "navi",
+      "jun1": 152439478.09521,
+      "jun30": 125966195.36435,
+      "changePct": -17.366421783683496
+    },
+    {
+      "protocol": "suilend",
+      "jun1": 132513823,
+      "jun30": 104279320,
+      "changePct": -21.30683604230481
+    },
+    {
+      "protocol": "scallop",
+      "jun1": 19321535,
+      "jun30": 13150969,
+      "changePct": -31.936210037142494
+    },
+    {
+      "protocol": "alphalend",
+      "jun1": 65434071,
+      "jun30": 55161903.86882529,
+      "changePct": -15.698499228597154
+    },
+    {
+      "protocol": "bucket",
+      "jun1": 62432382,
+      "jun30": 57081976,
+      "changePct": -8.569921295010015
+    }
+  ],
+  "tvlDaily": [
+    {
+      "date": "2026-06-01",
+      "protocol": "alphalend",
+      "tvl": 65434071
+    },
+    {
+      "date": "2026-06-01",
+      "protocol": "bucket",
+      "tvl": 62432382
+    },
+    {
+      "date": "2026-06-01",
+      "protocol": "navi",
+      "tvl": 152439478.09521
+    },
+    {
+      "date": "2026-06-01",
+      "protocol": "scallop",
+      "tvl": 19321535
+    },
+    {
+      "date": "2026-06-01",
+      "protocol": "suilend",
+      "tvl": 132513823
+    },
+    {
+      "date": "2026-06-02",
+      "protocol": "alphalend",
+      "tvl": 65150763
+    },
+    {
+      "date": "2026-06-02",
+      "protocol": "bucket",
+      "tvl": 60875545
+    },
+    {
+      "date": "2026-06-02",
+      "protocol": "navi",
+      "tvl": 144363588.34265
+    },
+    {
+      "date": "2026-06-02",
+      "protocol": "scallop",
+      "tvl": 18934139
+    },
+    {
+      "date": "2026-06-02",
+      "protocol": "suilend",
+      "tvl": 130322926
+    },
+    {
+      "date": "2026-06-03",
+      "protocol": "alphalend",
+      "tvl": 61369077
+    },
+    {
+      "date": "2026-06-03",
+      "protocol": "bucket",
+      "tvl": 59550756
+    },
+    {
+      "date": "2026-06-03",
+      "protocol": "navi",
+      "tvl": 137046331.82983
+    },
+    {
+      "date": "2026-06-03",
+      "protocol": "scallop",
+      "tvl": 17808816
+    },
+    {
+      "date": "2026-06-03",
+      "protocol": "suilend",
+      "tvl": 119535698
+    },
+    {
+      "date": "2026-06-04",
+      "protocol": "alphalend",
+      "tvl": 61499350
+    },
+    {
+      "date": "2026-06-04",
+      "protocol": "bucket",
+      "tvl": 59765522
+    },
+    {
+      "date": "2026-06-04",
+      "protocol": "navi",
+      "tvl": 133664320.39111
+    },
+    {
+      "date": "2026-06-04",
+      "protocol": "scallop",
+      "tvl": 17663751
+    },
+    {
+      "date": "2026-06-04",
+      "protocol": "suilend",
+      "tvl": 120321051
+    },
+    {
+      "date": "2026-06-05",
+      "protocol": "alphalend",
+      "tvl": 59026688.42721329
+    },
+    {
+      "date": "2026-06-05",
+      "protocol": "bucket",
+      "tvl": 58629325
+    },
+    {
+      "date": "2026-06-05",
+      "protocol": "navi",
+      "tvl": 130778302.14961
+    },
+    {
+      "date": "2026-06-05",
+      "protocol": "scallop",
+      "tvl": 17177580
+    },
+    {
+      "date": "2026-06-05",
+      "protocol": "suilend",
+      "tvl": 111802439
+    },
+    {
+      "date": "2026-06-06",
+      "protocol": "alphalend",
+      "tvl": 57694838.71507667
+    },
+    {
+      "date": "2026-06-06",
+      "protocol": "bucket",
+      "tvl": 57205642
+    },
+    {
+      "date": "2026-06-06",
+      "protocol": "navi",
+      "tvl": 127056076.43118
+    },
+    {
+      "date": "2026-06-06",
+      "protocol": "scallop",
+      "tvl": 15722721
+    },
+    {
+      "date": "2026-06-06",
+      "protocol": "suilend",
+      "tvl": 105244829
+    },
+    {
+      "date": "2026-06-07",
+      "protocol": "alphalend",
+      "tvl": 57775465.91483642
+    },
+    {
+      "date": "2026-06-07",
+      "protocol": "bucket",
+      "tvl": 57283746
+    },
+    {
+      "date": "2026-06-07",
+      "protocol": "navi",
+      "tvl": 127989150.75403
+    },
+    {
+      "date": "2026-06-07",
+      "protocol": "scallop",
+      "tvl": 15437739
+    },
+    {
+      "date": "2026-06-07",
+      "protocol": "suilend",
+      "tvl": 106104225
+    },
+    {
+      "date": "2026-06-08",
+      "protocol": "alphalend",
+      "tvl": 59171625.352373585
+    },
+    {
+      "date": "2026-06-08",
+      "protocol": "bucket",
+      "tvl": 57972547
+    },
+    {
+      "date": "2026-06-08",
+      "protocol": "navi",
+      "tvl": 130594561.55195
+    },
+    {
+      "date": "2026-06-08",
+      "protocol": "scallop",
+      "tvl": 15760626
+    },
+    {
+      "date": "2026-06-08",
+      "protocol": "suilend",
+      "tvl": 110500404
+    },
+    {
+      "date": "2026-06-09",
+      "protocol": "alphalend",
+      "tvl": 57924841.117367044
+    },
+    {
+      "date": "2026-06-09",
+      "protocol": "bucket",
+      "tvl": 57657176
+    },
+    {
+      "date": "2026-06-09",
+      "protocol": "navi",
+      "tvl": 128549659.46676
+    },
+    {
+      "date": "2026-06-09",
+      "protocol": "scallop",
+      "tvl": 15616810
+    },
+    {
+      "date": "2026-06-09",
+      "protocol": "suilend",
+      "tvl": 110927965
+    },
+    {
+      "date": "2026-06-10",
+      "protocol": "alphalend",
+      "tvl": 57623753.902048014
+    },
+    {
+      "date": "2026-06-10",
+      "protocol": "bucket",
+      "tvl": 57800418
+    },
+    {
+      "date": "2026-06-10",
+      "protocol": "navi",
+      "tvl": 126360096.37202
+    },
+    {
+      "date": "2026-06-10",
+      "protocol": "scallop",
+      "tvl": 15621996
+    },
+    {
+      "date": "2026-06-10",
+      "protocol": "suilend",
+      "tvl": 110070927
+    },
+    {
+      "date": "2026-06-11",
+      "protocol": "alphalend",
+      "tvl": 57129374.52757435
+    },
+    {
+      "date": "2026-06-11",
+      "protocol": "bucket",
+      "tvl": 57442151
+    },
+    {
+      "date": "2026-06-11",
+      "protocol": "navi",
+      "tvl": 125726152.68091
+    },
+    {
+      "date": "2026-06-11",
+      "protocol": "scallop",
+      "tvl": 14837118
+    },
+    {
+      "date": "2026-06-11",
+      "protocol": "suilend",
+      "tvl": 107738709
+    },
+    {
+      "date": "2026-06-12",
+      "protocol": "alphalend",
+      "tvl": 59395639.03204115
+    },
+    {
+      "date": "2026-06-12",
+      "protocol": "bucket",
+      "tvl": 58044192
+    },
+    {
+      "date": "2026-06-12",
+      "protocol": "navi",
+      "tvl": 129587444.21373
+    },
+    {
+      "date": "2026-06-12",
+      "protocol": "scallop",
+      "tvl": 15090579
+    },
+    {
+      "date": "2026-06-12",
+      "protocol": "suilend",
+      "tvl": 111437681
+    },
+    {
+      "date": "2026-06-13",
+      "protocol": "alphalend",
+      "tvl": 59483378.83473906
+    },
+    {
+      "date": "2026-06-13",
+      "protocol": "bucket",
+      "tvl": 58142304
+    },
+    {
+      "date": "2026-06-13",
+      "protocol": "navi",
+      "tvl": 130826680.67367
+    },
+    {
+      "date": "2026-06-13",
+      "protocol": "scallop",
+      "tvl": 15567238
+    },
+    {
+      "date": "2026-06-13",
+      "protocol": "suilend",
+      "tvl": 111476353
+    },
+    {
+      "date": "2026-06-14",
+      "protocol": "alphalend",
+      "tvl": 61648985.60832025
+    },
+    {
+      "date": "2026-06-14",
+      "protocol": "bucket",
+      "tvl": 58493622
+    },
+    {
+      "date": "2026-06-14",
+      "protocol": "navi",
+      "tvl": 131864521.57117
+    },
+    {
+      "date": "2026-06-14",
+      "protocol": "scallop",
+      "tvl": 15706545
+    },
+    {
+      "date": "2026-06-14",
+      "protocol": "suilend",
+      "tvl": 113443473
+    },
+    {
+      "date": "2026-06-15",
+      "protocol": "alphalend",
+      "tvl": 61718517.89843095
+    },
+    {
+      "date": "2026-06-15",
+      "protocol": "bucket",
+      "tvl": 59031952
+    },
+    {
+      "date": "2026-06-15",
+      "protocol": "navi",
+      "tvl": 134194935.25445
+    },
+    {
+      "date": "2026-06-15",
+      "protocol": "scallop",
+      "tvl": 15622791
+    },
+    {
+      "date": "2026-06-15",
+      "protocol": "suilend",
+      "tvl": 115960929
+    },
+    {
+      "date": "2026-06-16",
+      "protocol": "alphalend",
+      "tvl": 62663605.454480834
+    },
+    {
+      "date": "2026-06-16",
+      "protocol": "bucket",
+      "tvl": 59077883
+    },
+    {
+      "date": "2026-06-16",
+      "protocol": "navi",
+      "tvl": 135772760.34224
+    },
+    {
+      "date": "2026-06-16",
+      "protocol": "scallop",
+      "tvl": 15540704
+    },
+    {
+      "date": "2026-06-16",
+      "protocol": "suilend",
+      "tvl": 116076221
+    },
+    {
+      "date": "2026-06-17",
+      "protocol": "alphalend",
+      "tvl": 61938546.00270313
+    },
+    {
+      "date": "2026-06-17",
+      "protocol": "bucket",
+      "tvl": 59128339
+    },
+    {
+      "date": "2026-06-17",
+      "protocol": "navi",
+      "tvl": 136230609.94556
+    },
+    {
+      "date": "2026-06-17",
+      "protocol": "scallop",
+      "tvl": 15431388
+    },
+    {
+      "date": "2026-06-17",
+      "protocol": "suilend",
+      "tvl": 116920790
+    },
+    {
+      "date": "2026-06-18",
+      "protocol": "alphalend",
+      "tvl": 62179932.17809098
+    },
+    {
+      "date": "2026-06-18",
+      "protocol": "bucket",
+      "tvl": 58594070
+    },
+    {
+      "date": "2026-06-18",
+      "protocol": "navi",
+      "tvl": 132081362.74656
+    },
+    {
+      "date": "2026-06-18",
+      "protocol": "scallop",
+      "tvl": 15097625
+    },
+    {
+      "date": "2026-06-18",
+      "protocol": "suilend",
+      "tvl": 112899943
+    },
+    {
+      "date": "2026-06-19",
+      "protocol": "alphalend",
+      "tvl": 60104481.30034896
+    },
+    {
+      "date": "2026-06-19",
+      "protocol": "bucket",
+      "tvl": 57831624
+    },
+    {
+      "date": "2026-06-19",
+      "protocol": "navi",
+      "tvl": 128996292.97752
+    },
+    {
+      "date": "2026-06-19",
+      "protocol": "scallop",
+      "tvl": 14652673
+    },
+    {
+      "date": "2026-06-19",
+      "protocol": "suilend",
+      "tvl": 109155623
+    },
+    {
+      "date": "2026-06-20",
+      "protocol": "alphalend",
+      "tvl": 58845422.96159949
+    },
+    {
+      "date": "2026-06-20",
+      "protocol": "bucket",
+      "tvl": 57581492
+    },
+    {
+      "date": "2026-06-20",
+      "protocol": "navi",
+      "tvl": 130000655.06375
+    },
+    {
+      "date": "2026-06-20",
+      "protocol": "scallop",
+      "tvl": 14531104
+    },
+    {
+      "date": "2026-06-20",
+      "protocol": "suilend",
+      "tvl": 107910540
+    },
+    {
+      "date": "2026-06-21",
+      "protocol": "alphalend",
+      "tvl": 59812672.15434761
+    },
+    {
+      "date": "2026-06-21",
+      "protocol": "bucket",
+      "tvl": 57634132
+    },
+    {
+      "date": "2026-06-21",
+      "protocol": "navi",
+      "tvl": 130542588.15985
+    },
+    {
+      "date": "2026-06-21",
+      "protocol": "scallop",
+      "tvl": 14556716
+    },
+    {
+      "date": "2026-06-21",
+      "protocol": "suilend",
+      "tvl": 106560912
+    },
+    {
+      "date": "2026-06-22",
+      "protocol": "alphalend",
+      "tvl": 59089040.50257982
+    },
+    {
+      "date": "2026-06-22",
+      "protocol": "bucket",
+      "tvl": 57365406
+    },
+    {
+      "date": "2026-06-22",
+      "protocol": "navi",
+      "tvl": 128845639.43546
+    },
+    {
+      "date": "2026-06-22",
+      "protocol": "scallop",
+      "tvl": 14319915
+    },
+    {
+      "date": "2026-06-22",
+      "protocol": "suilend",
+      "tvl": 106290381
+    },
+    {
+      "date": "2026-06-23",
+      "protocol": "alphalend",
+      "tvl": 59702669.0533518
+    },
+    {
+      "date": "2026-06-23",
+      "protocol": "bucket",
+      "tvl": 57720251
+    },
+    {
+      "date": "2026-06-23",
+      "protocol": "navi",
+      "tvl": 130467284.89588
+    },
+    {
+      "date": "2026-06-23",
+      "protocol": "scallop",
+      "tvl": 15615695
+    },
+    {
+      "date": "2026-06-23",
+      "protocol": "suilend",
+      "tvl": 107128969
+    },
+    {
+      "date": "2026-06-24",
+      "protocol": "alphalend",
+      "tvl": 57275823.3634735
+    },
+    {
+      "date": "2026-06-24",
+      "protocol": "bucket",
+      "tvl": 57794858
+    },
+    {
+      "date": "2026-06-24",
+      "protocol": "navi",
+      "tvl": 129004404.75245
+    },
+    {
+      "date": "2026-06-24",
+      "protocol": "scallop",
+      "tvl": 15161191
+    },
+    {
+      "date": "2026-06-24",
+      "protocol": "suilend",
+      "tvl": 106094576
+    },
+    {
+      "date": "2026-06-25",
+      "protocol": "alphalend",
+      "tvl": 56185917.116786815
+    },
+    {
+      "date": "2026-06-25",
+      "protocol": "bucket",
+      "tvl": 57367987
+    },
+    {
+      "date": "2026-06-25",
+      "protocol": "navi",
+      "tvl": 126944258.73296
+    },
+    {
+      "date": "2026-06-25",
+      "protocol": "scallop",
+      "tvl": 14725546
+    },
+    {
+      "date": "2026-06-25",
+      "protocol": "suilend",
+      "tvl": 103205760
+    },
+    {
+      "date": "2026-06-26",
+      "protocol": "alphalend",
+      "tvl": 55153034.56614823
+    },
+    {
+      "date": "2026-06-26",
+      "protocol": "bucket",
+      "tvl": 57157865
+    },
+    {
+      "date": "2026-06-26",
+      "protocol": "navi",
+      "tvl": 123285501.20017
+    },
+    {
+      "date": "2026-06-26",
+      "protocol": "scallop",
+      "tvl": 13074997
+    },
+    {
+      "date": "2026-06-26",
+      "protocol": "suilend",
+      "tvl": 102624173
+    },
+    {
+      "date": "2026-06-27",
+      "protocol": "alphalend",
+      "tvl": 54999334.544346705
+    },
+    {
+      "date": "2026-06-27",
+      "protocol": "bucket",
+      "tvl": 57169701
+    },
+    {
+      "date": "2026-06-27",
+      "protocol": "navi",
+      "tvl": 125048093.34552
+    },
+    {
+      "date": "2026-06-27",
+      "protocol": "scallop",
+      "tvl": 13045246
+    },
+    {
+      "date": "2026-06-27",
+      "protocol": "suilend",
+      "tvl": 104717835
+    },
+    {
+      "date": "2026-06-28",
+      "protocol": "alphalend",
+      "tvl": 55407265.01757547
+    },
+    {
+      "date": "2026-06-28",
+      "protocol": "bucket",
+      "tvl": 56879913
+    },
+    {
+      "date": "2026-06-28",
+      "protocol": "navi",
+      "tvl": 123999000.48704
+    },
+    {
+      "date": "2026-06-28",
+      "protocol": "scallop",
+      "tvl": 12897507
+    },
+    {
+      "date": "2026-06-28",
+      "protocol": "suilend",
+      "tvl": 102658469
+    },
+    {
+      "date": "2026-06-29",
+      "protocol": "alphalend",
+      "tvl": 54996921.47808682
+    },
+    {
+      "date": "2026-06-29",
+      "protocol": "bucket",
+      "tvl": 56803303
+    },
+    {
+      "date": "2026-06-29",
+      "protocol": "navi",
+      "tvl": 124659427.46614
+    },
+    {
+      "date": "2026-06-29",
+      "protocol": "scallop",
+      "tvl": 13342804
+    },
+    {
+      "date": "2026-06-29",
+      "protocol": "suilend",
+      "tvl": 102366570
+    },
+    {
+      "date": "2026-06-30",
+      "protocol": "alphalend",
+      "tvl": 55161903.86882529
+    },
+    {
+      "date": "2026-06-30",
+      "protocol": "bucket",
+      "tvl": 57081976
+    },
+    {
+      "date": "2026-06-30",
+      "protocol": "navi",
+      "tvl": 125966195.36435
+    },
+    {
+      "date": "2026-06-30",
+      "protocol": "scallop",
+      "tvl": 13150969
+    },
+    {
+      "date": "2026-06-30",
+      "protocol": "suilend",
+      "tvl": 104279320
+    }
+  ],
+  "sector": {
+    "jun1": 432141289.09520996,
+    "jun30": 355640364.2331753,
+    "changePct": -17.702757591668103
+  },
+  "hhi": 2626.168289687774,
+  "jun30Shares": [
+    {
+      "protocol": "navi",
+      "tvl": 125966195.36435,
+      "sharePct": 35.41954402053204
+    },
+    {
+      "protocol": "suilend",
+      "tvl": 104279320,
+      "sharePct": 29.321564841168975
+    },
+    {
+      "protocol": "bucket",
+      "tvl": 57081976,
+      "sharePct": 16.05047731943449
+    },
+    {
+      "protocol": "alphalend",
+      "tvl": 55161903.86882529,
+      "sharePct": 15.510585809843125
+    },
+    {
+      "protocol": "scallop",
+      "tvl": 13150969,
+      "sharePct": 3.6978280090213778
+    }
+  ],
+  "liquidations": [
+    {
+      "protocol": "scallop",
+      "events": 822,
+      "debt": 915364.5988842095,
+      "avg_debt": 1113.582237085413,
+      "seized": 445222.5736695607,
+      "liquidators": 44,
+      "rawEvents": 890
+    },
+    {
+      "protocol": "navi",
+      "events": 1597,
+      "debt": 673486.6692296474,
+      "avg_debt": 421.71989306803215,
+      "seized": 750183.1858254303,
+      "liquidators": 92,
+      "rawEvents": 3173
+    },
+    {
+      "protocol": "suilend",
+      "events": 918,
+      "debt": 400124.2132388011,
+      "avg_debt": 435.8651560335524,
+      "seized": 417925.84313045,
+      "liquidators": 81,
+      "rawEvents": 1423
+    },
+    {
+      "protocol": "alphalend",
+      "events": 843,
+      "debt": 78993.06775729998,
+      "avg_debt": 93.70470671091338,
+      "seized": 2773012.5829417403,
+      "liquidators": 50,
+      "rawEvents": 1025
+    }
+  ],
+  "topLiquidators": [
+    {
+      "protocol": "navi",
+      "liquidator": "0x16d7ddecfa33cf38fb5101198f92314db524bbf97c2d6e5ef6d9449af0144299",
+      "events": 255,
+      "sharePct": 15.967438948027551
+    },
+    {
+      "protocol": "suilend",
+      "liquidator": "0x551187e5d09ff62da027b47fe50880408ea9b05e97fa67296a52120fe9bc52ad",
+      "events": 149,
+      "sharePct": 16.23093681917211
+    },
+    {
+      "protocol": "scallop",
+      "liquidator": "0x8cff2b423fc6183dbb2eb05385d6a9b0127e94e3e80527086046f36a70b17cb4",
+      "events": 158,
+      "sharePct": 19.22141119221411
+    },
+    {
+      "protocol": "alphalend",
+      "liquidator": "0xea6885049f01bd20b2e4b468db75eb9e2aefb44d139fdde5e6fae78b912c51dc",
+      "events": 348,
+      "sharePct": 41.281138790035584
+    }
+  ],
+  "liquidatorDedup": {
+    "uniq": 250,
+    "multi": 11
+  },
+  "liquidationsWeekly": [
+    {
+      "week": "2026-06-01",
+      "events": 2529,
+      "debt": 1370606.9087803988
+    },
+    {
+      "week": "2026-06-08",
+      "events": 455,
+      "debt": 9457.329114094891
+    },
+    {
+      "week": "2026-06-15",
+      "events": 437,
+      "debt": 419031.3479298809
+    },
+    {
+      "week": "2026-06-22",
+      "events": 726,
+      "debt": 252043.4198303232
+    },
+    {
+      "week": "2026-06-29",
+      "events": 33,
+      "debt": 16829.54345526051
+    }
+  ],
+  "liquidationsDaily": [
+    {
+      "date": "2026-06-01",
+      "protocol": "alphalend",
+      "events": 15,
+      "debt": 435.273426106,
+      "seized": 164566.207717609
+    },
+    {
+      "date": "2026-06-01",
+      "protocol": "navi",
+      "events": 73,
+      "debt": 9042.072501802842,
+      "seized": 9946.993251695641
+    },
+    {
+      "date": "2026-06-01",
+      "protocol": "scallop",
+      "events": 18,
+      "debt": 3053.6185915292285,
+      "seized": 2484.7166058321186
+    },
+    {
+      "date": "2026-06-01",
+      "protocol": "suilend",
+      "events": 15,
+      "debt": 27428.824324500823,
+      "seized": 28516.750577718412
+    },
+    {
+      "date": "2026-06-02",
+      "protocol": "alphalend",
+      "events": 143,
+      "debt": 267.63576666299997,
+      "seized": 251442.06761619903
+    },
+    {
+      "date": "2026-06-02",
+      "protocol": "navi",
+      "events": 106,
+      "debt": 46455.130258671634,
+      "seized": 51093.85265793749
+    },
+    {
+      "date": "2026-06-02",
+      "protocol": "scallop",
+      "events": 96,
+      "debt": 74687.07379828506,
+      "seized": 73401.51005122557
+    },
+    {
+      "date": "2026-06-02",
+      "protocol": "suilend",
+      "events": 112,
+      "debt": 81680.59105635807,
+      "seized": 89649.28892316554
+    },
+    {
+      "date": "2026-06-03",
+      "protocol": "alphalend",
+      "events": 75,
+      "debt": 124.38640195899998,
+      "seized": 219255.470266788
+    },
+    {
+      "date": "2026-06-03",
+      "protocol": "navi",
+      "events": 125,
+      "debt": 37425.088596248956,
+      "seized": 42493.06405956631
+    },
+    {
+      "date": "2026-06-03",
+      "protocol": "scallop",
+      "events": 25,
+      "debt": 133698.50257637512,
+      "seized": 42913.018402275455
+    },
+    {
+      "date": "2026-06-03",
+      "protocol": "suilend",
+      "events": 121,
+      "debt": 13287.07244277144,
+      "seized": 13651.380132539405
+    },
+    {
+      "date": "2026-06-04",
+      "protocol": "alphalend",
+      "events": 175,
+      "debt": 645.6802889529996,
+      "seized": 751392.7888798262
+    },
+    {
+      "date": "2026-06-04",
+      "protocol": "navi",
+      "events": 91,
+      "debt": 32772.317798333315,
+      "seized": 36303.59239447294
+    },
+    {
+      "date": "2026-06-04",
+      "protocol": "scallop",
+      "events": 114,
+      "debt": 270463.92306291964,
+      "seized": 81567.37797569486
+    },
+    {
+      "date": "2026-06-04",
+      "protocol": "suilend",
+      "events": 106,
+      "debt": 4484.444023075799,
+      "seized": 4909.563565559536
+    },
+    {
+      "date": "2026-06-05",
+      "protocol": "alphalend",
+      "events": 180,
+      "debt": 117.90333424999997,
+      "seized": 491484.54705993703
+    },
+    {
+      "date": "2026-06-05",
+      "protocol": "navi",
+      "events": 160,
+      "debt": 62697.284156883135,
+      "seized": 69183.95469141741
+    },
+    {
+      "date": "2026-06-05",
+      "protocol": "scallop",
+      "events": 209,
+      "debt": 273970.1104860986,
+      "seized": 144715.2392346227
+    },
+    {
+      "date": "2026-06-05",
+      "protocol": "suilend",
+      "events": 179,
+      "debt": 95785.26013265636,
+      "seized": 86733.80100770124
+    },
+    {
+      "date": "2026-06-06",
+      "protocol": "alphalend",
+      "events": 24,
+      "debt": 3.8221325319999995,
+      "seized": 70412.818444784
+    },
+    {
+      "date": "2026-06-06",
+      "protocol": "navi",
+      "events": 87,
+      "debt": 15786.22987491691,
+      "seized": 17957.805401557234
+    },
+    {
+      "date": "2026-06-06",
+      "protocol": "scallop",
+      "events": 117,
+      "debt": 76335.41171810887,
+      "seized": 45807.52495522905
+    },
+    {
+      "date": "2026-06-06",
+      "protocol": "suilend",
+      "events": 138,
+      "debt": 107967.10547284527,
+      "seized": 118762.08734946183
+    },
+    {
+      "date": "2026-06-07",
+      "protocol": "alphalend",
+      "events": 10,
+      "debt": 3.814130123,
+      "seized": 125068.29855776599
+    },
+    {
+      "date": "2026-06-07",
+      "protocol": "navi",
+      "events": 12,
+      "debt": 1976.399478321184,
+      "seized": 2174.073794998181
+    },
+    {
+      "date": "2026-06-07",
+      "protocol": "suilend",
+      "events": 3,
+      "debt": 11.932949109511664,
+      "seized": 2.861893284791415
+    },
+    {
+      "date": "2026-06-08",
+      "protocol": "alphalend",
+      "events": 9,
+      "debt": 9.422336977,
+      "seized": 90123.547092488
+    },
+    {
+      "date": "2026-06-08",
+      "protocol": "navi",
+      "events": 20,
+      "debt": 79.22561939754357,
+      "seized": 87.1481779537117
+    },
+    {
+      "date": "2026-06-08",
+      "protocol": "scallop",
+      "events": 91,
+      "debt": 219.43999536685513,
+      "seized": 229.66839288677076
+    },
+    {
+      "date": "2026-06-09",
+      "protocol": "alphalend",
+      "events": 32,
+      "debt": 260.1102325569999,
+      "seized": 157417.991808241
+    },
+    {
+      "date": "2026-06-09",
+      "protocol": "navi",
+      "events": 46,
+      "debt": 3376.3616545195428,
+      "seized": 3709.135411958571
+    },
+    {
+      "date": "2026-06-09",
+      "protocol": "scallop",
+      "events": 4,
+      "debt": 252.79327651206515,
+      "seized": 258.2577276352913
+    },
+    {
+      "date": "2026-06-09",
+      "protocol": "suilend",
+      "events": 6,
+      "debt": 231.30529832305416,
+      "seized": 237.3439741005077
+    },
+    {
+      "date": "2026-06-10",
+      "protocol": "alphalend",
+      "events": 34,
+      "debt": 1194.478208003,
+      "seized": 210176.98273526298
+    },
+    {
+      "date": "2026-06-10",
+      "protocol": "navi",
+      "events": 34,
+      "debt": 1033.986044761284,
+      "seized": 1137.3536777052548
+    },
+    {
+      "date": "2026-06-10",
+      "protocol": "scallop",
+      "events": 2,
+      "debt": 58.96012596012313,
+      "seized": 60.43026673146704
+    },
+    {
+      "date": "2026-06-10",
+      "protocol": "suilend",
+      "events": 10,
+      "debt": 1723.8514281639125,
+      "seized": 1911.767520761277
+    },
+    {
+      "date": "2026-06-11",
+      "protocol": "alphalend",
+      "events": 13,
+      "debt": 0.15169915899999997,
+      "seized": 68299.86116234
+    },
+    {
+      "date": "2026-06-11",
+      "protocol": "navi",
+      "events": 26,
+      "debt": 158.52991739736694,
+      "seized": 174.3828982158497
+    },
+    {
+      "date": "2026-06-11",
+      "protocol": "scallop",
+      "events": 2,
+      "debt": 29.43050278948876,
+      "seized": 30.60772289519266
+    },
+    {
+      "date": "2026-06-12",
+      "protocol": "alphalend",
+      "events": 1,
+      "debt": 0.021542089,
+      "seized": 48433.193795539
+    },
+    {
+      "date": "2026-06-12",
+      "protocol": "navi",
+      "events": 55,
+      "debt": 332.6565613017856,
+      "seized": 365.92219362019296
+    },
+    {
+      "date": "2026-06-12",
+      "protocol": "scallop",
+      "events": 1,
+      "debt": 28.02754547558669,
+      "seized": 28.58809637851797
+    },
+    {
+      "date": "2026-06-13",
+      "protocol": "navi",
+      "events": 30,
+      "debt": 110.83252131588202,
+      "seized": 121.91577155760697
+    },
+    {
+      "date": "2026-06-14",
+      "protocol": "navi",
+      "events": 38,
+      "debt": 347.26959320385396,
+      "seized": 381.99654438258386
+    },
+    {
+      "date": "2026-06-14",
+      "protocol": "scallop",
+      "events": 1,
+      "debt": 10.47501082154463,
+      "seized": 10.89401125229694
+    },
+    {
+      "date": "2026-06-15",
+      "protocol": "navi",
+      "events": 16,
+      "debt": 52.4896352294877,
+      "seized": 57.444178774608076
+    },
+    {
+      "date": "2026-06-15",
+      "protocol": "suilend",
+      "events": 2,
+      "debt": 17.79620397313619,
+      "seized": 18.044160433654323
+    },
+    {
+      "date": "2026-06-16",
+      "protocol": "alphalend",
+      "events": 1,
+      "debt": 0.00243855,
+      "seized": 3.185245348
+    },
+    {
+      "date": "2026-06-16",
+      "protocol": "navi",
+      "events": 10,
+      "debt": 152.0818417294615,
+      "seized": 167.2900218205522
+    },
+    {
+      "date": "2026-06-16",
+      "protocol": "scallop",
+      "events": 2,
+      "debt": 39.41788820220735,
+      "seized": 39.844909150266105
+    },
+    {
+      "date": "2026-06-16",
+      "protocol": "suilend",
+      "events": 2,
+      "debt": 8.549647997363529,
+      "seized": 14.912923082545735
+    },
+    {
+      "date": "2026-06-17",
+      "protocol": "alphalend",
+      "events": 3,
+      "debt": 0.004703863,
+      "seized": 310.94727092899996
+    },
+    {
+      "date": "2026-06-17",
+      "protocol": "navi",
+      "events": 47,
+      "debt": 139919.2953328878,
+      "seized": 153910.99456594425
+    },
+    {
+      "date": "2026-06-17",
+      "protocol": "scallop",
+      "events": 1,
+      "debt": 57.75747982754746,
+      "seized": 58.91262832744345
+    },
+    {
+      "date": "2026-06-17",
+      "protocol": "suilend",
+      "events": 1,
+      "debt": 3.046107435208936,
+      "seized": 3.321136574152698
+    },
+    {
+      "date": "2026-06-18",
+      "protocol": "alphalend",
+      "events": 13,
+      "debt": 75845.413683098,
+      "seized": 4353.124424756
+    },
+    {
+      "date": "2026-06-18",
+      "protocol": "navi",
+      "events": 61,
+      "debt": 139717.61030771275,
+      "seized": 154008.43637910098
+    },
+    {
+      "date": "2026-06-18",
+      "protocol": "scallop",
+      "events": 6,
+      "debt": 834.9228384809181,
+      "seized": 845.5852996657167
+    },
+    {
+      "date": "2026-06-18",
+      "protocol": "suilend",
+      "events": 23,
+      "debt": 2453.2395738998084,
+      "seized": 2625.7196589683426
+    },
+    {
+      "date": "2026-06-19",
+      "protocol": "alphalend",
+      "events": 4,
+      "debt": 0.023122613,
+      "seized": 33.871364353
+    },
+    {
+      "date": "2026-06-19",
+      "protocol": "navi",
+      "events": 70,
+      "debt": 54884.720730499095,
+      "seized": 60373.19278246743
+    },
+    {
+      "date": "2026-06-19",
+      "protocol": "scallop",
+      "events": 10,
+      "debt": 1680.2460471006034,
+      "seized": 1698.9385938846858
+    },
+    {
+      "date": "2026-06-19",
+      "protocol": "suilend",
+      "events": 4,
+      "debt": 112.7849236321939,
+      "seized": 126.69257431377997
+    },
+    {
+      "date": "2026-06-20",
+      "protocol": "alphalend",
+      "events": 9,
+      "debt": 0.23017789,
+      "seized": 280.909286858
+    },
+    {
+      "date": "2026-06-20",
+      "protocol": "navi",
+      "events": 35,
+      "debt": 886.1298716845315,
+      "seized": 973.9644952195138
+    },
+    {
+      "date": "2026-06-20",
+      "protocol": "scallop",
+      "events": 9,
+      "debt": 447.44634286933194,
+      "seized": 1201.067653668099
+    },
+    {
+      "date": "2026-06-20",
+      "protocol": "suilend",
+      "events": 19,
+      "debt": 35.574263835604825,
+      "seized": 231.1064180816498
+    },
+    {
+      "date": "2026-06-21",
+      "protocol": "alphalend",
+      "events": 11,
+      "debt": 0.10617192200000002,
+      "seized": 4388.19360754
+    },
+    {
+      "date": "2026-06-21",
+      "protocol": "navi",
+      "events": 73,
+      "debt": 1625.0741959061525,
+      "seized": 1787.5816099903352
+    },
+    {
+      "date": "2026-06-21",
+      "protocol": "scallop",
+      "events": 2,
+      "debt": 202.67956011874108,
+      "seized": 204.7063566495809
+    },
+    {
+      "date": "2026-06-21",
+      "protocol": "suilend",
+      "events": 3,
+      "debt": 54.704838923216855,
+      "seized": 70.33636507024715
+    },
+    {
+      "date": "2026-06-22",
+      "protocol": "navi",
+      "events": 39,
+      "debt": 133.4000615465428,
+      "seized": 146.6296388257857
+    },
+    {
+      "date": "2026-06-22",
+      "protocol": "scallop",
+      "events": 2,
+      "debt": 211.76604623032483,
+      "seized": 283.7778136237237
+    },
+    {
+      "date": "2026-06-23",
+      "protocol": "alphalend",
+      "events": 21,
+      "debt": 80.93448732400002,
+      "seized": 82624.62389955303
+    },
+    {
+      "date": "2026-06-23",
+      "protocol": "navi",
+      "events": 76,
+      "debt": 95568.98576091893,
+      "seized": 105125.46339221619
+    },
+    {
+      "date": "2026-06-23",
+      "protocol": "scallop",
+      "events": 8,
+      "debt": 1872.347177839719,
+      "seized": 3992.0754645448014
+    },
+    {
+      "date": "2026-06-23",
+      "protocol": "suilend",
+      "events": 12,
+      "debt": 389.1930935733451,
+      "seized": 421.8685811785575
+    },
+    {
+      "date": "2026-06-24",
+      "protocol": "alphalend",
+      "events": 50,
+      "debt": 2.9693928710000006,
+      "seized": 5936.580515086999
+    },
+    {
+      "date": "2026-06-24",
+      "protocol": "navi",
+      "events": 128,
+      "debt": 20683.96297445664,
+      "seized": 29389.1848224897
+    },
+    {
+      "date": "2026-06-24",
+      "protocol": "scallop",
+      "events": 59,
+      "debt": 17941.582574990363,
+      "seized": 18594.645942836807
+    },
+    {
+      "date": "2026-06-24",
+      "protocol": "suilend",
+      "events": 131,
+      "debt": 43858.28141854792,
+      "seized": 48096.008514752844
+    },
+    {
+      "date": "2026-06-25",
+      "protocol": "alphalend",
+      "events": 9,
+      "debt": 0.5710638950000001,
+      "seized": 2589.177481469
+    },
+    {
+      "date": "2026-06-25",
+      "protocol": "navi",
+      "events": 80,
+      "debt": 7167.723342613865,
+      "seized": 7900.466462355435
+    },
+    {
+      "date": "2026-06-25",
+      "protocol": "scallop",
+      "events": 15,
+      "debt": 8127.942484613708,
+      "seized": 7528.235732062527
+    },
+    {
+      "date": "2026-06-25",
+      "protocol": "suilend",
+      "events": 24,
+      "debt": 18145.460688293377,
+      "seized": 19332.67538448184
+    },
+    {
+      "date": "2026-06-26",
+      "protocol": "alphalend",
+      "events": 5,
+      "debt": 0.035823653,
+      "seized": 50.421313157
+    },
+    {
+      "date": "2026-06-26",
+      "protocol": "navi",
+      "events": 34,
+      "debt": 847.6199835744555,
+      "seized": 931.6818885857022
+    },
+    {
+      "date": "2026-06-26",
+      "protocol": "scallop",
+      "events": 10,
+      "debt": 36905.50612726278,
+      "seized": 8132.215466816315
+    },
+    {
+      "date": "2026-06-26",
+      "protocol": "suilend",
+      "events": 3,
+      "debt": 11.914680757291752,
+      "seized": 23.39829453529052
+    },
+    {
+      "date": "2026-06-27",
+      "protocol": "navi",
+      "events": 14,
+      "debt": 40.306400210635005,
+      "seized": 44.39202744815999
+    },
+    {
+      "date": "2026-06-27",
+      "protocol": "scallop",
+      "events": 3,
+      "debt": 10.144765283799117,
+      "seized": 10.473673712351836
+    },
+    {
+      "date": "2026-06-27",
+      "protocol": "suilend",
+      "events": 1,
+      "debt": 1.557742771933763,
+      "seized": 1.549694424488382
+    },
+    {
+      "date": "2026-06-28",
+      "protocol": "navi",
+      "events": 1,
+      "debt": 18.607005392385,
+      "seized": 20.46770593045984
+    },
+    {
+      "date": "2026-06-28",
+      "protocol": "scallop",
+      "events": 1,
+      "debt": 22.60673370232746,
+      "seized": 23.05886025502616
+    },
+    {
+      "date": "2026-06-29",
+      "protocol": "alphalend",
+      "events": 3,
+      "debt": 0.041984091,
+      "seized": 46.098733162
+    },
+    {
+      "date": "2026-06-29",
+      "protocol": "scallop",
+      "events": 2,
+      "debt": 435.18938887507187,
+      "seized": 443.89317493200207
+    },
+    {
+      "date": "2026-06-29",
+      "protocol": "suilend",
+      "events": 2,
+      "debt": 1.2360014406122204,
+      "seized": 13.005656499008452
+    },
+    {
+      "date": "2026-06-30",
+      "protocol": "alphalend",
+      "events": 3,
+      "debt": 0.035208158999999996,
+      "seized": 24321.674662751
+    },
+    {
+      "date": "2026-06-30",
+      "protocol": "navi",
+      "events": 10,
+      "debt": 195.27720820956,
+      "seized": 214.80492722219407
+    },
+    {
+      "date": "2026-06-30",
+      "protocol": "scallop",
+      "events": 12,
+      "debt": 13767.276738569397,
+      "seized": 10657.30865677194
+    },
+    {
+      "date": "2026-06-30",
+      "protocol": "suilend",
+      "events": 1,
+      "debt": 2430.486925915865,
+      "seized": 2572.358823760645
+    }
+  ],
+  "anomalies": [],
+  "composition": {
+    "totalSupplyUsd": 486657284.44428396,
+    "totalBorrowUsd": 186368739.317964,
+    "stableBorrowSharePct": 50.88259018605649,
+    "suiLstSupplySharePct": 31.146098879656563,
+    "perProtocol": {
+      "alphalend": {
+        "sup": 107937481.76013666,
+        "bor": 52878946.89300422
+      },
+      "bucket": {
+        "sup": 25036577.747065175,
+        "bor": 6847339.3060284415
+      },
+      "navi": {
+        "sup": 192431745.63468188,
+        "bor": 72055358.69595002
+      },
+      "scallop": {
+        "sup": 9107458.38033053,
+        "bor": 4760132.522287462
+      },
+      "suilend": {
+        "sup": 152144020.92206982,
+        "bor": 49826961.9006938
+      }
+    },
+    "perAsset": [
+      {
+        "protocol": "alphalend",
+        "symbol": "ALPHA",
+        "sup": 5453052.21001821,
+        "bor": 0.5996163855013439,
+        "asOf": "2026-06-30T00:45:33.518Z"
+      },
+      {
+        "protocol": "alphalend",
+        "symbol": "BLUE",
+        "sup": 505225.3521156632,
+        "bor": 368525.5855391637,
+        "asOf": "2026-06-30T00:45:33.518Z"
+      },
+      {
+        "protocol": "alphalend",
+        "symbol": "BTCVC",
+        "sup": 3296594.361487088,
+        "bor": 0,
+        "asOf": "2026-06-30T00:45:33.518Z"
+      },
+      {
+        "protocol": "alphalend",
+        "symbol": "DEEP",
+        "sup": 3243480.730199821,
+        "bor": 1655043.435191023,
+        "asOf": "2026-06-30T00:45:33.518Z"
+      },
+      {
+        "protocol": "alphalend",
+        "symbol": "EBTC",
+        "sup": 653896.6644746062,
+        "bor": 48.62331332349693,
+        "asOf": "2026-06-30T00:45:33.518Z"
+      },
+      {
+        "protocol": "alphalend",
+        "symbol": "EEARN",
+        "sup": 865150.1664567195,
+        "bor": 0,
+        "asOf": "2026-06-30T00:45:33.518Z"
+      },
+      {
+        "protocol": "alphalend",
+        "symbol": "EGUSDC",
+        "sup": 1250520.334044462,
+        "bor": 11874.81014326056,
+        "asOf": "2026-06-30T00:45:33.518Z"
+      },
+      {
+        "protocol": "alphalend",
+        "symbol": "ESUI",
+        "sup": 4133794.244695765,
+        "bor": 0.124853212083041,
+        "asOf": "2026-06-30T00:45:33.518Z"
+      },
+      {
+        "protocol": "alphalend",
+        "symbol": "ETHIRD",
+        "sup": 6606729.892896662,
+        "bor": 0,
+        "asOf": "2026-06-28T00:45:33.697Z"
+      },
+      {
+        "protocol": "alphalend",
+        "symbol": "IKA",
+        "sup": 252500.2788335826,
+        "bor": 1663.453939069862,
+        "asOf": "2026-06-30T00:45:33.518Z"
+      },
+      {
+        "protocol": "alphalend",
+        "symbol": "STSUI",
+        "sup": 5580730.825616637,
+        "bor": 890008.7989269788,
+        "asOf": "2026-06-30T00:45:33.518Z"
+      },
+      {
+        "protocol": "alphalend",
+        "symbol": "SUI",
+        "sup": 11448767.31416126,
+        "bor": 7283390.181658397,
+        "asOf": "2026-06-30T00:45:33.518Z"
+      },
+      {
+        "protocol": "alphalend",
+        "symbol": "TBTC",
+        "sup": 2776195.668906826,
+        "bor": 1498384.268897195,
+        "asOf": "2026-06-30T00:45:33.518Z"
+      },
+      {
+        "protocol": "alphalend",
+        "symbol": "USDC",
+        "sup": 32824334.81772972,
+        "bor": 26603076.96355883,
+        "asOf": "2026-06-30T00:45:33.518Z"
+      },
+      {
+        "protocol": "alphalend",
+        "symbol": "USDSUI",
+        "sup": 7587438.542740914,
+        "bor": 2386632.155600146,
+        "asOf": "2026-06-30T00:45:33.518Z"
+      },
+      {
+        "protocol": "alphalend",
+        "symbol": "USDT",
+        "sup": 5523777.929527714,
+        "bor": 3717139.834524132,
+        "asOf": "2026-06-30T00:45:33.518Z"
+      },
+      {
+        "protocol": "alphalend",
+        "symbol": "WAL",
+        "sup": 3332496.282651322,
+        "bor": 803518.4047234257,
+        "asOf": "2026-06-30T00:45:33.518Z"
+      },
+      {
+        "protocol": "alphalend",
+        "symbol": "WBTC",
+        "sup": 4812094.749747727,
+        "bor": 1031440.986229126,
+        "asOf": "2026-06-30T00:45:33.518Z"
+      },
+      {
+        "protocol": "alphalend",
+        "symbol": "XAUM",
+        "sup": 1305375.160839164,
+        "bor": 532183.6723957785,
+        "asOf": "2026-06-30T00:45:33.518Z"
+      },
+      {
+        "protocol": "alphalend",
+        "symbol": "XBTC",
+        "sup": 6485326.232992793,
+        "bor": 6096014.993894768,
+        "asOf": "2026-06-30T00:45:33.518Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "BKT-AF-AFSUI-SUI",
+        "sup": 1.088297529007602,
+        "bor": 0,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "BKT-KRIYA-FOUNTAIN-1",
+        "sup": 1.836384521479446,
+        "bor": 0,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "BKT-PSM-BLUEFIN_STABLE_LP",
+        "sup": 140989.8835648905,
+        "bor": 0,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "BKT-PSM-BUCKETUS",
+        "sup": 968568.5998161492,
+        "bor": 0,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "BKT-PSM-CETABLE",
+        "sup": 0.2377236662132815,
+        "bor": 0,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "BKT-PSM-FDUSD",
+        "sup": 0.07010931349988599,
+        "bor": 0,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "BKT-PSM-STAPEARL",
+        "sup": 0.05952355069081783,
+        "bor": 0,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "BKT-PSM-USDC_CIRCLE",
+        "sup": 59503.34757582915,
+        "bor": 0,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "BKT-PSM-USDC_WORMHOLE",
+        "sup": 1.591491182941687,
+        "bor": 0,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "BKT-PSM-USDT_WORMHOLE",
+        "sup": 0.1209794098836396,
+        "bor": 0,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "BKT-SAVE-AFSUI_S",
+        "sup": 1323162.531352017,
+        "bor": 0,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "BKT-SAVE-HASUI_NAVI_POND",
+        "sup": 0.8428758431995584,
+        "bor": 0,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "BKT-SAVE-HASUI_S",
+        "sup": 2248674.862390318,
+        "bor": 0,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "BKT-SAVE-NAVI_STSUI",
+        "sup": 626621.0444803819,
+        "bor": 0,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "BKT-SAVE-NAVI_VSUI",
+        "sup": 0.6408327255431713,
+        "bor": 0,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "BKT-SAVE-SUI_NAVI_POND",
+        "sup": 919052.0451674103,
+        "bor": 0,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "BKT-SAVE-VSUI_S",
+        "sup": 1386217.052155773,
+        "bor": 0,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "BKT-SCOIN-NAVI_CIRCLE_USDC",
+        "sup": 0.7061551941918741,
+        "bor": 0,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "BKT-SCOIN-NAVI_SUI_BRIDGE_USDT",
+        "sup": 19233.72960855303,
+        "bor": 0,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "BKT-SCOIN-SCALLOP_CIRCLE_USDC",
+        "sup": 0.9647214019359958,
+        "bor": 0,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "BKT-SCOIN-SCALLOP_SUI_BRIDGE_USDT",
+        "sup": 0.3027131871304056,
+        "bor": 0,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "BKT-SCOIN-SCALLOP_USDC",
+        "sup": 0.5510862204814996,
+        "bor": 0,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "BKT-SCOIN-SCALLOP_USDT",
+        "sup": 0.1962956685887897,
+        "bor": 0,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "PSM-BUCK",
+        "sup": 2358612.692413932,
+        "bor": 2365604.592936,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "PSM-USDC",
+        "sup": 8864.2318669981,
+        "bor": 8867.618688,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "PSM-USDSUI",
+        "sup": 394322.3354387613,
+        "bor": 394305.158063,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "PSM-USDT",
+        "sup": 0,
+        "bor": 0,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "SAVING-USDB",
+        "sup": 7326781.083668,
+        "bor": 0,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "SUI",
+        "sup": 42139.99785541409,
+        "bor": 27152.751611,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-AF_LP",
+        "sup": 0,
+        "bor": 0,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-BTC",
+        "sup": 676.370004638951,
+        "bor": 9e-9,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-CETUS",
+        "sup": 17.51946219421314,
+        "bor": 9.818140909,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-COIN",
+        "sup": 8521.903308845476,
+        "bor": 11.591830138,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-HAEDAL",
+        "sup": 24.21346794434756,
+        "bor": 50.493491719,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-LBTC",
+        "sup": 1047.465653418666,
+        "bor": 427.603076987,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-LP_TOKEN",
+        "sup": 0,
+        "bor": 1487.982953506,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-MUSD",
+        "sup": 72.77562734301762,
+        "bor": 50.480380224,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-NAVX",
+        "sup": 50.24977100361807,
+        "bor": 52.870769635,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-SCA",
+        "sup": 1122.029704378841,
+        "bor": 1865.037219788,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-SCALLOP_DEEP",
+        "sup": 8081.183931885973,
+        "bor": 1357.181489418,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-SCALLOP_SB_USDT",
+        "sup": 532.2207198722026,
+        "bor": 351.752143974,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-SCALLOP_SCA",
+        "sup": 117.3672002717403,
+        "bor": 161.471204678,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-SCALLOP_SUI",
+        "sup": 74769.61325142255,
+        "bor": 46074.664609529,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-SCALLOP_USDC",
+        "sup": 13348.10063299308,
+        "bor": 6936.815729502,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-SCALLOP_WORMHOLE_USDC",
+        "sup": 643.9852484625692,
+        "bor": 433.909154048,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-SCALLOP_WORMHOLE_USDT",
+        "sup": 2096.20528601227,
+        "bor": 1103.287121769,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-STSUI",
+        "sup": 36.50449830053147,
+        "bor": 36.308843496,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-SUI",
+        "sup": 0,
+        "bor": 3017.794346294,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-TBTC",
+        "sup": 292.560260881981,
+        "bor": 287.95682578,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-TLP",
+        "sup": 0,
+        "bor": 12494.869472018,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-USDY",
+        "sup": 864.2238787544854,
+        "bor": 631.402612568,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-WAL",
+        "sup": 36057.68440658497,
+        "bor": 50584.022907858,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-WETH",
+        "sup": 1409.45866407523,
+        "bor": 313.208336622,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-afSUI",
+        "sup": 5609.543422505161,
+        "bor": 3316.922776136,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-haSUI",
+        "sup": 2946.262960110827,
+        "bor": 905.906536148,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-sSUI",
+        "sup": 74.4849354739935,
+        "bor": 52.128022742,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1-vSUI",
+        "sup": 12017.11124611304,
+        "bor": 10784.652371709,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1PSM-AUSD",
+        "sup": 7.307956001,
+        "bor": 7.307956001,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1PSM-BLUEFIN_STABLE_LP",
+        "sup": 282087.505173162,
+        "bor": 282087.505173162,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1PSM-BUCKETUS",
+        "sup": 1937877.33561359,
+        "bor": 1937877.33561359,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1PSM-CETABLE",
+        "sup": 0.238021,
+        "bor": 0.238021,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1PSM-COIN",
+        "sup": 1019.758977,
+        "bor": 1019.758977,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1PSM-FDUSD",
+        "sup": 0.070352,
+        "bor": 0.070352,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1PSM-SCABLE",
+        "sup": 854.607426626,
+        "bor": 854.607426626,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1PSM-STAPEARL",
+        "sup": 0.059598,
+        "bor": 0.059598,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1PSM-USDC",
+        "sup": 59526.082350565,
+        "bor": 59526.082350565,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "V1PSM-USDT",
+        "sup": 0.057134295,
+        "bor": 0.057134295,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "WBTC",
+        "sup": 154596.2329015583,
+        "bor": 31556.215223,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "XBTC",
+        "sup": 179314.6298903249,
+        "bor": 106369.02533,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "afSUI",
+        "sup": 24667.71590573268,
+        "bor": 14977.524147,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "haSUI",
+        "sup": 4225352.79320674,
+        "bor": 1466844.308517,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "bucket",
+        "symbol": "vSUI",
+        "sup": 178091.668471251,
+        "bor": 7488.956544,
+        "asOf": "2026-06-30T01:24:53.128Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "AUSD",
+        "sup": 2426.84473066932,
+        "bor": 1017.940946703055,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "BLUE",
+        "sup": 19108.07063024665,
+        "bor": 4621.634888327159,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "BUCK",
+        "sup": 20392692.42548514,
+        "bor": 1801770.77260978,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "CETUS",
+        "sup": 151296.9193827345,
+        "bor": 21365.88406884811,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "DEEP",
+        "sup": 5403032.628301596,
+        "bor": 2702143.108916443,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "FDUSD",
+        "sup": 24648.96677455116,
+        "bor": 797.2787489072795,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "HAEDAL",
+        "sup": 59719.96529937846,
+        "bor": 109.2088997073607,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "IKA",
+        "sup": 122303.0117443789,
+        "bor": 20654.98252887153,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "LBTC",
+        "sup": 2787845.952318207,
+        "bor": 103678.3770848685,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "MBTC",
+        "sup": 18049588.04869595,
+        "bor": 0,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "NAVX",
+        "sup": 1729047.620647694,
+        "bor": 16898.65331309765,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "NS",
+        "sup": 211766.2966631978,
+        "bor": 14490.26508186335,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "SOL",
+        "sup": 47913.25761684489,
+        "bor": 853.9599185488237,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "SUI",
+        "sup": 20249860.91749117,
+        "bor": 17059194.28087462,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "USDC",
+        "sup": 25660556.871824,
+        "bor": 20700734.70441861,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "USDSUI",
+        "sup": 3854001.854557632,
+        "bor": 2744983.164344123,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "USDY",
+        "sup": 2308488.231198187,
+        "bor": 121779.7148060638,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "WAL",
+        "sup": 4037495.346293238,
+        "bor": 2240255.925823958,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "WBTC",
+        "sup": 4205520.941427004,
+        "bor": 2631666.769141066,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "WETH",
+        "sup": 152189.7238561047,
+        "bor": 14707.40890590714,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "XAUm",
+        "sup": 1006002.372361467,
+        "bor": 1136.132492853224,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "YBTC.B",
+        "sup": 3613.370338800126,
+        "bor": 0,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "enzoBTC",
+        "sup": 26172772.55498475,
+        "bor": 0,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "haSUI",
+        "sup": 16359938.7062545,
+        "bor": 1382538.099691127,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "stBTC",
+        "sup": 30402.40457729768,
+        "bor": 944.0669605662963,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "stSUI",
+        "sup": 8855.592941595682,
+        "bor": 456.8834845520028,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "suiETH",
+        "sup": 1397436.274464636,
+        "bor": 215083.562078964,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "suiUSDT",
+        "sup": 4766677.716723233,
+        "bor": 3839667.674238084,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "suiUSDe",
+        "sup": 681008.2371006948,
+        "bor": 255944.073669022,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "vSUI",
+        "sup": 11833611.03601424,
+        "bor": 319887.6821869749,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "wBTC",
+        "sup": 7722321.751266511,
+        "bor": 6296260.787947448,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "wUSDC",
+        "sup": 2172692.272122039,
+        "bor": 2025529.408929011,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "wUSDT",
+        "sup": 1164253.435103744,
+        "bor": 1119143.471252049,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "navi",
+        "symbol": "xBTC",
+        "sup": 9642656.015490478,
+        "bor": 6397042.817699033,
+        "asOf": "2026-06-30T00:35:34.046Z"
+      },
+      {
+        "protocol": "scallop",
+        "symbol": "CETUS",
+        "sup": 63961.02265103917,
+        "bor": 1070.764406384855,
+        "asOf": "2026-06-30T00:43:43.712Z"
+      },
+      {
+        "protocol": "scallop",
+        "symbol": "DEEP",
+        "sup": 125666.970162777,
+        "bor": 33040.39718864709,
+        "asOf": "2026-06-30T00:43:43.712Z"
+      },
+      {
+        "protocol": "scallop",
+        "symbol": "SBETH",
+        "sup": 384798.6004139602,
+        "bor": 121777.5047067468,
+        "asOf": "2026-06-30T00:43:43.712Z"
+      },
+      {
+        "protocol": "scallop",
+        "symbol": "SCA",
+        "sup": 239151.533493564,
+        "bor": 52734.85778064405,
+        "asOf": "2026-06-30T00:43:43.712Z"
+      },
+      {
+        "protocol": "scallop",
+        "symbol": "SUI",
+        "sup": 3551834.266817818,
+        "bor": 1459578.421431604,
+        "asOf": "2026-06-30T00:43:43.712Z"
+      },
+      {
+        "protocol": "scallop",
+        "symbol": "USDC",
+        "sup": 2452864.063677646,
+        "bor": 1888798.168078677,
+        "asOf": "2026-06-30T00:43:43.712Z"
+      },
+      {
+        "protocol": "scallop",
+        "symbol": "USDSUI",
+        "sup": 487067.0433982228,
+        "bor": 371900.721082253,
+        "asOf": "2026-06-30T00:43:43.712Z"
+      },
+      {
+        "protocol": "scallop",
+        "symbol": "USDT",
+        "sup": 860610.4014090394,
+        "bor": 544765.9543584073,
+        "asOf": "2026-06-30T00:43:43.712Z"
+      },
+      {
+        "protocol": "scallop",
+        "symbol": "USDY",
+        "sup": 504719.226869892,
+        "bor": 202166.8705876938,
+        "asOf": "2026-06-30T00:43:43.712Z"
+      },
+      {
+        "protocol": "scallop",
+        "symbol": "WBTC",
+        "sup": 116.4285320231218,
+        "bor": 0,
+        "asOf": "2026-06-30T00:43:43.712Z"
+      },
+      {
+        "protocol": "scallop",
+        "symbol": "WETH",
+        "sup": 8019.756604856646,
+        "bor": 995.702009799633,
+        "asOf": "2026-06-30T00:43:43.712Z"
+      },
+      {
+        "protocol": "scallop",
+        "symbol": "afSUI",
+        "sup": 106171.5914380984,
+        "bor": 3525.324573186921,
+        "asOf": "2026-06-30T00:43:43.712Z"
+      },
+      {
+        "protocol": "scallop",
+        "symbol": "haSUI",
+        "sup": 57582.96914533357,
+        "bor": 3825.747549971612,
+        "asOf": "2026-06-30T00:43:43.712Z"
+      },
+      {
+        "protocol": "scallop",
+        "symbol": "vSUI",
+        "sup": 22592.8192744992,
+        "bor": 4275.452598556147,
+        "asOf": "2026-06-30T00:43:43.712Z"
+      },
+      {
+        "protocol": "scallop",
+        "symbol": "wUSDC",
+        "sup": 168557.3827710587,
+        "bor": 53095.84759206048,
+        "asOf": "2026-06-30T00:43:43.712Z"
+      },
+      {
+        "protocol": "scallop",
+        "symbol": "wUSDT",
+        "sup": 73744.30367070426,
+        "bor": 18580.7883428286,
+        "asOf": "2026-06-30T00:43:43.712Z"
+      },
+      {
+        "protocol": "suilend",
+        "symbol": "AUSD",
+        "sup": 1663579.640613128,
+        "bor": 20580.05778371497,
+        "asOf": "2026-06-30T00:56:05.367Z"
+      },
+      {
+        "protocol": "suilend",
+        "symbol": "BTC",
+        "sup": 1985656.798499478,
+        "bor": 287281.245022292,
+        "asOf": "2026-06-30T00:56:05.367Z"
+      },
+      {
+        "protocol": "suilend",
+        "symbol": "COIN",
+        "sup": 553757.4491613238,
+        "bor": 162689.1459203376,
+        "asOf": "2026-06-30T00:56:05.367Z"
+      },
+      {
+        "protocol": "suilend",
+        "symbol": "DEEP",
+        "sup": 5554810.939188248,
+        "bor": 79431.94643738,
+        "asOf": "2026-06-30T00:56:05.367Z"
+      },
+      {
+        "protocol": "suilend",
+        "symbol": "ETH",
+        "sup": 3519797.528463379,
+        "bor": 189731.1931070268,
+        "asOf": "2026-06-30T00:56:05.367Z"
+      },
+      {
+        "protocol": "suilend",
+        "symbol": "LBTC",
+        "sup": 4045991.094933291,
+        "bor": 0,
+        "asOf": "2026-06-30T00:56:05.367Z"
+      },
+      {
+        "protocol": "suilend",
+        "symbol": "SEND",
+        "sup": 518019.3528283096,
+        "bor": 16.81302198149554,
+        "asOf": "2026-06-30T00:56:05.367Z"
+      },
+      {
+        "protocol": "suilend",
+        "symbol": "SUI",
+        "sup": 39109175.36601625,
+        "bor": 20488842.43814342,
+        "asOf": "2026-06-30T00:56:05.367Z"
+      },
+      {
+        "protocol": "suilend",
+        "symbol": "USDC",
+        "sup": 29999345.54394592,
+        "bor": 22078940.27328435,
+        "asOf": "2026-06-30T00:56:05.367Z"
+      },
+      {
+        "protocol": "suilend",
+        "symbol": "USDSUI",
+        "sup": 8902173.720285231,
+        "bor": 3030593.919873202,
+        "asOf": "2026-06-30T00:56:05.367Z"
+      },
+      {
+        "protocol": "suilend",
+        "symbol": "USDT",
+        "sup": 2420875.264736366,
+        "bor": 1526193.80804111,
+        "asOf": "2026-06-30T00:56:05.367Z"
+      },
+      {
+        "protocol": "suilend",
+        "symbol": "WAL",
+        "sup": 1420769.176723829,
+        "bor": 35581.80226372722,
+        "asOf": "2026-06-30T00:56:05.367Z"
+      },
+      {
+        "protocol": "suilend",
+        "symbol": "WBTC",
+        "sup": 3614192.848175934,
+        "bor": 717355.5791599014,
+        "asOf": "2026-06-30T00:56:05.367Z"
+      },
+      {
+        "protocol": "suilend",
+        "symbol": "WETH",
+        "sup": 888.7268977306479,
+        "bor": 879.947857207148,
+        "asOf": "2026-06-30T00:56:05.367Z"
+      },
+      {
+        "protocol": "suilend",
+        "symbol": "XBTC",
+        "sup": 4418729.738794542,
+        "bor": 1177491.361699329,
+        "asOf": "2026-06-30T00:56:05.367Z"
+      },
+      {
+        "protocol": "suilend",
+        "symbol": "sSUI",
+        "sup": 44356116.26307427,
+        "bor": 0,
+        "asOf": "2026-06-30T00:56:05.367Z"
+      },
+      {
+        "protocol": "suilend",
+        "symbol": "wUSDC",
+        "sup": 39467.34496807565,
+        "bor": 23961.14371815244,
+        "asOf": "2026-06-30T00:56:05.367Z"
+      },
+      {
+        "protocol": "suilend",
+        "symbol": "wUSDT",
+        "sup": 20674.12476452641,
+        "bor": 7391.225360664011,
+        "asOf": "2026-06-30T00:56:05.367Z"
+      }
+    ]
+  },
+  "activeMarkets": 160,
+  "rateModelParams": [
+    {
+      "protocol": "alphalend",
+      "symbol": "SUI",
+      "lt": 0.9,
+      "updatedAt": "2026-07-02T00:45:37.581Z"
+    },
+    {
+      "protocol": "bucket",
+      "symbol": "SUI",
+      "lt": 0.9090909090909091,
+      "updatedAt": "2026-07-02T01:24:53.150Z"
+    },
+    {
+      "protocol": "navi",
+      "symbol": "SUI",
+      "lt": 0.8,
+      "updatedAt": "2026-07-02T00:26:46.738Z"
+    },
+    {
+      "protocol": "scallop",
+      "symbol": "SUI",
+      "lt": 0.8999999999068677,
+      "updatedAt": "2026-07-02T00:43:44.091Z"
+    },
+    {
+      "protocol": "suilend",
+      "symbol": "SUI",
+      "lt": 0.75,
+      "updatedAt": "2026-07-02T00:56:05.254Z"
+    },
+    {
+      "protocol": "alphalend",
+      "symbol": "USDC",
+      "lt": 0.9,
+      "updatedAt": "2026-07-02T00:45:37.682Z"
+    },
+    {
+      "protocol": "navi",
+      "symbol": "USDC",
+      "lt": 0.85,
+      "updatedAt": "2026-07-02T00:26:46.656Z"
+    },
+    {
+      "protocol": "scallop",
+      "symbol": "USDC",
+      "lt": 0.8999999999068677,
+      "updatedAt": "2026-07-02T00:43:43.995Z"
+    },
+    {
+      "protocol": "suilend",
+      "symbol": "USDC",
+      "lt": 0.8,
+      "updatedAt": "2026-07-02T00:56:05.262Z"
+    },
+    {
+      "protocol": "alphalend",
+      "symbol": "USDT",
+      "lt": 0.9,
+      "updatedAt": "2026-07-02T00:45:37.468Z"
+    },
+    {
+      "protocol": "scallop",
+      "symbol": "USDT",
+      "lt": 0.8999999999068677,
+      "updatedAt": "2026-07-02T00:43:44.043Z"
+    },
+    {
+      "protocol": "suilend",
+      "symbol": "USDT",
+      "lt": 0.8,
+      "updatedAt": "2026-07-02T00:56:05.280Z"
+    },
+    {
+      "protocol": "alphalend",
+      "symbol": "WBTC",
+      "lt": 0.85,
+      "updatedAt": "2026-07-02T00:45:37.542Z"
+    },
+    {
+      "protocol": "bucket",
+      "symbol": "WBTC",
+      "lt": 0.9090909090909091,
+      "updatedAt": "2026-07-02T01:24:53.159Z"
+    },
+    {
+      "protocol": "navi",
+      "symbol": "WBTC",
+      "lt": 0.7,
+      "updatedAt": "2026-07-02T00:26:46.445Z"
+    },
+    {
+      "protocol": "scallop",
+      "symbol": "WBTC",
+      "lt": 0.7999999998137355,
+      "updatedAt": "2026-07-02T00:43:44.064Z"
+    },
+    {
+      "protocol": "suilend",
+      "symbol": "WBTC",
+      "lt": 0.65,
+      "updatedAt": "2026-07-02T00:56:05.336Z"
+    },
+    {
+      "protocol": "navi",
+      "symbol": "WETH",
+      "lt": 0.8,
+      "updatedAt": "2026-07-02T00:26:46.712Z"
+    },
+    {
+      "protocol": "scallop",
+      "symbol": "WETH",
+      "lt": 0.7999999998137355,
+      "updatedAt": "2026-07-02T00:43:44.052Z"
+    },
+    {
+      "protocol": "suilend",
+      "symbol": "WETH",
+      "lt": 0.75,
+      "updatedAt": "2026-07-02T00:56:05.361Z"
+    },
+    {
+      "protocol": "navi",
+      "symbol": "wUSDT",
+      "lt": 0.85,
+      "updatedAt": "2026-07-02T00:26:46.720Z"
+    },
+    {
+      "protocol": "scallop",
+      "symbol": "wUSDT",
+      "lt": 0.8999999999068677,
+      "updatedAt": "2026-07-02T00:43:44.081Z"
+    },
+    {
+      "protocol": "suilend",
+      "symbol": "wUSDT",
+      "lt": 0.8,
+      "updatedAt": "2026-07-02T00:56:05.289Z"
+    }
+  ]
+}
