@@ -72,8 +72,14 @@ export async function GET(
     // don't accidentally overwrite a good value with zero).
     let rmpWritten = 0;
     for (const pool of pools) {
-      const ltv = num(pool.ltv);
-      const liquidationThreshold = num(pool.liquidationThreshold);
+      let ltv = num(pool.ltv);
+      let liquidationThreshold = num(pool.liquidationThreshold);
+      // Guard: ltv/lt are fractions in [0,1]. Some adapters can emit a percent
+      // by mistake (e.g. Bucket, whose SDK returns minCollateralRatio as a ratio
+      // like 1.1 → 100/1.1 = 90.9 instead of 0.909). Any value >1 is a percent;
+      // normalize it so the display (which multiplies by 100) can't show 9091%.
+      if (ltv > 1) ltv = ltv / 100;
+      if (liquidationThreshold > 1) liquidationThreshold = liquidationThreshold / 100;
       const irm = pool.irm;
       // Bucket-only fee params. psmFee is real (read from the SDK swap fee);
       // redemptionFee is reserved (V2 redemption is dynamic/protocol-level,

@@ -92,6 +92,10 @@ export async function backfillOne(
 
   for (const entry of history) {
     if (typeof entry?.totalLiquidityUSD !== 'number' || !Number.isFinite(entry.totalLiquidityUSD)) continue;
+    // Guard: DefiLlama sometimes drops a protocol's listing and reports 0 for it
+    // (AlphaLend did exactly this from Jun 2026). A live protocol is never truly
+    // $0, so writing it would clobber a good historical value — skip zero reads.
+    if (entry.totalLiquidityUSD <= 0) continue;
     if (entry.date < cutoffSec) continue;
     const date = new Date(entry.date * 1000);
     date.setUTCHours(0, 0, 0, 0);

@@ -74,25 +74,68 @@ export async function GET(
       const n = typeof v === 'number' ? v : Number(v);
       return Number.isFinite(n) ? n : 0;
     };
-    const rows = events.map((e) => ({
-      id: e.id,
-      protocol: slug,
-      txDigest: e.txDigest,
-      timestamp: e.timestamp,
-      liquidator: e.liquidator.slice(0, 66),
-      borrower: e.borrower.slice(0, 66),
-      collateralAsset: e.collateralAsset.slice(0, 24),
-      collateralAmount: num(e.collateralAmount),
-      collateralPrice: num(e.collateralPrice),
-      collateralUsd: num(e.collateralUsd),
-      debtAsset: e.debtAsset.slice(0, 24),
-      debtAmount: num(e.debtAmount),
-      debtPrice: num(e.debtPrice),
-      debtUsd: num(e.debtUsd),
-      treasuryAmount: num(e.treasuryAmount),
-      gasUsedMist: e.gasUsedMist ?? null,
-      gasUsd: e.gasUsd ?? null,
-    }));
+    // Guard: a corrupted oracle read can record an absurd price (e.g. a $60,481
+    // "wUSDT" on 2026-06-24 inflated one dust liquidation to $402M seized).
+    // Cross-check each asset's price against the latest indexed pool price; if
+    // the event price is off by >10x either way, treat it as corrupt and
+    // recompute USD from the known price. Corrective only — never drops an event.
+    const assets = Array.from(
+      new Set(events.flatMap((e) => [e.collateralAsset, e.debtAsset]).filter(Boolean)),
+    );
+    const priceRows = (assets.length
+      ? await db.poolSnapshot.findMany({
+          where: {
+            protocol: slug,
+            symbol: { in: assets },
+            timestamp: { gte: new Date(Date.now() - 3 * 86400 * 1000) },
+          },
+          orderBy: [{ symbol: 'asc' }, { timestamp: 'desc' }],
+          distinct: ['symbol'],
+          select: { symbol: true, price: true },
+        })
+      : []) as Array<{ symbol: string; price: number }>;
+    const knownPrice = new Map<string, number>(
+      priceRows.map((r) => [r.symbol, r.price] as [string, number]),
+    );
+    const OUTLIER = 10;
+    const saneUsd = (asset: string, price: number, amount: number, usd: number) => {
+      const ref = knownPrice.get(asset);
+      if (ref && ref > 0 && price > 0 && (price / ref > OUTLIER || ref / price > OUTLIER)) {
+        return { price: ref, usd: amount * ref, repaired: true };
+      }
+      return { price, usd, repaired: false };
+    };
+
+    let repaired = 0;
+    const rows = events.map((e) => {
+      const cAmt = num(e.collateralAmount);
+      const dAmt = num(e.debtAmount);
+      const c = saneUsd(e.collateralAsset, num(e.collateralPrice), cAmt, num(e.collateralUsd));
+      const d = saneUsd(e.debtAsset, num(e.debtPrice), dAmt, num(e.debtUsd));
+      if (c.repaired || d.repaired) repaired++;
+      return {
+        id: e.id,
+        protocol: slug,
+        txDigest: e.txDigest,
+        timestamp: e.timestamp,
+        liquidator: e.liquidator.slice(0, 66),
+        borrower: e.borrower.slice(0, 66),
+        collateralAsset: e.collateralAsset.slice(0, 24),
+        collateralAmount: cAmt,
+        collateralPrice: c.price,
+        collateralUsd: c.usd,
+        debtAsset: e.debtAsset.slice(0, 24),
+        debtAmount: dAmt,
+        debtPrice: d.price,
+        debtUsd: d.usd,
+        treasuryAmount: num(e.treasuryAmount),
+        gasUsedMist: e.gasUsedMist ?? null,
+        gasUsd: e.gasUsd ?? null,
+      };
+    });
+    if (repaired > 0) {
+      console.warn(`[index-liquidations/${slug}] repaired ${repaired} event(s) with outlier prices`);
+    }
 
     const result = await db.liquidationEvent.createMany({
       data: rows,
