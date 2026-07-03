@@ -1,0 +1,2464 @@
+{
+  "generatedAt": "2026-07-02T21:19:57.348Z",
+  "tvlDaily": [
+    {
+      "date": "2026-05-01",
+      "protocol": "alphalend",
+      "tvl": 67730512
+    },
+    {
+      "date": "2026-05-01",
+      "protocol": "bucket",
+      "tvl": 61116635
+    },
+    {
+      "date": "2026-05-01",
+      "protocol": "navi",
+      "tvl": 156634291
+    },
+    {
+      "date": "2026-05-01",
+      "protocol": "scallop",
+      "tvl": 19941344
+    },
+    {
+      "date": "2026-05-01",
+      "protocol": "suilend",
+      "tvl": 141307356
+    },
+    {
+      "date": "2026-05-02",
+      "protocol": "alphalend",
+      "tvl": 70995765
+    },
+    {
+      "date": "2026-05-02",
+      "protocol": "bucket",
+      "tvl": 61532034
+    },
+    {
+      "date": "2026-05-02",
+      "protocol": "navi",
+      "tvl": 159708144
+    },
+    {
+      "date": "2026-05-02",
+      "protocol": "scallop",
+      "tvl": 20448413
+    },
+    {
+      "date": "2026-05-02",
+      "protocol": "suilend",
+      "tvl": 139492067
+    },
+    {
+      "date": "2026-05-03",
+      "protocol": "alphalend",
+      "tvl": 71585421
+    },
+    {
+      "date": "2026-05-03",
+      "protocol": "bucket",
+      "tvl": 61688191
+    },
+    {
+      "date": "2026-05-03",
+      "protocol": "navi",
+      "tvl": 157618259
+    },
+    {
+      "date": "2026-05-03",
+      "protocol": "scallop",
+      "tvl": 20531871
+    },
+    {
+      "date": "2026-05-03",
+      "protocol": "suilend",
+      "tvl": 139549669
+    },
+    {
+      "date": "2026-05-04",
+      "protocol": "alphalend",
+      "tvl": 72164427
+    },
+    {
+      "date": "2026-05-04",
+      "protocol": "bucket",
+      "tvl": 61602488
+    },
+    {
+      "date": "2026-05-04",
+      "protocol": "navi",
+      "tvl": 158443630
+    },
+    {
+      "date": "2026-05-04",
+      "protocol": "scallop",
+      "tvl": 20391187
+    },
+    {
+      "date": "2026-05-04",
+      "protocol": "suilend",
+      "tvl": 139240020
+    },
+    {
+      "date": "2026-05-05",
+      "protocol": "alphalend",
+      "tvl": 72410614
+    },
+    {
+      "date": "2026-05-05",
+      "protocol": "bucket",
+      "tvl": 62313426
+    },
+    {
+      "date": "2026-05-05",
+      "protocol": "navi",
+      "tvl": 156717248
+    },
+    {
+      "date": "2026-05-05",
+      "protocol": "scallop",
+      "tvl": 20865524
+    },
+    {
+      "date": "2026-05-05",
+      "protocol": "suilend",
+      "tvl": 140500165
+    },
+    {
+      "date": "2026-05-06",
+      "protocol": "alphalend",
+      "tvl": 73160827
+    },
+    {
+      "date": "2026-05-06",
+      "protocol": "bucket",
+      "tvl": 62804165
+    },
+    {
+      "date": "2026-05-06",
+      "protocol": "navi",
+      "tvl": 155721789
+    },
+    {
+      "date": "2026-05-06",
+      "protocol": "scallop",
+      "tvl": 21146216
+    },
+    {
+      "date": "2026-05-06",
+      "protocol": "suilend",
+      "tvl": 144519247
+    },
+    {
+      "date": "2026-05-07",
+      "protocol": "alphalend",
+      "tvl": 75070882
+    },
+    {
+      "date": "2026-05-07",
+      "protocol": "bucket",
+      "tvl": 63991003
+    },
+    {
+      "date": "2026-05-07",
+      "protocol": "navi",
+      "tvl": 166179059
+    },
+    {
+      "date": "2026-05-07",
+      "protocol": "scallop",
+      "tvl": 21431674
+    },
+    {
+      "date": "2026-05-07",
+      "protocol": "suilend",
+      "tvl": 150307259
+    },
+    {
+      "date": "2026-05-08",
+      "protocol": "alphalend",
+      "tvl": 73568508
+    },
+    {
+      "date": "2026-05-08",
+      "protocol": "bucket",
+      "tvl": 63419325
+    },
+    {
+      "date": "2026-05-08",
+      "protocol": "navi",
+      "tvl": 164566525
+    },
+    {
+      "date": "2026-05-08",
+      "protocol": "scallop",
+      "tvl": 21152002
+    },
+    {
+      "date": "2026-05-08",
+      "protocol": "suilend",
+      "tvl": 145917521
+    },
+    {
+      "date": "2026-05-09",
+      "protocol": "alphalend",
+      "tvl": 68259288
+    },
+    {
+      "date": "2026-05-09",
+      "protocol": "bucket",
+      "tvl": 63994975
+    },
+    {
+      "date": "2026-05-09",
+      "protocol": "navi",
+      "tvl": 169980053
+    },
+    {
+      "date": "2026-05-09",
+      "protocol": "scallop",
+      "tvl": 21861801
+    },
+    {
+      "date": "2026-05-09",
+      "protocol": "suilend",
+      "tvl": 151098381
+    },
+    {
+      "date": "2026-05-10",
+      "protocol": "alphalend",
+      "tvl": 77262512
+    },
+    {
+      "date": "2026-05-10",
+      "protocol": "bucket",
+      "tvl": 64570755
+    },
+    {
+      "date": "2026-05-10",
+      "protocol": "navi",
+      "tvl": 171833180
+    },
+    {
+      "date": "2026-05-10",
+      "protocol": "scallop",
+      "tvl": 22382295
+    },
+    {
+      "date": "2026-05-10",
+      "protocol": "suilend",
+      "tvl": 156961754
+    },
+    {
+      "date": "2026-05-11",
+      "protocol": "alphalend",
+      "tvl": 83055442
+    },
+    {
+      "date": "2026-05-11",
+      "protocol": "bucket",
+      "tvl": 69075651
+    },
+    {
+      "date": "2026-05-11",
+      "protocol": "navi",
+      "tvl": 194735407
+    },
+    {
+      "date": "2026-05-11",
+      "protocol": "scallop",
+      "tvl": 24501463
+    },
+    {
+      "date": "2026-05-11",
+      "protocol": "suilend",
+      "tvl": 181430445
+    },
+    {
+      "date": "2026-05-12",
+      "protocol": "alphalend",
+      "tvl": 82999763
+    },
+    {
+      "date": "2026-05-12",
+      "protocol": "bucket",
+      "tvl": 68601445
+    },
+    {
+      "date": "2026-05-12",
+      "protocol": "navi",
+      "tvl": 189288754
+    },
+    {
+      "date": "2026-05-12",
+      "protocol": "scallop",
+      "tvl": 24336118
+    },
+    {
+      "date": "2026-05-12",
+      "protocol": "suilend",
+      "tvl": 174603503
+    },
+    {
+      "date": "2026-05-13",
+      "protocol": "alphalend",
+      "tvl": 77700514
+    },
+    {
+      "date": "2026-05-13",
+      "protocol": "bucket",
+      "tvl": 68032260
+    },
+    {
+      "date": "2026-05-13",
+      "protocol": "navi",
+      "tvl": 183201424
+    },
+    {
+      "date": "2026-05-13",
+      "protocol": "scallop",
+      "tvl": 23660923
+    },
+    {
+      "date": "2026-05-13",
+      "protocol": "suilend",
+      "tvl": 169591401
+    },
+    {
+      "date": "2026-05-14",
+      "protocol": "alphalend",
+      "tvl": 81794318
+    },
+    {
+      "date": "2026-05-14",
+      "protocol": "bucket",
+      "tvl": 67562377
+    },
+    {
+      "date": "2026-05-14",
+      "protocol": "navi",
+      "tvl": 183805196
+    },
+    {
+      "date": "2026-05-14",
+      "protocol": "scallop",
+      "tvl": 23129238
+    },
+    {
+      "date": "2026-05-14",
+      "protocol": "suilend",
+      "tvl": 168644200
+    },
+    {
+      "date": "2026-05-15",
+      "protocol": "alphalend",
+      "tvl": 81274168
+    },
+    {
+      "date": "2026-05-15",
+      "protocol": "bucket",
+      "tvl": 67473128
+    },
+    {
+      "date": "2026-05-15",
+      "protocol": "navi",
+      "tvl": 182663574
+    },
+    {
+      "date": "2026-05-15",
+      "protocol": "scallop",
+      "tvl": 22958027
+    },
+    {
+      "date": "2026-05-15",
+      "protocol": "suilend",
+      "tvl": 168717135
+    },
+    {
+      "date": "2026-05-16",
+      "protocol": "alphalend",
+      "tvl": 70947431
+    },
+    {
+      "date": "2026-05-16",
+      "protocol": "bucket",
+      "tvl": 65667276
+    },
+    {
+      "date": "2026-05-16",
+      "protocol": "navi",
+      "tvl": 172879010
+    },
+    {
+      "date": "2026-05-16",
+      "protocol": "scallop",
+      "tvl": 21990944
+    },
+    {
+      "date": "2026-05-16",
+      "protocol": "suilend",
+      "tvl": 158473935
+    },
+    {
+      "date": "2026-05-17",
+      "protocol": "alphalend",
+      "tvl": 76803499
+    },
+    {
+      "date": "2026-05-17",
+      "protocol": "bucket",
+      "tvl": 65075213
+    },
+    {
+      "date": "2026-05-17",
+      "protocol": "navi",
+      "tvl": 157113362
+    },
+    {
+      "date": "2026-05-17",
+      "protocol": "scallop",
+      "tvl": 21685828
+    },
+    {
+      "date": "2026-05-17",
+      "protocol": "suilend",
+      "tvl": 155895509
+    },
+    {
+      "date": "2026-05-18",
+      "protocol": "alphalend",
+      "tvl": 74942062
+    },
+    {
+      "date": "2026-05-18",
+      "protocol": "bucket",
+      "tvl": 64658993
+    },
+    {
+      "date": "2026-05-18",
+      "protocol": "navi",
+      "tvl": 164975084
+    },
+    {
+      "date": "2026-05-18",
+      "protocol": "scallop",
+      "tvl": 21429356
+    },
+    {
+      "date": "2026-05-18",
+      "protocol": "suilend",
+      "tvl": 153659057
+    },
+    {
+      "date": "2026-05-19",
+      "protocol": "alphalend",
+      "tvl": 75429123
+    },
+    {
+      "date": "2026-05-19",
+      "protocol": "bucket",
+      "tvl": 65015354
+    },
+    {
+      "date": "2026-05-19",
+      "protocol": "navi",
+      "tvl": 168282066
+    },
+    {
+      "date": "2026-05-19",
+      "protocol": "scallop",
+      "tvl": 21537901
+    },
+    {
+      "date": "2026-05-19",
+      "protocol": "suilend",
+      "tvl": 155677794
+    },
+    {
+      "date": "2026-05-20",
+      "protocol": "alphalend",
+      "tvl": 74423187
+    },
+    {
+      "date": "2026-05-20",
+      "protocol": "bucket",
+      "tvl": 65032842
+    },
+    {
+      "date": "2026-05-20",
+      "protocol": "navi",
+      "tvl": 164261970
+    },
+    {
+      "date": "2026-05-20",
+      "protocol": "scallop",
+      "tvl": 21504405
+    },
+    {
+      "date": "2026-05-20",
+      "protocol": "suilend",
+      "tvl": 154076560
+    },
+    {
+      "date": "2026-05-21",
+      "protocol": "alphalend",
+      "tvl": 75440488
+    },
+    {
+      "date": "2026-05-21",
+      "protocol": "bucket",
+      "tvl": 65177903
+    },
+    {
+      "date": "2026-05-21",
+      "protocol": "navi",
+      "tvl": 170465952
+    },
+    {
+      "date": "2026-05-21",
+      "protocol": "scallop",
+      "tvl": 21894459
+    },
+    {
+      "date": "2026-05-21",
+      "protocol": "suilend",
+      "tvl": 154254447
+    },
+    {
+      "date": "2026-05-22",
+      "protocol": "alphalend",
+      "tvl": 70342875
+    },
+    {
+      "date": "2026-05-22",
+      "protocol": "bucket",
+      "tvl": 66487312
+    },
+    {
+      "date": "2026-05-22",
+      "protocol": "navi",
+      "tvl": 171868479
+    },
+    {
+      "date": "2026-05-22",
+      "protocol": "scallop",
+      "tvl": 22166612
+    },
+    {
+      "date": "2026-05-22",
+      "protocol": "suilend",
+      "tvl": 157246465
+    },
+    {
+      "date": "2026-05-23",
+      "protocol": "alphalend",
+      "tvl": 75303717
+    },
+    {
+      "date": "2026-05-23",
+      "protocol": "bucket",
+      "tvl": 65223085
+    },
+    {
+      "date": "2026-05-23",
+      "protocol": "navi",
+      "tvl": 166431392
+    },
+    {
+      "date": "2026-05-23",
+      "protocol": "scallop",
+      "tvl": 21157836
+    },
+    {
+      "date": "2026-05-23",
+      "protocol": "suilend",
+      "tvl": 149813826
+    },
+    {
+      "date": "2026-05-24",
+      "protocol": "alphalend",
+      "tvl": 76434740
+    },
+    {
+      "date": "2026-05-24",
+      "protocol": "bucket",
+      "tvl": 65675452
+    },
+    {
+      "date": "2026-05-24",
+      "protocol": "navi",
+      "tvl": 168328885
+    },
+    {
+      "date": "2026-05-24",
+      "protocol": "scallop",
+      "tvl": 21387790
+    },
+    {
+      "date": "2026-05-24",
+      "protocol": "suilend",
+      "tvl": 151171289
+    },
+    {
+      "date": "2026-05-25",
+      "protocol": "alphalend",
+      "tvl": 68060198
+    },
+    {
+      "date": "2026-05-25",
+      "protocol": "bucket",
+      "tvl": 65158022
+    },
+    {
+      "date": "2026-05-25",
+      "protocol": "navi",
+      "tvl": 166928613
+    },
+    {
+      "date": "2026-05-25",
+      "protocol": "scallop",
+      "tvl": 21105773
+    },
+    {
+      "date": "2026-05-25",
+      "protocol": "suilend",
+      "tvl": 147136042
+    },
+    {
+      "date": "2026-05-26",
+      "protocol": "alphalend",
+      "tvl": 74887060
+    },
+    {
+      "date": "2026-05-26",
+      "protocol": "bucket",
+      "tvl": 65307808
+    },
+    {
+      "date": "2026-05-26",
+      "protocol": "navi",
+      "tvl": 166253463
+    },
+    {
+      "date": "2026-05-26",
+      "protocol": "scallop",
+      "tvl": 20799273
+    },
+    {
+      "date": "2026-05-26",
+      "protocol": "suilend",
+      "tvl": 148380666
+    },
+    {
+      "date": "2026-05-27",
+      "protocol": "alphalend",
+      "tvl": 73825276
+    },
+    {
+      "date": "2026-05-27",
+      "protocol": "bucket",
+      "tvl": 64654861
+    },
+    {
+      "date": "2026-05-27",
+      "protocol": "navi",
+      "tvl": 163520063
+    },
+    {
+      "date": "2026-05-27",
+      "protocol": "scallop",
+      "tvl": 20308505
+    },
+    {
+      "date": "2026-05-27",
+      "protocol": "suilend",
+      "tvl": 144335133
+    },
+    {
+      "date": "2026-05-28",
+      "protocol": "alphalend",
+      "tvl": 71640001
+    },
+    {
+      "date": "2026-05-28",
+      "protocol": "bucket",
+      "tvl": 63709980
+    },
+    {
+      "date": "2026-05-28",
+      "protocol": "navi",
+      "tvl": 159388639
+    },
+    {
+      "date": "2026-05-28",
+      "protocol": "scallop",
+      "tvl": 20036469
+    },
+    {
+      "date": "2026-05-28",
+      "protocol": "suilend",
+      "tvl": 141464769
+    },
+    {
+      "date": "2026-05-29",
+      "protocol": "alphalend",
+      "tvl": 70252969
+    },
+    {
+      "date": "2026-05-29",
+      "protocol": "bucket",
+      "tvl": 63142874
+    },
+    {
+      "date": "2026-05-29",
+      "protocol": "navi",
+      "tvl": 156522301
+    },
+    {
+      "date": "2026-05-29",
+      "protocol": "scallop",
+      "tvl": 20212958
+    },
+    {
+      "date": "2026-05-29",
+      "protocol": "suilend",
+      "tvl": 138256583
+    },
+    {
+      "date": "2026-05-30",
+      "protocol": "alphalend",
+      "tvl": 68893683
+    },
+    {
+      "date": "2026-05-30",
+      "protocol": "bucket",
+      "tvl": 62631809
+    },
+    {
+      "date": "2026-05-30",
+      "protocol": "navi",
+      "tvl": 154652535
+    },
+    {
+      "date": "2026-05-30",
+      "protocol": "scallop",
+      "tvl": 19733562
+    },
+    {
+      "date": "2026-05-30",
+      "protocol": "suilend",
+      "tvl": 134979647
+    },
+    {
+      "date": "2026-05-31",
+      "protocol": "alphalend",
+      "tvl": 67010476
+    },
+    {
+      "date": "2026-05-31",
+      "protocol": "bucket",
+      "tvl": 62688262
+    },
+    {
+      "date": "2026-05-31",
+      "protocol": "navi",
+      "tvl": 153775238
+    },
+    {
+      "date": "2026-05-31",
+      "protocol": "scallop",
+      "tvl": 19725366
+    },
+    {
+      "date": "2026-05-31",
+      "protocol": "suilend",
+      "tvl": 135133976
+    },
+    {
+      "date": "2026-06-01",
+      "protocol": "alphalend",
+      "tvl": 65434071
+    },
+    {
+      "date": "2026-06-01",
+      "protocol": "bucket",
+      "tvl": 62432382
+    },
+    {
+      "date": "2026-06-01",
+      "protocol": "navi",
+      "tvl": 152439478
+    },
+    {
+      "date": "2026-06-01",
+      "protocol": "scallop",
+      "tvl": 19321535
+    },
+    {
+      "date": "2026-06-01",
+      "protocol": "suilend",
+      "tvl": 132513823
+    },
+    {
+      "date": "2026-06-02",
+      "protocol": "alphalend",
+      "tvl": 65150763
+    },
+    {
+      "date": "2026-06-02",
+      "protocol": "bucket",
+      "tvl": 60875545
+    },
+    {
+      "date": "2026-06-02",
+      "protocol": "navi",
+      "tvl": 144363588
+    },
+    {
+      "date": "2026-06-02",
+      "protocol": "scallop",
+      "tvl": 18934139
+    },
+    {
+      "date": "2026-06-02",
+      "protocol": "suilend",
+      "tvl": 130322926
+    },
+    {
+      "date": "2026-06-03",
+      "protocol": "alphalend",
+      "tvl": 61369077
+    },
+    {
+      "date": "2026-06-03",
+      "protocol": "bucket",
+      "tvl": 59550756
+    },
+    {
+      "date": "2026-06-03",
+      "protocol": "navi",
+      "tvl": 137046332
+    },
+    {
+      "date": "2026-06-03",
+      "protocol": "scallop",
+      "tvl": 17808816
+    },
+    {
+      "date": "2026-06-03",
+      "protocol": "suilend",
+      "tvl": 119535698
+    },
+    {
+      "date": "2026-06-04",
+      "protocol": "alphalend",
+      "tvl": 61499350
+    },
+    {
+      "date": "2026-06-04",
+      "protocol": "bucket",
+      "tvl": 59765522
+    },
+    {
+      "date": "2026-06-04",
+      "protocol": "navi",
+      "tvl": 133664320
+    },
+    {
+      "date": "2026-06-04",
+      "protocol": "scallop",
+      "tvl": 17663751
+    },
+    {
+      "date": "2026-06-04",
+      "protocol": "suilend",
+      "tvl": 120321051
+    },
+    {
+      "date": "2026-06-05",
+      "protocol": "alphalend",
+      "tvl": 59026688
+    },
+    {
+      "date": "2026-06-05",
+      "protocol": "bucket",
+      "tvl": 58629325
+    },
+    {
+      "date": "2026-06-05",
+      "protocol": "navi",
+      "tvl": 130778302
+    },
+    {
+      "date": "2026-06-05",
+      "protocol": "scallop",
+      "tvl": 17177580
+    },
+    {
+      "date": "2026-06-05",
+      "protocol": "suilend",
+      "tvl": 111802439
+    },
+    {
+      "date": "2026-06-06",
+      "protocol": "alphalend",
+      "tvl": 57694839
+    },
+    {
+      "date": "2026-06-06",
+      "protocol": "bucket",
+      "tvl": 57205642
+    },
+    {
+      "date": "2026-06-06",
+      "protocol": "navi",
+      "tvl": 127056076
+    },
+    {
+      "date": "2026-06-06",
+      "protocol": "scallop",
+      "tvl": 15722721
+    },
+    {
+      "date": "2026-06-06",
+      "protocol": "suilend",
+      "tvl": 105244829
+    },
+    {
+      "date": "2026-06-07",
+      "protocol": "alphalend",
+      "tvl": 57775466
+    },
+    {
+      "date": "2026-06-07",
+      "protocol": "bucket",
+      "tvl": 57283746
+    },
+    {
+      "date": "2026-06-07",
+      "protocol": "navi",
+      "tvl": 127989151
+    },
+    {
+      "date": "2026-06-07",
+      "protocol": "scallop",
+      "tvl": 15437739
+    },
+    {
+      "date": "2026-06-07",
+      "protocol": "suilend",
+      "tvl": 106104225
+    },
+    {
+      "date": "2026-06-08",
+      "protocol": "alphalend",
+      "tvl": 59171625
+    },
+    {
+      "date": "2026-06-08",
+      "protocol": "bucket",
+      "tvl": 57972547
+    },
+    {
+      "date": "2026-06-08",
+      "protocol": "navi",
+      "tvl": 130594562
+    },
+    {
+      "date": "2026-06-08",
+      "protocol": "scallop",
+      "tvl": 15760626
+    },
+    {
+      "date": "2026-06-08",
+      "protocol": "suilend",
+      "tvl": 110500404
+    },
+    {
+      "date": "2026-06-09",
+      "protocol": "alphalend",
+      "tvl": 57924841
+    },
+    {
+      "date": "2026-06-09",
+      "protocol": "bucket",
+      "tvl": 57657176
+    },
+    {
+      "date": "2026-06-09",
+      "protocol": "navi",
+      "tvl": 128549659
+    },
+    {
+      "date": "2026-06-09",
+      "protocol": "scallop",
+      "tvl": 15616810
+    },
+    {
+      "date": "2026-06-09",
+      "protocol": "suilend",
+      "tvl": 110927965
+    },
+    {
+      "date": "2026-06-10",
+      "protocol": "alphalend",
+      "tvl": 57623754
+    },
+    {
+      "date": "2026-06-10",
+      "protocol": "bucket",
+      "tvl": 57800418
+    },
+    {
+      "date": "2026-06-10",
+      "protocol": "navi",
+      "tvl": 126360096
+    },
+    {
+      "date": "2026-06-10",
+      "protocol": "scallop",
+      "tvl": 15621996
+    },
+    {
+      "date": "2026-06-10",
+      "protocol": "suilend",
+      "tvl": 110070927
+    },
+    {
+      "date": "2026-06-11",
+      "protocol": "alphalend",
+      "tvl": 57129375
+    },
+    {
+      "date": "2026-06-11",
+      "protocol": "bucket",
+      "tvl": 57442151
+    },
+    {
+      "date": "2026-06-11",
+      "protocol": "navi",
+      "tvl": 125726153
+    },
+    {
+      "date": "2026-06-11",
+      "protocol": "scallop",
+      "tvl": 14837118
+    },
+    {
+      "date": "2026-06-11",
+      "protocol": "suilend",
+      "tvl": 107738709
+    },
+    {
+      "date": "2026-06-12",
+      "protocol": "alphalend",
+      "tvl": 59395639
+    },
+    {
+      "date": "2026-06-12",
+      "protocol": "bucket",
+      "tvl": 58044192
+    },
+    {
+      "date": "2026-06-12",
+      "protocol": "navi",
+      "tvl": 129587444
+    },
+    {
+      "date": "2026-06-12",
+      "protocol": "scallop",
+      "tvl": 15090579
+    },
+    {
+      "date": "2026-06-12",
+      "protocol": "suilend",
+      "tvl": 111437681
+    },
+    {
+      "date": "2026-06-13",
+      "protocol": "alphalend",
+      "tvl": 59483379
+    },
+    {
+      "date": "2026-06-13",
+      "protocol": "bucket",
+      "tvl": 58142304
+    },
+    {
+      "date": "2026-06-13",
+      "protocol": "navi",
+      "tvl": 130826681
+    },
+    {
+      "date": "2026-06-13",
+      "protocol": "scallop",
+      "tvl": 15567238
+    },
+    {
+      "date": "2026-06-13",
+      "protocol": "suilend",
+      "tvl": 111476353
+    },
+    {
+      "date": "2026-06-14",
+      "protocol": "alphalend",
+      "tvl": 61648986
+    },
+    {
+      "date": "2026-06-14",
+      "protocol": "bucket",
+      "tvl": 58493622
+    },
+    {
+      "date": "2026-06-14",
+      "protocol": "navi",
+      "tvl": 131864522
+    },
+    {
+      "date": "2026-06-14",
+      "protocol": "scallop",
+      "tvl": 15706545
+    },
+    {
+      "date": "2026-06-14",
+      "protocol": "suilend",
+      "tvl": 113443473
+    },
+    {
+      "date": "2026-06-15",
+      "protocol": "alphalend",
+      "tvl": 61718518
+    },
+    {
+      "date": "2026-06-15",
+      "protocol": "bucket",
+      "tvl": 59031952
+    },
+    {
+      "date": "2026-06-15",
+      "protocol": "navi",
+      "tvl": 134194935
+    },
+    {
+      "date": "2026-06-15",
+      "protocol": "scallop",
+      "tvl": 15622791
+    },
+    {
+      "date": "2026-06-15",
+      "protocol": "suilend",
+      "tvl": 115960929
+    },
+    {
+      "date": "2026-06-16",
+      "protocol": "alphalend",
+      "tvl": 62663605
+    },
+    {
+      "date": "2026-06-16",
+      "protocol": "bucket",
+      "tvl": 59077883
+    },
+    {
+      "date": "2026-06-16",
+      "protocol": "navi",
+      "tvl": 135772760
+    },
+    {
+      "date": "2026-06-16",
+      "protocol": "scallop",
+      "tvl": 15540704
+    },
+    {
+      "date": "2026-06-16",
+      "protocol": "suilend",
+      "tvl": 116076221
+    },
+    {
+      "date": "2026-06-17",
+      "protocol": "alphalend",
+      "tvl": 61938546
+    },
+    {
+      "date": "2026-06-17",
+      "protocol": "bucket",
+      "tvl": 59128339
+    },
+    {
+      "date": "2026-06-17",
+      "protocol": "navi",
+      "tvl": 136230610
+    },
+    {
+      "date": "2026-06-17",
+      "protocol": "scallop",
+      "tvl": 15431388
+    },
+    {
+      "date": "2026-06-17",
+      "protocol": "suilend",
+      "tvl": 116920790
+    },
+    {
+      "date": "2026-06-18",
+      "protocol": "alphalend",
+      "tvl": 62179932
+    },
+    {
+      "date": "2026-06-18",
+      "protocol": "bucket",
+      "tvl": 58594070
+    },
+    {
+      "date": "2026-06-18",
+      "protocol": "navi",
+      "tvl": 132081363
+    },
+    {
+      "date": "2026-06-18",
+      "protocol": "scallop",
+      "tvl": 15097625
+    },
+    {
+      "date": "2026-06-18",
+      "protocol": "suilend",
+      "tvl": 112899943
+    },
+    {
+      "date": "2026-06-19",
+      "protocol": "alphalend",
+      "tvl": 60104481
+    },
+    {
+      "date": "2026-06-19",
+      "protocol": "bucket",
+      "tvl": 57831624
+    },
+    {
+      "date": "2026-06-19",
+      "protocol": "navi",
+      "tvl": 128996293
+    },
+    {
+      "date": "2026-06-19",
+      "protocol": "scallop",
+      "tvl": 14652673
+    },
+    {
+      "date": "2026-06-19",
+      "protocol": "suilend",
+      "tvl": 109155623
+    },
+    {
+      "date": "2026-06-20",
+      "protocol": "alphalend",
+      "tvl": 58845423
+    },
+    {
+      "date": "2026-06-20",
+      "protocol": "bucket",
+      "tvl": 57581492
+    },
+    {
+      "date": "2026-06-20",
+      "protocol": "navi",
+      "tvl": 130000655
+    },
+    {
+      "date": "2026-06-20",
+      "protocol": "scallop",
+      "tvl": 14531104
+    },
+    {
+      "date": "2026-06-20",
+      "protocol": "suilend",
+      "tvl": 107910540
+    },
+    {
+      "date": "2026-06-21",
+      "protocol": "alphalend",
+      "tvl": 59812672
+    },
+    {
+      "date": "2026-06-21",
+      "protocol": "bucket",
+      "tvl": 57634132
+    },
+    {
+      "date": "2026-06-21",
+      "protocol": "navi",
+      "tvl": 130542588
+    },
+    {
+      "date": "2026-06-21",
+      "protocol": "scallop",
+      "tvl": 14556716
+    },
+    {
+      "date": "2026-06-21",
+      "protocol": "suilend",
+      "tvl": 106560912
+    },
+    {
+      "date": "2026-06-22",
+      "protocol": "alphalend",
+      "tvl": 59089041
+    },
+    {
+      "date": "2026-06-22",
+      "protocol": "bucket",
+      "tvl": 57365406
+    },
+    {
+      "date": "2026-06-22",
+      "protocol": "navi",
+      "tvl": 128845639
+    },
+    {
+      "date": "2026-06-22",
+      "protocol": "scallop",
+      "tvl": 14319915
+    },
+    {
+      "date": "2026-06-22",
+      "protocol": "suilend",
+      "tvl": 106290381
+    },
+    {
+      "date": "2026-06-23",
+      "protocol": "alphalend",
+      "tvl": 59702669
+    },
+    {
+      "date": "2026-06-23",
+      "protocol": "bucket",
+      "tvl": 57720251
+    },
+    {
+      "date": "2026-06-23",
+      "protocol": "navi",
+      "tvl": 130467285
+    },
+    {
+      "date": "2026-06-23",
+      "protocol": "scallop",
+      "tvl": 15615695
+    },
+    {
+      "date": "2026-06-23",
+      "protocol": "suilend",
+      "tvl": 107128969
+    },
+    {
+      "date": "2026-06-24",
+      "protocol": "alphalend",
+      "tvl": 57275823
+    },
+    {
+      "date": "2026-06-24",
+      "protocol": "bucket",
+      "tvl": 57794858
+    },
+    {
+      "date": "2026-06-24",
+      "protocol": "navi",
+      "tvl": 129004405
+    },
+    {
+      "date": "2026-06-24",
+      "protocol": "scallop",
+      "tvl": 15161191
+    },
+    {
+      "date": "2026-06-24",
+      "protocol": "suilend",
+      "tvl": 106094576
+    },
+    {
+      "date": "2026-06-25",
+      "protocol": "alphalend",
+      "tvl": 56185917
+    },
+    {
+      "date": "2026-06-25",
+      "protocol": "bucket",
+      "tvl": 57367987
+    },
+    {
+      "date": "2026-06-25",
+      "protocol": "navi",
+      "tvl": 126944259
+    },
+    {
+      "date": "2026-06-25",
+      "protocol": "scallop",
+      "tvl": 14725546
+    },
+    {
+      "date": "2026-06-25",
+      "protocol": "suilend",
+      "tvl": 103205760
+    },
+    {
+      "date": "2026-06-26",
+      "protocol": "alphalend",
+      "tvl": 55153035
+    },
+    {
+      "date": "2026-06-26",
+      "protocol": "bucket",
+      "tvl": 57157865
+    },
+    {
+      "date": "2026-06-26",
+      "protocol": "navi",
+      "tvl": 123285501
+    },
+    {
+      "date": "2026-06-26",
+      "protocol": "scallop",
+      "tvl": 13074997
+    },
+    {
+      "date": "2026-06-26",
+      "protocol": "suilend",
+      "tvl": 102624173
+    },
+    {
+      "date": "2026-06-27",
+      "protocol": "alphalend",
+      "tvl": 54999335
+    },
+    {
+      "date": "2026-06-27",
+      "protocol": "bucket",
+      "tvl": 57169701
+    },
+    {
+      "date": "2026-06-27",
+      "protocol": "navi",
+      "tvl": 125048093
+    },
+    {
+      "date": "2026-06-27",
+      "protocol": "scallop",
+      "tvl": 13045246
+    },
+    {
+      "date": "2026-06-27",
+      "protocol": "suilend",
+      "tvl": 104717835
+    },
+    {
+      "date": "2026-06-28",
+      "protocol": "alphalend",
+      "tvl": 55407265
+    },
+    {
+      "date": "2026-06-28",
+      "protocol": "bucket",
+      "tvl": 56879913
+    },
+    {
+      "date": "2026-06-28",
+      "protocol": "navi",
+      "tvl": 123999000
+    },
+    {
+      "date": "2026-06-28",
+      "protocol": "scallop",
+      "tvl": 12897507
+    },
+    {
+      "date": "2026-06-28",
+      "protocol": "suilend",
+      "tvl": 102658469
+    },
+    {
+      "date": "2026-06-29",
+      "protocol": "alphalend",
+      "tvl": 54996921
+    },
+    {
+      "date": "2026-06-29",
+      "protocol": "bucket",
+      "tvl": 56803303
+    },
+    {
+      "date": "2026-06-29",
+      "protocol": "navi",
+      "tvl": 124659427
+    },
+    {
+      "date": "2026-06-29",
+      "protocol": "scallop",
+      "tvl": 13342804
+    },
+    {
+      "date": "2026-06-29",
+      "protocol": "suilend",
+      "tvl": 102366570
+    },
+    {
+      "date": "2026-06-30",
+      "protocol": "alphalend",
+      "tvl": 55161904
+    },
+    {
+      "date": "2026-06-30",
+      "protocol": "bucket",
+      "tvl": 57081976
+    },
+    {
+      "date": "2026-06-30",
+      "protocol": "navi",
+      "tvl": 125966195
+    },
+    {
+      "date": "2026-06-30",
+      "protocol": "scallop",
+      "tvl": 13150969
+    },
+    {
+      "date": "2026-06-30",
+      "protocol": "suilend",
+      "tvl": 104279320
+    }
+  ],
+  "liqDaily": [
+    {
+      "date": "2026-05-01",
+      "debt": 20,
+      "events": 3
+    },
+    {
+      "date": "2026-05-02",
+      "debt": 331,
+      "events": 7
+    },
+    {
+      "date": "2026-05-03",
+      "debt": 54,
+      "events": 4
+    },
+    {
+      "date": "2026-05-04",
+      "debt": 4698,
+      "events": 11
+    },
+    {
+      "date": "2026-05-05",
+      "debt": 26,
+      "events": 2
+    },
+    {
+      "date": "2026-05-06",
+      "debt": 13,
+      "events": 3
+    },
+    {
+      "date": "2026-05-07",
+      "debt": 221,
+      "events": 2
+    },
+    {
+      "date": "2026-05-08",
+      "debt": 1217,
+      "events": 17
+    },
+    {
+      "date": "2026-05-09",
+      "debt": 100690,
+      "events": 50
+    },
+    {
+      "date": "2026-05-10",
+      "debt": 921534,
+      "events": 379
+    },
+    {
+      "date": "2026-05-11",
+      "debt": 1421,
+      "events": 29
+    },
+    {
+      "date": "2026-05-12",
+      "debt": 2343,
+      "events": 7
+    },
+    {
+      "date": "2026-05-13",
+      "debt": 5803,
+      "events": 26
+    },
+    {
+      "date": "2026-05-14",
+      "debt": 581,
+      "events": 17
+    },
+    {
+      "date": "2026-05-15",
+      "debt": 40718,
+      "events": 147
+    },
+    {
+      "date": "2026-05-16",
+      "debt": 7583,
+      "events": 41
+    },
+    {
+      "date": "2026-05-17",
+      "debt": 2175,
+      "events": 36
+    },
+    {
+      "date": "2026-05-18",
+      "debt": 215,
+      "events": 21
+    },
+    {
+      "date": "2026-05-19",
+      "debt": 159,
+      "events": 12
+    },
+    {
+      "date": "2026-05-20",
+      "debt": 38,
+      "events": 5
+    },
+    {
+      "date": "2026-05-21",
+      "debt": 1831,
+      "events": 19
+    },
+    {
+      "date": "2026-05-22",
+      "debt": 961,
+      "events": 17
+    },
+    {
+      "date": "2026-05-23",
+      "debt": 385835,
+      "events": 128
+    },
+    {
+      "date": "2026-05-24",
+      "debt": 387,
+      "events": 22
+    },
+    {
+      "date": "2026-05-25",
+      "debt": 459,
+      "events": 6
+    },
+    {
+      "date": "2026-05-26",
+      "debt": 2661,
+      "events": 24
+    },
+    {
+      "date": "2026-05-27",
+      "debt": 30994,
+      "events": 118
+    },
+    {
+      "date": "2026-05-28",
+      "debt": 223195,
+      "events": 195
+    },
+    {
+      "date": "2026-05-29",
+      "debt": 30335,
+      "events": 75
+    },
+    {
+      "date": "2026-05-30",
+      "debt": 6445,
+      "events": 43
+    },
+    {
+      "date": "2026-05-31",
+      "debt": 160058,
+      "events": 229
+    },
+    {
+      "date": "2026-06-01",
+      "debt": 39960,
+      "events": 121
+    },
+    {
+      "date": "2026-06-02",
+      "debt": 203090,
+      "events": 457
+    },
+    {
+      "date": "2026-06-03",
+      "debt": 184535,
+      "events": 346
+    },
+    {
+      "date": "2026-06-04",
+      "debt": 308366,
+      "events": 486
+    },
+    {
+      "date": "2026-06-05",
+      "debt": 432571,
+      "events": 728
+    },
+    {
+      "date": "2026-06-06",
+      "debt": 200093,
+      "events": 366
+    },
+    {
+      "date": "2026-06-07",
+      "debt": 1992,
+      "events": 25
+    },
+    {
+      "date": "2026-06-08",
+      "debt": 308,
+      "events": 120
+    },
+    {
+      "date": "2026-06-09",
+      "debt": 4121,
+      "events": 88
+    },
+    {
+      "date": "2026-06-10",
+      "debt": 4011,
+      "events": 80
+    },
+    {
+      "date": "2026-06-11",
+      "debt": 188,
+      "events": 41
+    },
+    {
+      "date": "2026-06-12",
+      "debt": 361,
+      "events": 57
+    },
+    {
+      "date": "2026-06-13",
+      "debt": 111,
+      "events": 30
+    },
+    {
+      "date": "2026-06-14",
+      "debt": 358,
+      "events": 39
+    },
+    {
+      "date": "2026-06-15",
+      "debt": 70,
+      "events": 18
+    },
+    {
+      "date": "2026-06-16",
+      "debt": 200,
+      "events": 15
+    },
+    {
+      "date": "2026-06-17",
+      "debt": 139980,
+      "events": 52
+    },
+    {
+      "date": "2026-06-18",
+      "debt": 218851,
+      "events": 103
+    },
+    {
+      "date": "2026-06-19",
+      "debt": 56678,
+      "events": 88
+    },
+    {
+      "date": "2026-06-20",
+      "debt": 1369,
+      "events": 72
+    },
+    {
+      "date": "2026-06-21",
+      "debt": 1883,
+      "events": 89
+    },
+    {
+      "date": "2026-06-22",
+      "debt": 345,
+      "events": 41
+    },
+    {
+      "date": "2026-06-23",
+      "debt": 97911,
+      "events": 117
+    },
+    {
+      "date": "2026-06-24",
+      "debt": 82487,
+      "events": 368
+    },
+    {
+      "date": "2026-06-25",
+      "debt": 33442,
+      "events": 128
+    },
+    {
+      "date": "2026-06-26",
+      "debt": 37765,
+      "events": 52
+    },
+    {
+      "date": "2026-06-27",
+      "debt": 52,
+      "events": 18
+    },
+    {
+      "date": "2026-06-28",
+      "debt": 41,
+      "events": 2
+    },
+    {
+      "date": "2026-06-29",
+      "debt": 436,
+      "events": 7
+    },
+    {
+      "date": "2026-06-30",
+      "debt": 16393,
+      "events": 26
+    }
+  ],
+  "may31Assets": [
+    {
+      "symbol": "SUI",
+      "sup": 96455080,
+      "bor": 55495815
+    },
+    {
+      "symbol": "USDC",
+      "sup": 94503315,
+      "bor": 77482120
+    },
+    {
+      "symbol": "sSUI",
+      "sup": 52888980,
+      "bor": 0
+    },
+    {
+      "symbol": "enzoBTC",
+      "sup": 32152597,
+      "bor": 0
+    },
+    {
+      "symbol": "haSUI",
+      "sup": 26509244,
+      "bor": 3317326
+    },
+    {
+      "symbol": "USDSUI",
+      "sup": 24942045,
+      "bor": 5187573
+    },
+    {
+      "symbol": "DEEP",
+      "sup": 23624278,
+      "bor": 7111482
+    },
+    {
+      "symbol": "MBTC",
+      "sup": 22173468,
+      "bor": 0
+    },
+    {
+      "symbol": "BUCK",
+      "sup": 20410267,
+      "bor": 1621359
+    },
+    {
+      "symbol": "WBTC",
+      "sup": 16597603,
+      "bor": 5300967
+    },
+    {
+      "symbol": "WAL",
+      "sup": 16141878,
+      "bor": 5310784
+    },
+    {
+      "symbol": "vSUI",
+      "sup": 13394131,
+      "bor": 615589
+    },
+    {
+      "symbol": "XBTC",
+      "sup": 12395119,
+      "bor": 8776128
+    },
+    {
+      "symbol": "xBTC",
+      "sup": 11285634,
+      "bor": 9322049
+    },
+    {
+      "symbol": "SAVING-USDB",
+      "sup": 10619060,
+      "bor": 0
+    },
+    {
+      "symbol": "USDT",
+      "sup": 10386971,
+      "bor": 6725632
+    },
+    {
+      "symbol": "wBTC",
+      "sup": 9326675,
+      "bor": 7700684
+    },
+    {
+      "symbol": "ALPHA",
+      "sup": 8047435,
+      "bor": 1
+    },
+    {
+      "symbol": "ETHIRD",
+      "sup": 7036025,
+      "bor": 0
+    },
+    {
+      "symbol": "LBTC",
+      "sup": 7033651,
+      "bor": 119493
+    },
+    {
+      "symbol": "STSUI",
+      "sup": 6729670,
+      "bor": 1444163
+    },
+    {
+      "symbol": "suiUSDT",
+      "sup": 5862088,
+      "bor": 4025707
+    },
+    {
+      "symbol": "ETH",
+      "sup": 5174402,
+      "bor": 237481
+    },
+    {
+      "symbol": "ESUI",
+      "sup": 4878506,
+      "bor": 0
+    },
+    {
+      "symbol": "BTCVC",
+      "sup": 4042813,
+      "bor": 0
+    },
+    {
+      "symbol": "TBTC",
+      "sup": 3403587,
+      "bor": 1859603
+    },
+    {
+      "symbol": "PSM-BUCK",
+      "sup": 3075823,
+      "bor": 3081189
+    },
+    {
+      "symbol": "USDY",
+      "sup": 3028890,
+      "bor": 395614
+    },
+    {
+      "symbol": "BKT-SAVE-HASUI_S",
+      "sup": 2950187,
+      "bor": 0
+    },
+    {
+      "symbol": "BTC",
+      "sup": 2911160,
+      "bor": 678129
+    },
+    {
+      "symbol": "suiETH",
+      "sup": 2886460,
+      "bor": 310500
+    },
+    {
+      "symbol": "wUSDC",
+      "sup": 2359473,
+      "bor": 2134639
+    },
+    {
+      "symbol": "NAVX",
+      "sup": 2253958,
+      "bor": 27233
+    },
+    {
+      "symbol": "V1PSM-BUCKETUS",
+      "sup": 1937877,
+      "bor": 1937877
+    },
+    {
+      "symbol": "BKT-SAVE-VSUI_S",
+      "sup": 1816533,
+      "bor": 0
+    },
+    {
+      "symbol": "BKT-SAVE-AFSUI_S",
+      "sup": 1726248,
+      "bor": 0
+    },
+    {
+      "symbol": "AUSD",
+      "sup": 1687355,
+      "bor": 36845
+    },
+    {
+      "symbol": "XAUM",
+      "sup": 1599639,
+      "bor": 638263
+    },
+    {
+      "symbol": "XAUm",
+      "sup": 1559976,
+      "bor": 3640
+    },
+    {
+      "symbol": "EGUSDC",
+      "sup": 1550259,
+      "bor": 12456
+    },
+    {
+      "symbol": "wUSDT",
+      "sup": 1358113,
+      "bor": 1258124
+    },
+    {
+      "symbol": "BKT-SAVE-SUI_NAVI_POND",
+      "sup": 1211781,
+      "bor": 0
+    },
+    {
+      "symbol": "EEARN",
+      "sup": 1081197,
+      "bor": 0
+    },
+    {
+      "symbol": "BKT-PSM-BUCKETUS",
+      "sup": 968588,
+      "bor": 0
+    },
+    {
+      "symbol": "EBTC",
+      "sup": 847954,
+      "bor": 60
+    },
+    {
+      "symbol": "BKT-SAVE-NAVI_STSUI",
+      "sup": 823066,
+      "bor": 0
+    },
+    {
+      "symbol": "BLUE",
+      "sup": 811290,
+      "bor": 517631
+    },
+    {
+      "symbol": "SBETH",
+      "sup": 738571,
+      "bor": 389066
+    },
+    {
+      "symbol": "suiUSDe",
+      "sup": 681577,
+      "bor": 283735
+    },
+    {
+      "symbol": "IKA",
+      "sup": 675691,
+      "bor": 37007
+    },
+    {
+      "symbol": "COIN",
+      "sup": 654495,
+      "bor": 138765
+    },
+    {
+      "symbol": "PSM-USDC",
+      "sup": 653236,
+      "bor": 653473
+    },
+    {
+      "symbol": "SEND",
+      "sup": 575242,
+      "bor": 18
+    },
+    {
+      "symbol": "YBTC.B",
+      "sup": 544781,
+      "bor": 0
+    },
+    {
+      "symbol": "NS",
+      "sup": 522589,
+      "bor": 26972
+    },
+    {
+      "symbol": "SCA",
+      "sup": 440176,
+      "bor": 108324
+    },
+    {
+      "symbol": "CETUS",
+      "sup": 332822,
+      "bor": 35123
+    },
+    {
+      "symbol": "V1PSM-BLUEFIN_STABLE_LP",
+      "sup": 282088,
+      "bor": 282088
+    },
+    {
+      "symbol": "WETH",
+      "sup": 213157,
+      "bor": 20734
+    },
+    {
+      "symbol": "HAEDAL",
+      "sup": 196792,
+      "bor": 199
+    },
+    {
+      "symbol": "afSUI",
+      "sup": 167113,
+      "bor": 20035
+    },
+    {
+      "symbol": "BKT-PSM-BLUEFIN_STABLE_LP",
+      "sup": 140993,
+      "bor": 0
+    },
+    {
+      "symbol": "V1-SCALLOP_SUI",
+      "sup": 98429,
+      "bor": 46075
+    },
+    {
+      "symbol": "V1-WAL",
+      "sup": 67744,
+      "bor": 50584
+    },
+    {
+      "symbol": "V1PSM-USDC",
+      "sup": 59526,
+      "bor": 59526
+    },
+    {
+      "symbol": "BKT-PSM-USDC_CIRCLE",
+      "sup": 59505,
+      "bor": 0
+    },
+    {
+      "symbol": "stBTC",
+      "sup": 37350,
+      "bor": 1185
+    },
+    {
+      "symbol": "SOL",
+      "sup": 33360,
+      "bor": 1520
+    },
+    {
+      "symbol": "FDUSD",
+      "sup": 25742,
+      "bor": 3721
+    },
+    {
+      "symbol": "BKT-SCOIN-NAVI_SUI_BRIDGE_USDT",
+      "sup": 19219,
+      "bor": 0
+    },
+    {
+      "symbol": "V1-vSUI",
+      "sup": 15748,
+      "bor": 10785
+    },
+    {
+      "symbol": "V1-SCALLOP_DEEP",
+      "sup": 14644,
+      "bor": 1357
+    },
+    {
+      "symbol": "stSUI",
+      "sup": 14610,
+      "bor": 584
+    },
+    {
+      "symbol": "V1-SCALLOP_USDC",
+      "sup": 13289,
+      "bor": 6937
+    },
+    {
+      "symbol": "V1-afSUI",
+      "sup": 7318,
+      "bor": 3692
+    },
+    {
+      "symbol": "V1-SCALLOP_WAL",
+      "sup": 5388,
+      "bor": 2458
+    },
+    {
+      "symbol": "V1-haSUI",
+      "sup": 3865,
+      "bor": 906
+    },
+    {
+      "symbol": "V1-SCA",
+      "sup": 2127,
+      "bor": 1865
+    },
+    {
+      "symbol": "V1-SCALLOP_WORMHOLE_USDT",
+      "sup": 2094,
+      "bor": 1103
+    },
+    {
+      "symbol": "V1-WETH",
+      "sup": 1788,
+      "bor": 313
+    },
+    {
+      "symbol": "V1-LBTC",
+      "sup": 1295,
+      "bor": 428
+    },
+    {
+      "symbol": "V1PSM-COIN",
+      "sup": 1020,
+      "bor": 1020
+    },
+    {
+      "symbol": "V1-USDY",
+      "sup": 864,
+      "bor": 631
+    },
+    {
+      "symbol": "V1PSM-SCABLE",
+      "sup": 855,
+      "bor": 855
+    },
+    {
+      "symbol": "V1-BTC",
+      "sup": 837,
+      "bor": 0
+    },
+    {
+      "symbol": "PSM-USDSUI",
+      "sup": 664,
+      "bor": 664
+    },
+    {
+      "symbol": "V1-SCALLOP_WORMHOLE_USDC",
+      "sup": 643,
+      "bor": 434
+    },
+    {
+      "symbol": "V1-SCALLOP_SB_USDT",
+      "sup": 530,
+      "bor": 352
+    },
+    {
+      "symbol": "V1-TBTC",
+      "sup": 360,
+      "bor": 288
+    },
+    {
+      "symbol": "V1-SCALLOP_SCA",
+      "sup": 222,
+      "bor": 161
+    },
+    {
+      "symbol": "V1-SCALLOP_SB_ETH",
+      "sup": 164,
+      "bor": 50
+    },
+    {
+      "symbol": "V1-ETH",
+      "sup": 143,
+      "bor": 62
+    },
+    {
+      "symbol": "V1-sSUI",
+      "sup": 97,
+      "bor": 52
+    },
+    {
+      "symbol": "V1-MSUI",
+      "sup": 92,
+      "bor": 48
+    },
+    {
+      "symbol": "V1-XBTC",
+      "sup": 89,
+      "bor": 51
+    },
+    {
+      "symbol": "V1-COIN",
+      "sup": 87,
+      "bor": 0
+    },
+    {
+      "symbol": "V1-MUSD",
+      "sup": 72,
+      "bor": 50
+    },
+    {
+      "symbol": "V1-NAVX",
+      "sup": 65,
+      "bor": 53
+    },
+    {
+      "symbol": "V1-STSUI",
+      "sup": 48,
+      "bor": 36
+    },
+    {
+      "symbol": "V1-HAEDAL",
+      "sup": 43,
+      "bor": 50
+    },
+    {
+      "symbol": "V1-CETUS",
+      "sup": 23,
+      "bor": 10
+    },
+    {
+      "symbol": "V1PSM-AUSD",
+      "sup": 7,
+      "bor": 7
+    },
+    {
+      "symbol": "BKT-KRIYA-FOUNTAIN-1",
+      "sup": 2,
+      "bor": 0
+    },
+    {
+      "symbol": "BKT-PSM-USDC_WORMHOLE",
+      "sup": 2,
+      "bor": 0
+    },
+    {
+      "symbol": "BKT-AF-AFSUI-SUI",
+      "sup": 1,
+      "bor": 0
+    },
+    {
+      "symbol": "BKT-SAVE-HASUI_NAVI_POND",
+      "sup": 1,
+      "bor": 0
+    },
+    {
+      "symbol": "BKT-SCOIN-SCALLOP_CIRCLE_USDC",
+      "sup": 1,
+      "bor": 0
+    },
+    {
+      "symbol": "BKT-SAVE-NAVI_VSUI",
+      "sup": 1,
+      "bor": 0
+    },
+    {
+      "symbol": "BKT-SCOIN-NAVI_CIRCLE_USDC",
+      "sup": 1,
+      "bor": 0
+    },
+    {
+      "symbol": "BKT-SCOIN-SCALLOP_USDC",
+      "sup": 1,
+      "bor": 0
+    },
+    {
+      "symbol": "BKT-SCOIN-SCALLOP_SUI_BRIDGE_USDT",
+      "sup": 0,
+      "bor": 0
+    },
+    {
+      "symbol": "V1PSM-CETABLE",
+      "sup": 0,
+      "bor": 0
+    },
+    {
+      "symbol": "BKT-PSM-CETABLE",
+      "sup": 0,
+      "bor": 0
+    },
+    {
+      "symbol": "BKT-SCOIN-SCALLOP_USDT",
+      "sup": 0,
+      "bor": 0
+    },
+    {
+      "symbol": "BKT-PSM-USDT_WORMHOLE",
+      "sup": 0,
+      "bor": 0
+    },
+    {
+      "symbol": "V1PSM-FDUSD",
+      "sup": 0,
+      "bor": 0
+    },
+    {
+      "symbol": "BKT-PSM-FDUSD",
+      "sup": 0,
+      "bor": 0
+    },
+    {
+      "symbol": "BKT-PSM-STAPEARL",
+      "sup": 0,
+      "bor": 0
+    },
+    {
+      "symbol": "V1PSM-USDT",
+      "sup": 0,
+      "bor": 0
+    },
+    {
+      "symbol": "V1PSM-STAPEARL",
+      "sup": 0,
+      "bor": 0
+    },
+    {
+      "symbol": "PSM-USDT",
+      "sup": 0,
+      "bor": 0
+    },
+    {
+      "symbol": "V1-SUI",
+      "sup": 0,
+      "bor": 3018
+    },
+    {
+      "symbol": "V1-TLP",
+      "sup": 0,
+      "bor": 12495
+    },
+    {
+      "symbol": "V1-AF_LP",
+      "sup": 0,
+      "bor": 0
+    },
+    {
+      "symbol": "V1-LP_TOKEN",
+      "sup": 0,
+      "bor": 1488
+    }
+  ]
+}

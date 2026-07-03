@@ -1,0 +1,958 @@
+{
+  "generatedAt": "2026-07-02T19:18:41.080Z",
+  "window": {
+    "start": "2026-06-01",
+    "end": "2026-06-30"
+  },
+  "section1_protocolMetrics": [
+    {
+      "protocol": "navi",
+      "jun30": {
+        "suppliedUsd": 192431745.63468188,
+        "borrowedUsd": 72055358.69595002,
+        "utilization": 0.374446318398743,
+        "wSupplyApy": 1.4384285508955912,
+        "wBorrowApy": 5.9059068956647325,
+        "effectiveSpread": 4.467478344769141
+      },
+      "jun1": {
+        "suppliedUsd": 224779380.79607502,
+        "borrowedUsd": 80822381.4245051,
+        "utilization": 0.3595631464873062,
+        "wSupplyApy": 1.55858273893768,
+        "wBorrowApy": 6.579259609013665,
+        "effectiveSpread": 5.0206768700759845
+      },
+      "supplyChangePct": -14.390837383229401,
+      "borrowChangePct": -10.847270983649771
+    },
+    {
+      "protocol": "suilend",
+      "jun30": {
+        "suppliedUsd": 152144020.92206982,
+        "borrowedUsd": 49826961.9006938,
+        "utilization": 0.32749865291266245,
+        "wSupplyApy": 1.1633126741399111,
+        "wBorrowApy": 4.4564537252174805,
+        "effectiveSpread": 3.293141051077569
+      },
+      "jun1": {
+        "suppliedUsd": 184423705.83364466,
+        "borrowedUsd": 54527701.25637002,
+        "utilization": 0.2956653593413611,
+        "wSupplyApy": 1.4122761716145502,
+        "wBorrowApy": 6.009754829071218,
+        "effectiveSpread": 4.5974786574566675
+      },
+      "supplyChangePct": -17.503001995140483,
+      "borrowChangePct": -8.620828033030419
+    },
+    {
+      "protocol": "scallop",
+      "jun30": {
+        "suppliedUsd": 9107458.38033053,
+        "borrowedUsd": 4760132.522287462,
+        "utilization": 0.5226631101129122,
+        "wSupplyApy": 3.716839046638328,
+        "wBorrowApy": 9.068329524477942,
+        "effectiveSpread": 5.351490477839614
+      },
+      "jun1": {
+        "suppliedUsd": 13774969.136199169,
+        "borrowedUsd": 8130192.941246953,
+        "utilization": 0.5902149660634565,
+        "wSupplyApy": 4.538992999077665,
+        "wBorrowApy": 9.913688234739634,
+        "effectiveSpread": 5.374695235661969
+      },
+      "supplyChangePct": -33.88400155179231,
+      "borrowChangePct": -41.45117395507485
+    },
+    {
+      "protocol": "alphalend",
+      "jun30": {
+        "suppliedUsd": 107937481.76013666,
+        "borrowedUsd": 52878946.89300422,
+        "utilization": 0.4899034703302983,
+        "wSupplyApy": 2.9638543354309097,
+        "wBorrowApy": 7.206894953700035,
+        "effectiveSpread": 4.243040618269125
+      },
+      "jun1": {
+        "suppliedUsd": 125788439.23228097,
+        "borrowedUsd": 60772219.57109931,
+        "utilization": 0.48313040484489445,
+        "wSupplyApy": 3.7883708084754475,
+        "wBorrowApy": 9.37106348232183,
+        "effectiveSpread": 5.582692673846383
+      },
+      "supplyChangePct": -14.191254443646226,
+      "borrowChangePct": -12.98829092273074
+    },
+    {
+      "protocol": "bucket",
+      "jun30": {
+        "suppliedUsd": 25036577.747065175,
+        "borrowedUsd": 6847339.3060284415,
+        "utilization": 0.2734934213135857,
+        "wSupplyApy": 0.8779292231175871,
+        "wBorrowApy": 2.1705286705526765,
+        "effectiveSpread": 1.2925994474350895
+      },
+      "jun1": {
+        "suppliedUsd": 32869015.674183723,
+        "borrowedUsd": 8084848.26202382,
+        "utilization": 0.24597171823353062,
+        "wSupplyApy": 0,
+        "wBorrowApy": 2.1796695897900182,
+        "effectiveSpread": 2.1796695897900182
+      },
+      "supplyChangePct": -23.829243944382466,
+      "borrowChangePct": -15.30652049226712
+    }
+  ],
+  "section2_assetDecomp": {
+    "suilend": [
+      {
+        "symbol": "sSUI",
+        "jun1SupUsd": 51965769.39786275,
+        "jun30SupUsd": 44356116.26307427,
+        "changeUsd": -7609653.134788476,
+        "changePct": -14.64358792905979
+      },
+      {
+        "symbol": "SUI",
+        "jun1SupUsd": 49296105.67548716,
+        "jun30SupUsd": 39109175.36601625,
+        "changeUsd": -10186930.309470914,
+        "changePct": -20.664777003949904
+      },
+      {
+        "symbol": "USDC",
+        "jun1SupUsd": 34222452.39403444,
+        "jun30SupUsd": 29999345.54394592,
+        "changeUsd": -4223106.850088518,
+        "changePct": -12.34016429174631
+      },
+      {
+        "symbol": "USDSUI",
+        "jun1SupUsd": 10571751.33852431,
+        "jun30SupUsd": 8902173.720285231,
+        "changeUsd": -1669577.6182390787,
+        "changePct": -15.79281960742875
+      },
+      {
+        "symbol": "DEEP",
+        "jun1SupUsd": 9748844.775302121,
+        "jun30SupUsd": 5554810.939188248,
+        "changeUsd": -4194033.836113874,
+        "changePct": -43.020828957489464
+      },
+      {
+        "symbol": "ETH",
+        "jun1SupUsd": 5081901.514273016,
+        "jun30SupUsd": 3519797.528463379,
+        "changeUsd": -1562103.9858096368,
+        "changePct": -30.738572587884978
+      },
+      {
+        "symbol": "XBTC",
+        "jun1SupUsd": 4370668.109983189,
+        "jun30SupUsd": 4418729.738794542,
+        "changeUsd": 48061.628811352886,
+        "changePct": 1.0996403204712277
+      },
+      {
+        "symbol": "WBTC",
+        "jun1SupUsd": 4222872.697633008,
+        "jun30SupUsd": 3614192.848175934,
+        "changeUsd": -608679.8494570735,
+        "changePct": -14.413881095640155
+      },
+      {
+        "symbol": "LBTC",
+        "jun1SupUsd": 3689206.097304667,
+        "jun30SupUsd": 4045991.094933291,
+        "changeUsd": 356784.9976286241,
+        "changePct": 9.671050849918391
+      },
+      {
+        "symbol": "WAL",
+        "jun1SupUsd": 3031182.111660552,
+        "jun30SupUsd": 1420769.176723829,
+        "changeUsd": -1610412.9349367232,
+        "changePct": -53.128214525339146
+      }
+    ],
+    "navi": [
+      {
+        "symbol": "enzoBTC",
+        "jun1SupUsd": 32022525.1770972,
+        "jun30SupUsd": 26172772.55498475,
+        "changeUsd": -5849752.622112453,
+        "changePct": -18.267618152413068
+      },
+      {
+        "symbol": "USDC",
+        "jun1SupUsd": 27000550.11096373,
+        "jun30SupUsd": 25660556.871824,
+        "changeUsd": -1339993.2391397282,
+        "changePct": -4.96283680751977
+      },
+      {
+        "symbol": "SUI",
+        "jun1SupUsd": 25764633.6719786,
+        "jun30SupUsd": 20249860.91749117,
+        "changeUsd": -5514772.754487429,
+        "changePct": -21.40442912831029
+      },
+      {
+        "symbol": "MBTC",
+        "jun1SupUsd": 22083766.11653689,
+        "jun30SupUsd": 18049588.04869595,
+        "changeUsd": -4034178.0678409375,
+        "changePct": -18.26761815241306
+      },
+      {
+        "symbol": "BUCK",
+        "jun1SupUsd": 20415688.95411915,
+        "jun30SupUsd": 20392692.42548514,
+        "changeUsd": -22996.52863400802,
+        "changePct": -0.112641452785105
+      },
+      {
+        "symbol": "haSUI",
+        "jun1SupUsd": 20205650.38660448,
+        "jun30SupUsd": 16359938.7062545,
+        "changeUsd": -3845711.6803499795,
+        "changePct": -19.0328527256887
+      },
+      {
+        "symbol": "vSUI",
+        "jun1SupUsd": 12722731.9482622,
+        "jun30SupUsd": 11833611.03601424,
+        "changeUsd": -889120.9122479595,
+        "changePct": -6.988443330124586
+      },
+      {
+        "symbol": "xBTC",
+        "jun1SupUsd": 11360687.8295067,
+        "jun30SupUsd": 9642656.015490478,
+        "changeUsd": -1718031.814016223,
+        "changePct": -15.122603840535442
+      },
+      {
+        "symbol": "wBTC",
+        "jun1SupUsd": 9290896.400841063,
+        "jun30SupUsd": 7722321.751266511,
+        "changeUsd": -1568574.6495745517,
+        "changePct": -16.882920462147826
+      },
+      {
+        "symbol": "DEEP",
+        "jun1SupUsd": 7929799.213667982,
+        "jun30SupUsd": 5403032.628301596,
+        "changeUsd": -2526766.585366386,
+        "changePct": -31.864193749208603
+      }
+    ]
+  },
+  "section3_assetConcentration": {
+    "supplyByAsset": [
+      {
+        "asset": "USDC",
+        "usd": 94710228.19221178
+      },
+      {
+        "asset": "SUI",
+        "usd": 74401777.86234191
+      },
+      {
+        "asset": "sSUI",
+        "usd": 44356116.26307427
+      },
+      {
+        "asset": "enzoBTC",
+        "usd": 26172772.55498475
+      },
+      {
+        "asset": "USDSUI",
+        "usd": 20830681.160981998
+      },
+      {
+        "asset": "haSUI",
+        "usd": 20642874.468606576
+      },
+      {
+        "asset": "BUCK",
+        "usd": 20392692.42548514
+      },
+      {
+        "asset": "MBTC",
+        "usd": 18049588.04869595
+      },
+      {
+        "asset": "USDT",
+        "usd": 14852476.008672325
+      },
+      {
+        "asset": "DEEP",
+        "usd": 14326991.267852442
+      },
+      {
+        "asset": "WBTC",
+        "usd": 12786521.200784246
+      },
+      {
+        "asset": "vSUI",
+        "usd": 12034295.52375999
+      },
+      {
+        "asset": "XBTC",
+        "usd": 11083370.60167766
+      },
+      {
+        "asset": "xBTC",
+        "usd": 9642656.015490478
+      },
+      {
+        "asset": "WAL",
+        "usd": 8790760.80566839
+      },
+      {
+        "asset": "wBTC",
+        "usd": 7722321.751266511
+      },
+      {
+        "asset": "USDB",
+        "usd": 7326781.083668
+      },
+      {
+        "asset": "LBTC",
+        "usd": 6833837.047251498
+      },
+      {
+        "asset": "ETHIRD",
+        "usd": 6606729.892896662
+      },
+      {
+        "asset": "STSUI",
+        "usd": 5580730.825616637
+      },
+      {
+        "asset": "ALPHA",
+        "usd": 5453052.21001821
+      },
+      {
+        "asset": "ESUI",
+        "usd": 4133794.244695765
+      },
+      {
+        "asset": "ETH",
+        "usd": 3519797.528463379
+      },
+      {
+        "asset": "BTCVC",
+        "usd": 3296594.361487088
+      },
+      {
+        "asset": "USDY",
+        "usd": 2813207.458068079
+      },
+      {
+        "asset": "TBTC",
+        "usd": 2776195.668906826
+      },
+      {
+        "asset": "PSM-BUCK",
+        "usd": 2358612.692413932
+      },
+      {
+        "asset": "BKT-SAVE-HASUI_S",
+        "usd": 2248674.862390318
+      },
+      {
+        "asset": "BTC",
+        "usd": 1985656.798499478
+      },
+      {
+        "asset": "V1PSM-BUCKETUS",
+        "usd": 1937877.33561359
+      },
+      {
+        "asset": "NAVX",
+        "usd": 1729047.620647694
+      },
+      {
+        "asset": "AUSD",
+        "usd": 1666006.4853437974
+      },
+      {
+        "asset": "suiETH",
+        "usd": 1397436.274464636
+      },
+      {
+        "asset": "BKT-SAVE-VSUI_S",
+        "usd": 1386217.052155773
+      },
+      {
+        "asset": "BKT-SAVE-AFSUI_S",
+        "usd": 1323162.531352017
+      },
+      {
+        "asset": "XAUM",
+        "usd": 1305375.160839164
+      },
+      {
+        "asset": "XAUm",
+        "usd": 1006002.372361467
+      },
+      {
+        "asset": "BKT-PSM-BUCKETUS",
+        "usd": 968568.5998161492
+      },
+      {
+        "asset": "BKT-SAVE-SUI_NAVI_POND",
+        "usd": 919052.0451674103
+      },
+      {
+        "asset": "EEARN",
+        "usd": 865150.1664567195
+      },
+      {
+        "asset": "suiUSDe",
+        "usd": 681008.2371006948
+      },
+      {
+        "asset": "EBTC",
+        "usd": 653896.6644746062
+      },
+      {
+        "asset": "BKT-SAVE-NAVI_STSUI",
+        "usd": 626621.0444803819
+      },
+      {
+        "asset": "COIN",
+        "usd": 553757.4491613238
+      },
+      {
+        "asset": "BLUE",
+        "usd": 524333.4227459098
+      },
+      {
+        "asset": "SEND",
+        "usd": 518019.3528283096
+      },
+      {
+        "asset": "PSM-USDSUI",
+        "usd": 394322.3354387613
+      },
+      {
+        "asset": "SBETH",
+        "usd": 384798.6004139602
+      },
+      {
+        "asset": "IKA",
+        "usd": 374803.2905779615
+      },
+      {
+        "asset": "V1PSM-BLUEFIN_STABLE_LP",
+        "usd": 282087.505173162
+      },
+      {
+        "asset": "SCA",
+        "usd": 239151.533493564
+      },
+      {
+        "asset": "CETUS",
+        "usd": 215257.94203377367
+      },
+      {
+        "asset": "NS",
+        "usd": 211766.2966631978
+      },
+      {
+        "asset": "WETH",
+        "usd": 161098.207358692
+      },
+      {
+        "asset": "BKT-PSM-BLUEFIN_STABLE_LP",
+        "usd": 140989.8835648905
+      },
+      {
+        "asset": "afSUI",
+        "usd": 130839.30734383108
+      },
+      {
+        "asset": "V1-SCALLOP_SUI",
+        "usd": 74769.61325142255
+      },
+      {
+        "asset": "HAEDAL",
+        "usd": 59719.96529937846
+      },
+      {
+        "asset": "SOL",
+        "usd": 47913.25761684489
+      },
+      {
+        "asset": "V1-WAL",
+        "usd": 36057.68440658497
+      },
+      {
+        "asset": "stBTC",
+        "usd": 30402.40457729768
+      },
+      {
+        "asset": "FDUSD",
+        "usd": 24648.96677455116
+      },
+      {
+        "asset": "V1-vSUI",
+        "usd": 12017.11124611304
+      },
+      {
+        "asset": "stSUI",
+        "usd": 8855.592941595682
+      },
+      {
+        "asset": "V1-COIN",
+        "usd": 8521.903308845476
+      },
+      {
+        "asset": "V1-SCALLOP_DEEP",
+        "usd": 8081.183931885973
+      },
+      {
+        "asset": "V1-afSUI",
+        "usd": 5609.543422505161
+      },
+      {
+        "asset": "YBTC.B",
+        "usd": 3613.370338800126
+      },
+      {
+        "asset": "V1-haSUI",
+        "usd": 2946.262960110827
+      },
+      {
+        "asset": "V1-WETH",
+        "usd": 1409.45866407523
+      },
+      {
+        "asset": "V1-SCA",
+        "usd": 1122.029704378841
+      },
+      {
+        "asset": "V1-LBTC",
+        "usd": 1047.465653418666
+      },
+      {
+        "asset": "V1PSM-COIN",
+        "usd": 1019.758977
+      },
+      {
+        "asset": "V1-USDY",
+        "usd": 864.2238787544854
+      },
+      {
+        "asset": "V1PSM-SCABLE",
+        "usd": 854.607426626
+      },
+      {
+        "asset": "V1-BTC",
+        "usd": 676.370004638951
+      },
+      {
+        "asset": "V1-TBTC",
+        "usd": 292.560260881981
+      },
+      {
+        "asset": "V1-SCALLOP_SCA",
+        "usd": 117.3672002717403
+      },
+      {
+        "asset": "V1-sSUI",
+        "usd": 74.4849354739935
+      },
+      {
+        "asset": "V1-MUSD",
+        "usd": 72.77562734301762
+      },
+      {
+        "asset": "V1-NAVX",
+        "usd": 50.24977100361807
+      },
+      {
+        "asset": "V1-STSUI",
+        "usd": 36.50449830053147
+      },
+      {
+        "asset": "V1-HAEDAL",
+        "usd": 24.21346794434756
+      },
+      {
+        "asset": "V1-CETUS",
+        "usd": 17.51946219421314
+      },
+      {
+        "asset": "V1PSM-AUSD",
+        "usd": 7.307956001
+      },
+      {
+        "asset": "BKT-KRIYA-FOUNTAIN-1",
+        "usd": 1.836384521479446
+      },
+      {
+        "asset": "BKT-AF-AFSUI-SUI",
+        "usd": 1.088297529007602
+      },
+      {
+        "asset": "BKT-SAVE-HASUI_NAVI_POND",
+        "usd": 0.8428758431995584
+      },
+      {
+        "asset": "BKT-SAVE-NAVI_VSUI",
+        "usd": 0.6408327255431713
+      },
+      {
+        "asset": "V1PSM-CETABLE",
+        "usd": 0.238021
+      },
+      {
+        "asset": "BKT-PSM-CETABLE",
+        "usd": 0.2377236662132815
+      },
+      {
+        "asset": "V1PSM-FDUSD",
+        "usd": 0.070352
+      },
+      {
+        "asset": "BKT-PSM-FDUSD",
+        "usd": 0.07010931349988599
+      },
+      {
+        "asset": "V1PSM-STAPEARL",
+        "usd": 0.059598
+      },
+      {
+        "asset": "BKT-PSM-STAPEARL",
+        "usd": 0.05952355069081783
+      },
+      {
+        "asset": "V1-AF_LP",
+        "usd": 0
+      },
+      {
+        "asset": "V1-LP_TOKEN",
+        "usd": 0
+      },
+      {
+        "asset": "V1-SUI",
+        "usd": 0
+      },
+      {
+        "asset": "V1-TLP",
+        "usd": 0
+      }
+    ],
+    "supplyHHI": 850.6102844169661,
+    "borrowByAsset": [
+      {
+        "asset": "USDC",
+        "usd": 73386011.31972295
+      },
+      {
+        "asset": "SUI",
+        "usd": 46291005.322108045
+      },
+      {
+        "asset": "USDT",
+        "usd": 10772882.756117273
+      },
+      {
+        "asset": "USDSUI",
+        "usd": 8534109.960899726
+      },
+      {
+        "asset": "XBTC",
+        "usd": 7273506.355594097
+      },
+      {
+        "asset": "USDB",
+        "usd": 6847339.3060284415
+      },
+      {
+        "asset": "xBTC",
+        "usd": 6397042.817699033
+      },
+      {
+        "asset": "wBTC",
+        "usd": 6296260.787947448
+      },
+      {
+        "asset": "DEEP",
+        "usd": 4469658.887733493
+      },
+      {
+        "asset": "WBTC",
+        "usd": 4380463.334530093
+      },
+      {
+        "asset": "WAL",
+        "usd": 3079356.1328111114
+      },
+      {
+        "asset": "BUCK",
+        "usd": 1801770.77260978
+      },
+      {
+        "asset": "TBTC",
+        "usd": 1498384.268897195
+      },
+      {
+        "asset": "haSUI",
+        "usd": 1386363.8472410985
+      },
+      {
+        "asset": "STSUI",
+        "usd": 890008.7989269788
+      },
+      {
+        "asset": "XAUM",
+        "usd": 532183.6723957785
+      },
+      {
+        "asset": "BLUE",
+        "usd": 373147.2204274908
+      },
+      {
+        "asset": "vSUI",
+        "usd": 324163.13478553103
+      },
+      {
+        "asset": "USDY",
+        "usd": 323946.58539375756
+      },
+      {
+        "asset": "BTC",
+        "usd": 287281.245022292
+      },
+      {
+        "asset": "suiUSDe",
+        "usd": 255944.073669022
+      },
+      {
+        "asset": "suiETH",
+        "usd": 215083.562078964
+      },
+      {
+        "asset": "ETH",
+        "usd": 189731.1931070268
+      },
+      {
+        "asset": "COIN",
+        "usd": 162689.1459203376
+      },
+      {
+        "asset": "SBETH",
+        "usd": 121777.5047067468
+      },
+      {
+        "asset": "LBTC",
+        "usd": 103678.3770848685
+      },
+      {
+        "asset": "SCA",
+        "usd": 52734.85778064405
+      },
+      {
+        "asset": "CETUS",
+        "usd": 22436.648475232967
+      },
+      {
+        "asset": "IKA",
+        "usd": 22318.436467941392
+      },
+      {
+        "asset": "AUSD",
+        "usd": 21597.998730418025
+      },
+      {
+        "asset": "NAVX",
+        "usd": 16898.65331309765
+      },
+      {
+        "asset": "WETH",
+        "usd": 16583.058772913922
+      },
+      {
+        "asset": "NS",
+        "usd": 14490.26508186335
+      },
+      {
+        "asset": "afSUI",
+        "usd": 3525.324573186921
+      },
+      {
+        "asset": "XAUm",
+        "usd": 1136.132492853224
+      },
+      {
+        "asset": "stBTC",
+        "usd": 944.0669605662963
+      },
+      {
+        "asset": "SOL",
+        "usd": 853.9599185488237
+      },
+      {
+        "asset": "FDUSD",
+        "usd": 797.2787489072795
+      },
+      {
+        "asset": "stSUI",
+        "usd": 456.8834845520028
+      },
+      {
+        "asset": "HAEDAL",
+        "usd": 109.2088997073607
+      },
+      {
+        "asset": "EBTC",
+        "usd": 48.62331332349693
+      },
+      {
+        "asset": "SEND",
+        "usd": 16.81302198149554
+      },
+      {
+        "asset": "ALPHA",
+        "usd": 0.5996163855013439
+      },
+      {
+        "asset": "ESUI",
+        "usd": 0.124853212083041
+      },
+      {
+        "asset": "BTCVC",
+        "usd": 0
+      },
+      {
+        "asset": "EEARN",
+        "usd": 0
+      },
+      {
+        "asset": "ETHIRD",
+        "usd": 0
+      },
+      {
+        "asset": "MBTC",
+        "usd": 0
+      },
+      {
+        "asset": "YBTC.B",
+        "usd": 0
+      },
+      {
+        "asset": "enzoBTC",
+        "usd": 0
+      },
+      {
+        "asset": "sSUI",
+        "usd": 0
+      }
+    ],
+    "borrowHHI": 2290.4179936273804,
+    "usdcPlusSuiBorrowSharePct": 64.21517743791244,
+    "note": "Supply keyed by (normalized) collateral symbol; Bucket vault names are kept as-is. Borrow: Bucket attributed to USDB."
+  },
+  "section4_hhiThreeWays": {
+    "tvlNetHHI": 3142.8896557087064,
+    "suppliedHHI": 3062.805755441471,
+    "borrowedHHI": 3034.6746977756197,
+    "perProtocol": [
+      {
+        "protocol": "alphalend",
+        "netTvl": 55058534.86713244,
+        "supplied": 107937481.76013666,
+        "borrowed": 52878946.89300422
+      },
+      {
+        "protocol": "bucket",
+        "netTvl": 18189238.441036735,
+        "supplied": 25036577.747065175,
+        "borrowed": 6847339.3060284415
+      },
+      {
+        "protocol": "navi",
+        "netTvl": 120376386.93873186,
+        "supplied": 192431745.63468188,
+        "borrowed": 72055358.69595002
+      },
+      {
+        "protocol": "scallop",
+        "netTvl": 4347325.858043069,
+        "supplied": 9107458.38033053,
+        "borrowed": 4760132.522287462
+      },
+      {
+        "protocol": "suilend",
+        "netTvl": 102317059.02137601,
+        "supplied": 152144020.92206982,
+        "borrowed": 49826961.9006938
+      }
+    ]
+  },
+  "section5_naviIdle": [
+    {
+      "symbol": "enzoBTC",
+      "suppliedUsd": 26172772.55498475,
+      "borrowedUsd": 0,
+      "utilizationPct": 0
+    },
+    {
+      "symbol": "MBTC",
+      "suppliedUsd": 18049588.04869595,
+      "borrowedUsd": 0,
+      "utilizationPct": 0
+    },
+    {
+      "symbol": "vSUI",
+      "suppliedUsd": 11833611.03601424,
+      "borrowedUsd": 319887.6821869749,
+      "utilizationPct": 2.7032127489523985
+    }
+  ],
+  "section6_liquidatorGini": [
+    {
+      "protocol": "navi",
+      "liquidators": 92,
+      "events": 1597,
+      "gini": 0.712987667093191
+    },
+    {
+      "protocol": "suilend",
+      "liquidators": 81,
+      "events": 918,
+      "gini": 0.6824551494123026
+    },
+    {
+      "protocol": "scallop",
+      "liquidators": 44,
+      "events": 822,
+      "gini": 0.7674187126741872
+    },
+    {
+      "protocol": "alphalend",
+      "liquidators": 50,
+      "events": 843,
+      "gini": 0.7186002372479241
+    }
+  ],
+  "section7_bucketBacking": {
+    "collateralUsd": 25036577.747065175,
+    "issuedUsdb": 6847339.3060284415,
+    "backingRatioPct": 365.6395079622067
+  }
+}
