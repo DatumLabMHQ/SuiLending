@@ -23,7 +23,7 @@
  */
 
 import { NextResponse } from 'next/server';
-import { CRON_SECRET } from '@/lib/constants';
+import { cronAuthorized } from '@/lib/constants';
 import { getDb } from '@/lib/db';
 import { backfillAll, PROTOCOL_LLAMA_SLUG } from '@/lib/defillama-backfill';
 import { getProtocol } from '@/protocols/registry';
@@ -39,7 +39,7 @@ interface CatchUpReport {
 
 export async function GET(req: Request) {
   const authHeader = req.headers.get('authorization');
-  if (authHeader !== `Bearer ${CRON_SECRET}`) {
+  if (!cronAuthorized(authHeader)) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 

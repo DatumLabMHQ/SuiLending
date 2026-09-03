@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { CRON_SECRET } from '@/lib/constants';
+import { cronAuthorized } from '@/lib/constants';
 import { getProtocol } from '@/protocols/registry';
 import { getDb } from '@/lib/db';
 
@@ -10,7 +10,7 @@ export async function GET(
   { params }: { params: Promise<{ protocol: string }> }
 ) {
   const authHeader = req.headers.get('authorization');
-  if (authHeader !== `Bearer ${CRON_SECRET}`) {
+  if (!cronAuthorized(authHeader)) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 

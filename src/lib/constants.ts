@@ -126,4 +126,12 @@ export function healthFactorLabel(hf: number): string {
 
 // ─── Cron Auth ──────────────────────────────────────────────────────────────
 
-export const CRON_SECRET = process.env.CRON_SECRET ?? 'dev-secret';
+// Fail closed. If CRON_SECRET is unset, every cron route rejects the request.
+// The previous 'dev-secret' fallback meant an unconfigured deploy accepted a
+// guessable bearer token. Vercel Cron sends `Authorization: Bearer <CRON_SECRET>`
+// only when the env var is set on the project, so this is safe in production.
+export const CRON_SECRET: string | undefined = process.env.CRON_SECRET;
+
+export function cronAuthorized(authHeader: string | null | undefined): boolean {
+  return !!CRON_SECRET && authHeader === `Bearer ${CRON_SECRET}`;
+}
