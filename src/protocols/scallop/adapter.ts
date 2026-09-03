@@ -2,7 +2,7 @@
  * Scallop Protocol adapter.
  *
  * Uses Scallop's hosted indexer at https://sui.apis.scallop.io (via
- * @scallop-io/sui-scallop-sdk's ScallopIndexer class). The indexer is HTTP-only —
+ * a direct HTTP read of Scallop's indexer, see ./indexer.ts). The indexer is HTTP-only —
  * no on-chain decoding, no Sui RPC calls — which makes this adapter the
  * fastest of the bunch.
  *
@@ -16,11 +16,11 @@
  * its risk params if the asset is also a collateral.
  */
 
-import { ScallopIndexer } from '@scallop-io/sui-scallop-sdk';
+import { fetchScallopMarket, type ScallopMarketPool, type ScallopMarketCollateral } from './indexer';
 
 import type { ProtocolAdapter, NormalizedPool, NormalizedLiquidation } from '../types';
 import { SCALLOP_INDEXER_URL, SCALLOP_EVENT_TYPES } from './config';
-import { queryEvents } from '@/lib/rpc';
+import { queryEvents, type EventCursor } from '@/lib/rpc';
 
 // ─── Reserve filter ─────────────────────────────────────────────────────────
 //
@@ -64,22 +64,17 @@ const CANONICAL_BY_COINTYPE: Record<string, string> = {
   '0xdeeb7a4662eec9f2f3def03fb937a663dddaa2e215b8078a284d026b7946c270::deep::DEEP': 'DEEP',
 };
 
-let _indexer: ScallopIndexer | null = null;
-function getIndexer(): ScallopIndexer {
-  if (!_indexer) _indexer = new ScallopIndexer({ indexerApiUrl: SCALLOP_INDEXER_URL });
-  return _indexer;
-}
 
 const scallopAdapter: ProtocolAdapter = {
   async fetchPools(): Promise<NormalizedPool[]> {
     try {
-      const market = await getIndexer().getMarket();
-      const pools = Object.values(market.pools ?? {}).filter((p): p is NonNullable<typeof p> => !!p);
-      const collaterals = market.collaterals ?? {};
+      const market = await fetchScallopMarket();
+      const pools = (Object.values(market.pools ?? {}) as ScallopMarketPool[]).filter((p): p is ScallopMarketPool => !!p);
+      const collaterals = Object.values(market.collaterals ?? {}) as ScallopMarketCollateral[];
 
       // Build coinType → collateral lookup for the LTV merge
-      const collateralByCoinType: Record<string, NonNullable<typeof collaterals[string]>> = {};
-      for (const c of Object.values(collaterals)) {
+      const collateralByCoinType: Record<string, ScallopMarketCollateral> = {};
+      for (const c of collaterals) {
         if (c?.coinType) collateralByCoinType[c.coinType] = c;
       }
 
@@ -119,7 +114,7 @@ const scallopAdapter: ProtocolAdapter = {
    */
   async fetchLiquidations({ untilEventId, maxPages = 4 } = {}): Promise<NormalizedLiquidation[]> {
     const out: NormalizedLiquidation[] = [];
-    let cursor: { txDigest: string; eventSeq: string } | null = null;
+    let cursor: EventCursor | null = null;
     let pages = 0;
 
     while (pages < maxPages) {
@@ -208,9 +203,6 @@ export default scallopAdapter;
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
 
-type Market = Awaited<ReturnType<ScallopIndexer['getMarket']>>;
-type ScallopMarketPool = NonNullable<Market['pools'][string]>;
-type ScallopMarketCollateral = NonNullable<Market['collaterals'][string]>;
 
 /**
  * Resolve a symbol from Scallop's pool record. Prefers the canonical map

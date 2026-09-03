@@ -22,7 +22,7 @@
  */
 
 import type { NormalizedLiquidation } from '../types';
-import { queryEvents, rpc } from '@/lib/rpc';
+import { queryEvents, rpc, type EventCursor } from '@/lib/rpc';
 
 interface FetchOpts {
   untilEventId?: string;
@@ -40,7 +40,7 @@ export async function tryFetchLiquidations(
   const { untilEventId, maxPages = 4, decimals = {}, symbols = {} } = opts;
   const out: NormalizedLiquidation[] = [];
 
-  let cursor: { txDigest: string; eventSeq: string } | null = null;
+  let cursor: EventCursor | null = null;
   let pages = 0;
 
   while (pages < maxPages) {

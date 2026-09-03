@@ -30,7 +30,9 @@ export async function GET() {
     CRON_SECRET: fingerprint(CRON_SECRET),
     DATABASE_URL: process.env.DATABASE_URL ? `postgresql://…(len=${process.env.DATABASE_URL.length})` : 'MISSING',
     BLOCKVISION_SUI_RPC: process.env.BLOCKVISION_SUI_RPC ? 'set' : 'MISSING',
-    ALCHEMY_SUI_RPC: process.env.ALCHEMY_SUI_RPC ? 'set' : 'MISSING',
+    SUI_GRPC_URL: process.env.SUI_GRPC_URL ?? 'MISSING (using public fullnode gRPC)',
+    SUI_GRPC_AUTH: process.env.SUI_GRPC_BEARER || process.env.SUI_GRPC_API_KEY ? 'set' : 'MISSING',
+    ALCHEMY_SUI_RPC: process.env.ALCHEMY_SUI_RPC ? 'set (legacy JSON-RPC, unused)' : 'MISSING',
   };
 
   let dbCheck: Record<string, unknown> = { connected: false };

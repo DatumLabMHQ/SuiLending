@@ -154,10 +154,8 @@ export async function fetchScallopCanonicalTvl(): Promise<number | null> {
  */
 export async function fetchScallopSCoinPrices(): Promise<Record<string, number>> {
   try {
-    const { ScallopIndexer } = await import('@scallop-io/sui-scallop-sdk');
-    const indexerUrl = process.env.SCALLOP_INDEXER_URL ?? 'https://sdk.api.scallop.io';
-    const indexer = new ScallopIndexer({ indexerApiUrl: indexerUrl });
-    const market = await indexer.getMarket();
+    const { fetchScallopMarket } = await import('@/protocols/scallop/indexer');
+    const market = await fetchScallopMarket();
 
     const out: Record<string, number> = {};
     for (const pool of Object.values(market.pools ?? {})) {

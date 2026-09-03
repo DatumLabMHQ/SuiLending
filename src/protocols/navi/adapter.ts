@@ -11,7 +11,7 @@ import { fetchAllPools, fetchSinglePool } from '@/lib/sdk';
 import { NAVI_EVENT_TYPES } from './config';
 import { getNaviPoolRegistry } from './poolRegistry';
 import { parseLiquidationEvent } from './events';
-import { queryEvents, rpc } from '@/lib/rpc';
+import { queryEvents, rpc, type EventCursor } from '@/lib/rpc';
 
 const MIST_PER_SUI = BigInt(1_000_000_000);
 
@@ -69,7 +69,7 @@ const naviAdapter: ProtocolAdapter = {
     const registry = await getNaviPoolRegistry();
     const out: NormalizedLiquidation[] = [];
 
-    let cursor: { txDigest: string; eventSeq: string } | null = null;
+    let cursor: EventCursor | null = null;
     let pages = 0;
 
     while (pages < maxPages) {

@@ -100,3 +100,26 @@ Should return `HTTP 204` with `Access-Control-Allow-Origin: *`.
 To revert to mock data for offline development, restore the original
 `data.js` from git history (or copy from
 `Datum Labs Dashboard SDK/data.js` and adapt).
+
+## Sui access after the JSON-RPC shutdown (September 2026)
+
+Sui JSON-RPC is gone: the Foundation disabled it on public fullnodes in late July 2026 and
+Alchemy retires it on 25 September 2026. Every on-chain read now goes through gRPC-Web via
+`src/lib/sui-client.ts`. Set these on the Vercel project (Production + Preview):
+
+| Variable | Value |
+|---|---|
+| `SUI_GRPC_URL` | `https://sui-mainnet.g.alchemy.com` (Alchemy) or `https://sui-mainnet-grpc.blockvision.org` (BlockVision) |
+| `SUI_GRPC_BEARER` | Alchemy API key (sent as `Authorization: Bearer`) |
+| `SUI_GRPC_API_KEY` | BlockVision key (sent as `x-api-key`), if using BlockVision |
+
+With none set the app falls back to the public fullnode (`fullnode.mainnet.sui.io`), which is
+rate limited, keeps only a few weeks of history and is meant for development. The primary
+provider is also backed by the public node on failure (`withSuiClient`).
+
+`ALCHEMY_SUI_RPC` and `BLOCKVISION_SUI_RPC` (JSON-RPC) are no longer read by the app.
+`/api/cron-status` reports which provider is configured.
+
+Prices for Suilend reserves no longer come from Pyth Hermes (which began returning 401 in late
+August 2026 and emptied the Suilend pools); they come from coins.llama.fi through an injected
+price source in `src/protocols/suilend/adapter.ts`.

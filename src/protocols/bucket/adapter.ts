@@ -11,6 +11,7 @@
  */
 
 import { BucketClient } from '@bucket-protocol/sdk';
+import { getSuiClient } from '@/lib/sui-client';
 
 import type { ProtocolAdapter, NormalizedPool, NormalizedLiquidation } from '../types';
 import {
@@ -19,7 +20,7 @@ import {
 } from './config';
 import { fetchSuiCoinPrices, fetchScallopSCoinPrices } from '@/lib/prices';
 import { tryFetchLiquidations } from '../_shared/liquidations';
-import { queryEvents, rpc } from '@/lib/rpc';
+import { queryEvents, rpc, type EventCursor } from '@/lib/rpc';
 import { fetchBucketExtraTvl } from './extra-tvl';
 
 // ─── CoinType → canonical symbol ────────────────────────────────────────────
@@ -45,9 +46,11 @@ async function getBucketClient(): Promise<BucketClient> {
   // BUCKET_SUI_GRPC_URL is the gRPC-Web endpoint (e.g. BlockVision's). When
   // unset, the SDK uses the default public gRPC fullnode. We pass `network`
   // and let the SDK construct its own SuiGrpcClient.
+  // Share the app-wide gRPC client so Bucket reads use the same provider,
+  // auth and fallback as everything else (SUI_GRPC_URL et al.).
   _bucketClient = await BucketClient.initialize({
     network: 'mainnet',
-    ...(BUCKET_SUI_GRPC_URL ? { configOverrides: {} } : {}),
+    suiClient: getSuiClient(),
   });
   return _bucketClient;
 }
@@ -201,7 +204,7 @@ async function fetchBucketV1Liquidations(
   { untilEventId, maxPages = 4 }: { untilEventId?: string; maxPages?: number },
 ): Promise<NormalizedLiquidation[]> {
   const out: NormalizedLiquidation[] = [];
-  let cursor: { txDigest: string; eventSeq: string } | null = null;
+  let cursor: EventCursor | null = null;
   let pages = 0;
 
   while (pages < maxPages) {
