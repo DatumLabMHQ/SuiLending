@@ -11,7 +11,8 @@
 
 const QSTASH_TOKEN = process.env.QSTASH_TOKEN;
 const APP_URL = process.env.APP_URL;
-const CRON_SECRET = process.env.CRON_SECRET ?? 'dev-secret';
+const CRON_SECRET = process.env.CRON_SECRET;
+if (!CRON_SECRET) throw new Error('CRON_SECRET must be set (no default; cron routes fail closed)');
 
 if (!QSTASH_TOKEN || !APP_URL) {
   console.error('Missing QSTASH_TOKEN or APP_URL');
