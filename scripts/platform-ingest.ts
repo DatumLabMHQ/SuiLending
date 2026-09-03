@@ -29,6 +29,11 @@ const DEFILLAMA_SLUG: Record<string, string> = {
   navi: 'navi-protocol', suilend: 'suilend', scallop: 'scallop-lend', alphalend: 'alphalend', bucket: 'bucket-protocol',
 };
 
+async function jobIsRunning(job: string): Promise<boolean> {
+  const r = await pool.query(
+    `select 1 from ops.sync_runs where job = $1 and status = 'running' and started_at > now() - interval '30 minutes' limit 1`, [job]);
+  return (r.rowCount ?? 0) > 0;
+}
 async function openRun(job: string, product: string, notes: Record<string, unknown> = {}): Promise<number> {
   const r = await pool.query(
     `insert into ops.sync_runs (job, product, runner, notes) values ($1, $2, $3, $4) returning run_id`,
@@ -68,6 +73,7 @@ async function ingestPools(): Promise<boolean> {
   for (const slug of listProtocolSlugs()) {
     const entry: any = getProtocol(slug); const ad = entry?.adapter ?? entry;
     const job = `sui.collect_pools.${slug}`;
+    if (await jobIsRunning(job)) { console.warn(`[skip] ${job} is already running`); continue; }
     const runId = await openRun(job, 'sui');
     try {
       const pools: NormalizedPool[] = await ad.fetchPools();
@@ -89,7 +95,7 @@ async function ingestPools(): Promise<boolean> {
              num((p as any).availableLiquidity), num((p as any).availableLiquidityUsd), num(p.supplyApy), num(p.borrowApy),
              num((p as any).boostedSupplyApy ?? (p as any).incentiveSupplyApy), num((p as any).boostedBorrowApy ?? (p as any).incentiveBorrowApy),
              num(p.utilization), pct(p.ltv), pct(p.liquidationThreshold), num((p as any).price), (p as any).irm ? JSON.stringify((p as any).irm) : null,
-             JSON.stringify(p)],
+             json(p)],
           );
         }
         await client.query('commit');
@@ -115,6 +121,7 @@ async function ingestLiquidations(): Promise<boolean> {
     const entry: any = getProtocol(slug); const ad = entry?.adapter ?? entry;
     if (!ad.fetchLiquidations) continue;
     const job = `sui.index_liquidations.${slug}`;
+    if (await jobIsRunning(job)) { console.warn(`[skip] ${job} is already running`); continue; }
     const untilEventId = await getCursor(job);
     const runId = await openRun(job, 'sui', { untilEventId });
     try {
@@ -136,7 +143,7 @@ async function ingestLiquidations(): Promise<boolean> {
             [ev.id, runId, 'sui_grpc', fetchedAt, slug, ev.txDigest, ev.timestamp, ev.liquidator || null, ev.borrower || null,
              ev.collateralAsset, num(ev.collateralAmount), num(ev.collateralPrice), num(ev.collateralUsd),
              ev.debtAsset, num(ev.debtAmount), num(ev.debtPrice), num(ev.debtUsd), num(ev.treasuryAmount),
-             (ev as any).gasUsedMist != null ? String((ev as any).gasUsedMist) : null, num((ev as any).gasUsd), null, JSON.stringify(ev)],
+             (ev as any).gasUsedMist != null ? String((ev as any).gasUsedMist) : null, num((ev as any).gasUsd), null, json(ev)],
           );
           written += r.rowCount ?? 0;
         }
@@ -160,6 +167,7 @@ async function ingestDefillama(): Promise<boolean> {
   let allOk = true;
   for (const [slug, llama] of Object.entries(DEFILLAMA_SLUG)) {
     const job = `sui.defillama_tvl.${slug}`;
+    if (await jobIsRunning(job)) { console.warn(`[skip] ${job} is already running`); continue; }
     const runId = await openRun(job, 'sui', { llama });
     try {
       const res = await fetch(`https://api.llama.fi/protocol/${llama}`);
@@ -195,6 +203,7 @@ async function ingestDefillama(): Promise<boolean> {
   return allOk;
 }
 
+const json = (v: unknown) => JSON.stringify(v, (_k, x) => (typeof x === 'bigint' ? x.toString() : x));
 function num(v: unknown): number | null { const n = typeof v === 'number' ? v : Number(v); return Number.isFinite(n) ? n : null; }
 // Adapters carry LTV / LT as fractions (0..1); the platform stores percent (0..100) per house/units.md.
 function pct(v: unknown): number | null { const n = num(v); return n == null ? null : (n <= 1 ? n * 100 : n); }
