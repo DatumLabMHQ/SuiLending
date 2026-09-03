@@ -183,9 +183,10 @@ async function ingestDefillama(): Promise<boolean> {
         await client.query('begin');
         for (const p of rows) {
           await client.query(
+            // Append-only: one row per (protocol, day, run). Staging picks the latest fetch per day.
             `insert into sui.raw_defillama_tvl (protocol, slug, day, tvl_usd, fetched_at, run_id)
              values ($1, $2, to_timestamp($3)::date, $4, $5, $6)
-             on conflict (protocol, day) do update set tvl_usd = excluded.tvl_usd, fetched_at = excluded.fetched_at, run_id = excluded.run_id`,
+             on conflict (protocol, day, run_id) do nothing`,
             [slug, llama, p.date, p.totalLiquidityUSD, fetchedAt, runId],
           );
         }
