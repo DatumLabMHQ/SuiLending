@@ -11,6 +11,8 @@
  */
 
 import { NextResponse } from 'next/server';
+import { suiRpcSourceLabel } from '@/lib/sui-client';
+import { rpc } from '@/lib/rpc';
 import { getDb } from '@/lib/db';
 import { listProtocols } from '@/protocols/registry';
 import { fetchScallopCanonicalTvl, fetchBucketCanonicalTvl } from '@/lib/prices';
@@ -1158,47 +1160,22 @@ interface AsOfMeta {
   rpcSource: string;
 }
 async function fetchAsOfMeta(): Promise<AsOfMeta> {
-  const rpc = process.env.ALCHEMY_SUI_RPC ?? 'https://fullnode.mainnet.sui.io:443';
-  const rpcSource = rpc.includes('alchemy') ? 'alchemy' : rpc.includes('blockvision') ? 'blockvision' : 'fullnode.sui.io';
   const out: AsOfMeta = {
     checkpoint: null,
     checkpointTimestamp: null,
     network: 'sui-mainnet',
     serverTime: new Date().toISOString(),
-    rpcSource,
+    rpcSource: suiRpcSourceLabel(),
   };
   try {
-    // Step 1: latest checkpoint sequence number (cheap).
-    const seqRes = await fetch(rpc, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ jsonrpc: '2.0', id: 1, method: 'sui_getLatestCheckpointSequenceNumber', params: [] }),
-      next: { revalidate: 30 },
-    });
-    if (!seqRes.ok) return out;
-    const seqJson = await seqRes.json() as { result?: string };
-    const seqStr = seqJson.result;
+    // Latest checkpoint height (cheap), then its timestamp (optional).
+    const seqStr = await rpc<string>('sui_getLatestCheckpointSequenceNumber');
     if (!seqStr) return out;
-    const checkpoint = Number(seqStr);
-    out.checkpoint = checkpoint;
-
-    // Step 2: timestamp of that checkpoint. Optional — if it fails we still
-    // have the height, which is the primary signal.
+    out.checkpoint = Number(seqStr);
     try {
-      const tsRes = await fetch(rpc, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ jsonrpc: '2.0', id: 2, method: 'sui_getCheckpoint', params: [seqStr] }),
-        next: { revalidate: 30 },
-      });
-      if (tsRes.ok) {
-        const tsJson = await tsRes.json() as { result?: { timestampMs?: string | number } };
-        const ms = Number(tsJson.result?.timestampMs);
-        if (Number.isFinite(ms) && ms > 0) out.checkpointTimestamp = new Date(ms).toISOString();
-      }
-    } catch { /* keep checkpoint, no timestamp */ }
-  } catch {
-    /* leave as nulls */
-  }
+      const cp = await rpc<{ timestampMs?: string }>('sui_getCheckpoint', [seqStr]);
+      if (cp?.timestampMs) out.checkpointTimestamp = new Date(Number(cp.timestampMs)).toISOString();
+    } catch { /* height alone is enough */ }
+  } catch { /* leave nulls; the UI shows n/a */ }
   return out;
 }

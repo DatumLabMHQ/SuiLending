@@ -19,7 +19,7 @@
 import type { ProtocolAdapter, NormalizedPool, NormalizedLiquidation } from '../types';
 import { ALPHALEND_MARKETS_TABLE_ID, SUI_GRAPHQL_URL, ALPHALEND_EVENT_TYPES } from './config';
 import { fetchSuiCoinPrices } from '@/lib/prices';
-import { queryEvents, rpc } from '@/lib/rpc';
+import { queryEvents, rpc, type EventCursor } from '@/lib/rpc';
 
 // ─── CoinType → canonical symbol ────────────────────────────────────────────
 const CANONICAL_BY_COINTYPE: Record<string, string> = {
@@ -163,7 +163,7 @@ async function fetchAlphalendLiquidations(
   maxPages: number,
 ): Promise<NormalizedLiquidation[]> {
   const out: NormalizedLiquidation[] = [];
-  let cursor: { txDigest: string; eventSeq: string } | null = null;
+  let cursor: EventCursor | null = null;
   let pages = 0;
 
   while (pages < maxPages) {

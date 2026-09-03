@@ -25,24 +25,48 @@
  */
 
 import BigNumber from 'bignumber.js';
-import { SuiJsonRpcClient } from '@mysten/sui/jsonRpc';
+import { getSuiClient } from '@/lib/sui-client';
+import { normalizeFeedId } from '@suilend/sdk/utils/feedId';
 import { SuilendClient } from '@suilend/sdk/client';
 import { initializeSuilend } from '@suilend/sdk/lib/initialize';
 
 import type { ProtocolAdapter, NormalizedPool, NormalizedLiquidation } from '../types';
 import { SUILEND_LENDING_MARKET_ID, SUILEND_LENDING_MARKET_TYPE, SUILEND_EVENT_TYPES } from './config';
 import { fetchSuiCoinPrices } from '@/lib/prices';
-import { queryEvents, rpc } from '@/lib/rpc';
+import { queryEvents, rpc, type EventCursor } from '@/lib/rpc';
 
-const RPC_URL =
-  process.env.BLOCKVISION_SUI_RPC ??
-  process.env.ALCHEMY_SUI_RPC ??
-  'https://fullnode.mainnet.sui.io:443';
-
-let _suiClient: SuiJsonRpcClient | null = null;
-function getSuiClient(): SuiJsonRpcClient {
-  if (!_suiClient) _suiClient = new SuiJsonRpcClient({ url: RPC_URL, network: 'mainnet' });
-  return _suiClient;
+// On-chain reads go through the shared gRPC client (see src/lib/sui-client.ts).
+//
+// Prices: the SDK prices reserves from Pyth Hermes, which started returning
+// 401 (auth required) in late August 2026 and took Suilend pools down. We
+// inject our own PriceFeedSource backed by coins.llama.fi, keyed by the
+// reserves' Pyth feed ids, and tolerate feeds DefiLlama cannot price.
+type FeedPrice = { id: string; price: number; emaPrice: number; publishTimeS: number };
+function bytesToHex(bytes: ArrayLike<number>): string {
+  let out = '';
+  for (let i = 0; i < bytes.length; i++) out += (bytes[i] & 0xff).toString(16).padStart(2, '0');
+  return out;
+}
+function llamaPriceSource(feedToCoinType: Record<string, string>) {
+  const lookup = async (ids: string[]) => {
+    const wanted = ids.map((id) => normalizeFeedId(id));
+    const coinTypes = Array.from(new Set(wanted.map((id) => feedToCoinType[id]).filter(Boolean)));
+    const prices = coinTypes.length ? await fetchSuiCoinPrices(coinTypes) : {};
+    const nowS = Math.floor(Date.now() / 1000);
+    const feeds: FeedPrice[] = [];
+    const missing: string[] = [];
+    wanted.forEach((id, i) => {
+      const ct = feedToCoinType[id];
+      const p = ct ? prices[ct] : undefined;
+      if (p && p > 0) feeds.push({ id, price: p, emaPrice: p, publishTimeS: nowS });
+      else missing.push(ids[i]);
+    });
+    return { feeds, missing };
+  };
+  return {
+    async getLatestPriceFeeds(ids: string[]) { return (await lookup(ids)).feeds; },
+    async getLatestPriceFeedsPartial(ids: string[]) { return lookup(ids); },
+  };
 }
 
 // ─── CoinType → canonical symbol ────────────────────────────────────────────
@@ -112,7 +136,18 @@ const suilendAdapter: ProtocolAdapter = {
         SUILEND_LENDING_MARKET_TYPE,
         suiClient,
       );
-      const { lendingMarket } = await initializeSuilend(suiClient, suilendClient);
+      // Map each reserve's Pyth feed id to its coinType so our price source
+      // can answer the SDK's feed-id lookups from DefiLlama.
+      const feedToCoinType: Record<string, string> = {};
+      for (const r of (suilendClient.lendingMarket?.reserves ?? []) as any[]) {
+        const ct = r?.coinType?.name ?? r?.coinType;
+        const bytes = r?.priceIdentifier?.bytes;
+        if (typeof ct === 'string' && bytes) feedToCoinType[normalizeFeedId(bytesToHex(bytes))] = ct.startsWith('0x') ? ct : `0x${ct}`;
+      }
+      const { lendingMarket } = await initializeSuilend(suiClient, suilendClient, undefined, undefined, {
+        pythConnection: llamaPriceSource(feedToCoinType),
+        tolerateMissingPriceFeeds: true,
+      });
 
       // Optional price lookups for LSTs that the SDK couldn't price properly.
       // Keyed by full coinType. Best-effort; if DefiLlama fails we keep the
@@ -157,7 +192,7 @@ const suilendAdapter: ProtocolAdapter = {
    */
   async fetchLiquidations({ untilEventId, maxPages = 4 } = {}): Promise<NormalizedLiquidation[]> {
     const out: NormalizedLiquidation[] = [];
-    let cursor: { txDigest: string; eventSeq: string } | null = null;
+    let cursor: EventCursor | null = null;
     let pages = 0;
 
     // First pass: collect all events into raw form so we can batch-fetch
@@ -277,7 +312,7 @@ export default suilendAdapter;
 
 type ParsedReserve = Awaited<ReturnType<typeof initializeSuilend>>['lendingMarket']['reserves'][number];
 
-const toNum = (v: BigNumber | number | string | undefined | null, fallback = 0): number => {
+const toNum = (v: BigNumber | { toString(): string } | number | string | undefined | null, fallback = 0): number => {
   if (v == null) return fallback;
   const n = typeof v === 'number' ? v : new BigNumber(String(v)).toNumber();
   return Number.isFinite(n) ? n : fallback;
