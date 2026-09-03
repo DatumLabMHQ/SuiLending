@@ -28,7 +28,8 @@ function stripTrailingSlash(u: string): string {
 }
 
 export function suiGrpcUrl(): string {
-  return stripTrailingSlash(process.env.SUI_GRPC_URL ?? PUBLIC_SUI_GRPC_URL);
+  // `||` not `??`: CI runners set unset secrets to '' and an empty base URL breaks every call.
+  return stripTrailingSlash(process.env.SUI_GRPC_URL || PUBLIC_SUI_GRPC_URL);
 }
 
 export function suiRpcSourceLabel(): string {
@@ -41,9 +42,9 @@ export function suiRpcSourceLabel(): string {
 
 function authMeta(url: string): Record<string, string> {
   const meta: Record<string, string> = {};
-  const bearer = process.env.SUI_GRPC_BEARER;
+  const bearer = process.env.SUI_GRPC_BEARER || undefined;
   const apiKey = process.env.SUI_GRPC_API_KEY
-    ?? (url.includes('blockvision') ? process.env.BLOCKVISION_API_KEY : undefined);
+    || (url.includes('blockvision') ? process.env.BLOCKVISION_API_KEY : undefined) || undefined;
   if (bearer) meta.Authorization = `Bearer ${bearer}`;
   if (apiKey) meta['x-api-key'] = apiKey;
   return meta;
