@@ -1,0 +1,232 @@
+{
+  "at": "2026-09-06T21:37:34.843Z",
+  "legacy": "https://sui-lending.vercel.app",
+  "platform": "https://sui-lending-datum.vercel.app",
+  "tolerancePct": 2,
+  "flagged": 16,
+  "rows": [
+    {
+      "metric": "navi tvl",
+      "platform": 141.66212933197278,
+      "legacy": 141.63728318768173,
+      "unit": "$M",
+      "diffPct": 0.02,
+      "flag": ""
+    },
+    {
+      "metric": "navi supply",
+      "platform": 208.3004371546488,
+      "legacy": 207.81344171331435,
+      "unit": "$M",
+      "diffPct": 0.23,
+      "flag": ""
+    },
+    {
+      "metric": "navi borrow",
+      "platform": 66.638307822676,
+      "legacy": 66.17615852563262,
+      "unit": "$M",
+      "diffPct": 0.7,
+      "flag": ""
+    },
+    {
+      "metric": "suilend tvl",
+      "platform": 106.58966302332726,
+      "legacy": 0,
+      "unit": "$M",
+      "diffPct": null,
+      "flag": "⚠"
+    },
+    {
+      "metric": "suilend supply",
+      "platform": 143.70963808540193,
+      "legacy": 0,
+      "unit": "$M",
+      "diffPct": null,
+      "flag": "⚠"
+    },
+    {
+      "metric": "suilend borrow",
+      "platform": 37.11997506207466,
+      "legacy": 0,
+      "unit": "$M",
+      "diffPct": null,
+      "flag": "⚠"
+    },
+    {
+      "metric": "scallop tvl",
+      "platform": 10.09796401280386,
+      "legacy": 10.085028886935305,
+      "unit": "$M",
+      "diffPct": 0.13,
+      "flag": ""
+    },
+    {
+      "metric": "scallop supply",
+      "platform": 6.320240259328086,
+      "legacy": 6.169936821690143,
+      "unit": "$M",
+      "diffPct": 2.44,
+      "flag": "⚠"
+    },
+    {
+      "metric": "scallop borrow",
+      "platform": 2.1183182625114703,
+      "legacy": 2.0354750856011727,
+      "unit": "$M",
+      "diffPct": 4.07,
+      "flag": "⚠"
+    },
+    {
+      "metric": "alphalend tvl",
+      "platform": 55.742222870343106,
+      "legacy": 53.35791382961095,
+      "unit": "$M",
+      "diffPct": 4.47,
+      "flag": "⚠"
+    },
+    {
+      "metric": "alphalend supply",
+      "platform": 97.88104046795918,
+      "legacy": 97.80861493065234,
+      "unit": "$M",
+      "diffPct": 0.07,
+      "flag": ""
+    },
+    {
+      "metric": "alphalend borrow",
+      "platform": 42.138817597616075,
+      "legacy": 44.45070110104138,
+      "unit": "$M",
+      "diffPct": -5.2,
+      "flag": "⚠"
+    },
+    {
+      "metric": "bucket tvl",
+      "platform": 7.912103374001178,
+      "legacy": 7.912103374001178,
+      "unit": "$M",
+      "diffPct": 0,
+      "flag": ""
+    },
+    {
+      "metric": "bucket supply",
+      "platform": 5.6826869334699,
+      "legacy": 16.508907588563503,
+      "unit": "$M",
+      "diffPct": -65.58,
+      "flag": "⚠"
+    },
+    {
+      "metric": "bucket borrow",
+      "platform": 1.6671519520509999,
+      "legacy": 6.342786052712366,
+      "unit": "$M",
+      "diffPct": -73.72,
+      "flag": "⚠"
+    },
+    {
+      "metric": "pools (count)",
+      "platform": 85,
+      "legacy": 66,
+      "diffPct": 28.79,
+      "flag": "⚠"
+    },
+    {
+      "metric": "vaults (count)",
+      "platform": 6,
+      "legacy": 48,
+      "diffPct": -87.5,
+      "flag": "⚠"
+    },
+    {
+      "metric": "liquidations 30d (count)",
+      "platform": 742,
+      "legacy": 354,
+      "diffPct": 109.6,
+      "flag": "⚠"
+    },
+    {
+      "metric": "liquidation rows returned",
+      "platform": 500,
+      "legacy": 354,
+      "diffPct": 41.24,
+      "flag": "⚠"
+    },
+    {
+      "metric": "navi tvlSeries last day",
+      "platform": 141.66212933197278,
+      "legacy": 141.63728318768173,
+      "unit": "$M",
+      "diffPct": 0.02,
+      "flag": ""
+    },
+    {
+      "metric": "navi tvlSeries days with data",
+      "platform": 90,
+      "legacy": 90,
+      "diffPct": 0,
+      "flag": ""
+    },
+    {
+      "metric": "suilend tvlSeries last day",
+      "platform": 106.58966302332726,
+      "legacy": 0,
+      "unit": "$M",
+      "diffPct": null,
+      "flag": "⚠"
+    },
+    {
+      "metric": "suilend tvlSeries days with data",
+      "platform": 83,
+      "legacy": 89,
+      "diffPct": -6.74,
+      "flag": "⚠"
+    },
+    {
+      "metric": "scallop tvlSeries last day",
+      "platform": 10.09796401280386,
+      "legacy": 10.085028886935305,
+      "unit": "$M",
+      "diffPct": 0.13,
+      "flag": ""
+    },
+    {
+      "metric": "scallop tvlSeries days with data",
+      "platform": 90,
+      "legacy": 90,
+      "diffPct": 0,
+      "flag": ""
+    },
+    {
+      "metric": "alphalend tvlSeries last day",
+      "platform": 55.742222870343106,
+      "legacy": 53.35791382961095,
+      "unit": "$M",
+      "diffPct": 4.47,
+      "flag": "⚠"
+    },
+    {
+      "metric": "alphalend tvlSeries days with data",
+      "platform": 90,
+      "legacy": 90,
+      "diffPct": 0,
+      "flag": ""
+    },
+    {
+      "metric": "bucket tvlSeries last day",
+      "platform": 7.912103374001178,
+      "legacy": 7.912103374001178,
+      "unit": "$M",
+      "diffPct": 0,
+      "flag": ""
+    },
+    {
+      "metric": "bucket tvlSeries days with data",
+      "platform": 90,
+      "legacy": 90,
+      "diffPct": 0,
+      "flag": ""
+    }
+  ]
+}

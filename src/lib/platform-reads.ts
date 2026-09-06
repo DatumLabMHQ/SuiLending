@@ -8,6 +8,9 @@
  *   fct_sui_pool_daily        last snapshot of each pool per UTC day (history since Feb 2026)
  *   fct_sui_protocol_tvl_daily net/gross TVL per protocol per day with the DefiLlama reference
  *   fct_sui_liquidations      one row per liquidation event (history since Nov 2025)
+ *
+ * No is_lending_pool filter here: the legacy path returns every symbol (Bucket's PSM and wrapper
+ * rows included) and the dashboard does its own archetype split, so parity means the same rows.
  */
 import { platformQuery } from './data-source';
 
@@ -29,7 +32,7 @@ export async function latestSnapshots<T>(freshSince: Date): Promise<T[]> {
       (irm->>'psmFee')::float8         AS "psmFee",
       (irm->>'redemptionFee')::float8  AS "redemptionFee"
     FROM sui.stg_sui__pool_snapshots
-    WHERE fetched_at >= $1 AND is_lending_pool
+    WHERE fetched_at >= $1
     ORDER BY protocol, symbol, fetched_at DESC
   `, [freshSince]);
 }
@@ -40,7 +43,7 @@ export async function dailyRows<T>(since: Date): Promise<T[]> {
       total_supply_usd::float8 AS "closeTotalSupplyUsd", total_borrows_usd::float8 AS "closeTotalBorrowsUsd",
       available_liquidity_usd::float8 AS "closeLiquidityUsd", supply_apy::float8 AS "avgSupplyApy", borrow_apy::float8 AS "avgBorrowApy"
     FROM sui.fct_sui_pool_daily
-    WHERE day >= $1::date AND is_lending_pool
+    WHERE day >= $1::date
     ORDER BY protocol, day
   `, [since]);
 }
