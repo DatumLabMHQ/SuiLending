@@ -1,9 +1,9 @@
 {
-  "at": "2026-09-06T21:37:34.843Z",
+  "at": "2026-09-06T21:39:12.977Z",
   "legacy": "https://sui-lending.vercel.app",
   "platform": "https://sui-lending-datum.vercel.app",
   "tolerancePct": 2,
-  "flagged": 16,
+  "flagged": 13,
   "rows": [
     {
       "metric": "navi tvl",
@@ -111,19 +111,19 @@
     },
     {
       "metric": "bucket supply",
-      "platform": 5.6826869334699,
+      "platform": 16.70415741587828,
       "legacy": 16.508907588563503,
       "unit": "$M",
-      "diffPct": -65.58,
-      "flag": "⚠"
+      "diffPct": 1.18,
+      "flag": ""
     },
     {
       "metric": "bucket borrow",
-      "platform": 1.6671519520509999,
+      "platform": 6.352363615941048,
       "legacy": 6.342786052712366,
       "unit": "$M",
-      "diffPct": -73.72,
-      "flag": "⚠"
+      "diffPct": 0.15,
+      "flag": ""
     },
     {
       "metric": "pools (count)",
@@ -134,10 +134,10 @@
     },
     {
       "metric": "vaults (count)",
-      "platform": 6,
+      "platform": 48,
       "legacy": 48,
-      "diffPct": -87.5,
-      "flag": "⚠"
+      "diffPct": 0,
+      "flag": ""
     },
     {
       "metric": "liquidations 30d (count)",

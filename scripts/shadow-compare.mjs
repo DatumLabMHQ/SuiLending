@@ -40,8 +40,8 @@ for (const ps of platform.tvlSeries ?? []) {
   add(`${proto} tvlSeries days with data`, nzP, nzL);
 }
 for (const sym of ['USDC', 'SUI', 'USDT']) {
-  const pp = (platform.pools ?? []).find((x) => x.protocol === 'navi' && x.symbol === sym), lp = (legacy.pools ?? []).find((x) => x.protocol === 'navi' && x.symbol === sym);
-  if (pp || lp) { add(`navi ${sym} supplyApy`, pp?.supplyApy, lp?.supplyApy, '%'); add(`navi ${sym} utilization`, pp?.utilization, lp?.utilization, '%'); add(`navi ${sym} ltv`, pp?.ltv, lp?.ltv, '%'); }
+  const pp = (platform.pools ?? []).find((x) => x.protocol === 'navi' && x.sym === sym), lp = (legacy.pools ?? []).find((x) => x.protocol === 'navi' && x.sym === sym);
+  if (pp || lp) { add(`navi ${sym} supplyApy`, pp?.supplyApy, lp?.supplyApy, '%'); add(`navi ${sym} utilization`, pp?.util, lp?.util, '%'); add(`navi ${sym} ltv`, pp?.ltv, lp?.ltv, '%'); add(`navi ${sym} liqThreshold`, pp?.liqThreshold, lp?.liqThreshold, '%'); }
 }
 
 const flagged = rows.filter((r) => r.flag).length;

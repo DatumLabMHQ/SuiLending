@@ -23,7 +23,8 @@ export async function latestSnapshots<T>(freshSince: Date): Promise<T[]> {
       available_liquidity_usd::float8 AS "availableLiquidityUsd",
       supply_apy::float8 AS "supplyApy", borrow_apy::float8 AS "borrowApy",
       utilization::float8 AS utilization, price_usd::float8 AS price,
-      COALESCE(ltv, 0)::float8 AS ltv, COALESCE(liquidation_threshold, 0)::float8 AS "liquidationThreshold",
+      -- the platform stores percent; the aggregator expects a fraction (it multiplies by 100 itself)
+      (COALESCE(ltv, 0) / 100.0)::float8 AS ltv, (COALESCE(liquidation_threshold, 0) / 100.0)::float8 AS "liquidationThreshold",
       (irm->>'baseRate')::float8       AS "irmBaseRate",
       (irm->>'multiplier')::float8     AS "irmMultiplier",
       (irm->>'jumpMultiplier')::float8 AS "irmJumpMult",
