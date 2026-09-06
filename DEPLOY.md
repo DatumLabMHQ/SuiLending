@@ -123,3 +123,14 @@ provider is also backed by the public node on failure (`withSuiClient`).
 Prices for Suilend reserves no longer come from Pyth Hermes (which began returning 401 in late
 August 2026 and emptied the Suilend pools); they come from coins.llama.fi through an injected
 price source in `src/protocols/suilend/adapter.ts`.
+
+## Data source switch (platform migration)
+
+`DATA_SOURCE=platform` makes `/api/sui-lending` read the Datum data platform's curated tables
+(`sui.fct_sui_pool_daily`, `sui.fct_sui_liquidations`, `sui.fct_sui_protocol_tvl_daily`, the snapshot staging view)
+through `PLATFORM_READ_URL` (the read-only `datum_reader` role). Unset, or `legacy`, keeps this app's own database.
+Rate-model parameters and wallet positions still come from the legacy database when it is configured.
+
+The Datum Labs copy (`sui-lending-datum`) runs on `platform`; the personal copy stays on `legacy` until the
+shadow period is over. `scripts/shadow-compare.mjs` (daily via the shadow-compare workflow) compares the two.
+Flip back: set `DATA_SOURCE=legacy` and redeploy.

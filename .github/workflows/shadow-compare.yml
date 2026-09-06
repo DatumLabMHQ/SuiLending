@@ -1,0 +1,26 @@
+name: shadow-compare
+# Daily side-by-side of the legacy copy and the platform copy of this dashboard. The table lands
+# in the job summary and as an artifact; a difference is a row for datum-context's divergence log,
+# not a failure here.
+on:
+  schedule:
+    - cron: "30 6 * * *"
+  workflow_dispatch: {}
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: node scripts/shadow-compare.mjs
+        env:
+          LEGACY_URL: https://sui-lending.vercel.app
+          PLATFORM_URL: https://sui-lending-datum.vercel.app
+      - uses: actions/upload-artifact@v4
+        with:
+          name: shadow-compare
+          path: shadow-compare.json
+          retention-days: 90

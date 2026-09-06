@@ -28,6 +28,8 @@ export async function GET() {
 
   const env = {
     CRON_SECRET: fingerprint(CRON_SECRET),
+    DATA_SOURCE: process.env.DATA_SOURCE === 'platform' ? 'platform' : 'legacy (default)',
+    PLATFORM_READ_URL: process.env.PLATFORM_READ_URL ? 'set' : 'MISSING',
     DATABASE_URL: process.env.DATABASE_URL ? `postgresql://…(len=${process.env.DATABASE_URL.length})` : 'MISSING',
     BLOCKVISION_SUI_RPC: process.env.BLOCKVISION_SUI_RPC ? 'set' : 'MISSING',
     SUI_GRPC_URL: process.env.SUI_GRPC_URL ?? 'MISSING (using public fullnode gRPC)',

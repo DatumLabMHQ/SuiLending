@@ -14,6 +14,8 @@ import { NextResponse } from 'next/server';
 import { suiRpcSourceLabel } from '@/lib/sui-client';
 import { rpc } from '@/lib/rpc';
 import { getDb } from '@/lib/db';
+import { dataSource } from '@/lib/data-source';
+import * as platform from '@/lib/platform-reads';
 import { listProtocols } from '@/protocols/registry';
 import { fetchScallopCanonicalTvl, fetchBucketCanonicalTvl } from '@/lib/prices';
 
@@ -189,7 +191,10 @@ export async function OPTIONS() {
 
 export async function GET() {
   const db = getDb();
-  if (!db) {
+  const source = dataSource();
+  // legacy needs this app's database; platform reads datum-models and only uses the legacy
+  // database, when present, for the two things the platform does not hold yet (wallets, IRM).
+  if (!db && source === 'legacy') {
     return NextResponse.json({ error: 'No database configured' }, { status: 503, headers: CORS });
   }
 
@@ -238,7 +243,9 @@ export async function GET() {
     // value > 0 guards, so it's the cron-proof source. We still read the
     // snapshot column as a fallback so older snapshots that pre-date the
     // RateModelParams.ltv migration aren't blanked.
-    const latestRows = (await db.$queryRawUnsafe(`
+    const latestRows = source === 'platform'
+      ? await platform.latestSnapshots<SnapshotRow>(freshSince)
+      : (await db.$queryRawUnsafe(`
       SELECT DISTINCT ON (ps.protocol, ps.symbol)
         ps.protocol, ps.symbol, ps.timestamp,
         ps."totalSupply"::float8, ps."totalSupplyUsd"::float8,
@@ -275,7 +282,9 @@ export async function GET() {
     // ── Time series — 90d daily TVL/supply/borrow per protocol ──
     const days = 90;
     const since = new Date(Date.now() - days * 86400 * 1000);
-    const dailyRows = (await db.$queryRawUnsafe(`
+    const dailyRows = source === 'platform'
+      ? await platform.dailyRows<DailyRow>(since)
+      : (await db.$queryRawUnsafe(`
       SELECT protocol, symbol, date,
         "closeTotalSupplyUsd"::float8, "closeTotalBorrowsUsd"::float8,
         "closeLiquidityUsd"::float8, "avgSupplyApy"::float8, "avgBorrowApy"::float8
@@ -306,7 +315,9 @@ export async function GET() {
     // can fall back to it on any day PoolDaily has no value. Value is $M.
     const dlamaByProto = new Map<string, number[]>();
     try {
-      const dlamaRows = (await db.$queryRawUnsafe(`
+      const dlamaRows = source === 'platform'
+        ? await platform.defillamaRows<{ protocol: string; date: Date; tvlUsd: number }>(since)
+        : (await db.$queryRawUnsafe(`
         SELECT protocol, date, "tvlUsd"::float8
         FROM "DefillamaTvl"
         WHERE date >= $1
@@ -397,7 +408,9 @@ export async function GET() {
     // Real 30D count separately: keep an unfiltered COUNT for the KPI so
     // we don't claim "30D = 500" (the LIMIT cap on the row fetch). The
     // KPI now reports the true count; the table shows the top-500 rows.
-    const liq30dCountRow = (await db.$queryRawUnsafe(`
+    const liq30dCountRow = source === 'platform'
+      ? [{ count: await platform.liquidationCount(since30) }]
+      : (await db.$queryRawUnsafe(`
       SELECT COUNT(*)::int AS count
       FROM "LiquidationEvent"
       WHERE timestamp >= $1
@@ -405,7 +418,9 @@ export async function GET() {
     `, since30)) as Array<{ count: number }>;
     const liq30dCount = liq30dCountRow[0]?.count ?? 0;
 
-    const liqRowsRaw = (await db.$queryRawUnsafe(`
+    const liqRowsRaw = source === 'platform'
+      ? await platform.liquidationRows<LiquidationRow>(since30)
+      : (await db.$queryRawUnsafe(`
       SELECT id, protocol, "txDigest", timestamp, liquidator, borrower,
         "collateralAsset", "collateralAmount"::float8, "collateralUsd"::float8,
         "debtAsset", "debtAmount"::float8, "debtUsd"::float8
@@ -465,13 +480,15 @@ export async function GET() {
     // plus distinct wallet-position addresses (NAVI-only today). Not the
     // total active-user count — but it's a real on-chain signal vs the
     // hard-coded 0 we had before.
-    const userCountRows = (await db.$queryRawUnsafe(`
+    const userCountRows = source === 'platform'
+      ? await platform.userCounts<{ protocol: string; users: number }>(since30)
+      : (await db.$queryRawUnsafe(`
       SELECT protocol, count(DISTINCT borrower)::int AS users
       FROM "LiquidationEvent"
       WHERE timestamp >= $1
       GROUP BY protocol
     `, since30)) as Array<{ protocol: string; users: number }>;
-    const walletPosRows = (await db.$queryRawUnsafe(`
+    const walletPosRows = !db ? [] : (await db.$queryRawUnsafe(`
       SELECT protocol, count(*)::int AS users
       FROM "WalletPosition"
       GROUP BY protocol
@@ -709,6 +726,7 @@ export async function GET() {
       // collect-pools cron wrote. This is what drives the topbar freshness pill
       // — distinct from asOf.checkpointTimestamp (a live Sui RPC read that is
       // always seconds-fresh and says nothing about how old the pool data is).
+      dataSource: source,
       dataAsOf: latestRows.length
         ? new Date(Math.max(...latestRows.map(r => new Date(r.timestamp).getTime()))).toISOString()
         : null,
