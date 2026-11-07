@@ -15,8 +15,9 @@ async function main() {
     console.error('DATABASE_URL not set');
     process.exit(1);
   }
-  const { PrismaClient } = await import('@prisma/client');
-  const db = new PrismaClient();
+  const { getDb } = await import('../src/lib/db');
+  const db = getDb();
+  if (!db) throw new Error('DATABASE_URL is not set');
   const { backfillAll } = await import('../src/lib/defillama-backfill');
 
   console.log('Backfilling DefiLlama TVL history for all 5 protocols…\n');

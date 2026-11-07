@@ -18,7 +18,7 @@ jobs:
       - run: node scripts/shadow-compare.mjs
         env:
           LEGACY_URL: https://sui-lending.vercel.app
-          PLATFORM_URL: https://sui-lending-datum.vercel.app
+          PLATFORM_URL: https://suilending.datumlabs.workers.dev
       - uses: actions/upload-artifact@v4
         with:
           name: shadow-compare
