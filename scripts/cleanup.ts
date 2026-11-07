@@ -1,7 +1,8 @@
-import { PrismaClient } from '@prisma/client';
+import { getDb } from '../src/lib/db';
 
 async function main() {
-  const db = new PrismaClient();
+  const db = getDb();
+  if (!db) throw new Error('DATABASE_URL is not set');
   const res = await db.liquidationEvent.deleteMany({
     where: {
       protocol: 'navi',

@@ -45,7 +45,7 @@ Body shape:
 ```
 
 Recommended monitor setup (UptimeRobot or Better Uptime):
-1. Add HTTP check on `https://sui-lending.vercel.app/api/data-health`
+1. Add HTTP check on `https://suilending.datumlabs.workers.dev/api/data-health`
 2. Alert condition: HTTP status ≠ 200 OR response body contains `"status":"broken"`
 3. Alert channel: Slack / email / on-call
 
@@ -76,7 +76,7 @@ npx tsx scripts/repair-risk-params-v2.ts
 npx tsx scripts/may-to-now-coverage.ts
 
 # Health check (the same one the monitor polls)
-curl https://sui-lending.vercel.app/api/data-health | jq
+curl https://suilending.datumlabs.workers.dev/api/data-health | jq
 ```
 
 ## Vercel cron budget

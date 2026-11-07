@@ -65,13 +65,13 @@ export async function GET() {
     service: 'sui-lending-cron-status',
     timestamp: new Date().toISOString(),
     deployment: {
-      commit: process.env.VERCEL_GIT_COMMIT_SHA ?? null,
-      region: process.env.VERCEL_REGION ?? null,
+      commit: process.env.GIT_COMMIT_SHA ?? null,
+      platform: 'cloudflare-workers',
     },
     env,
     db: dbCheck,
     crons: {
-      schedule: 'see vercel.json',
+      schedule: 'datum-scheduler',
       protocols: ['navi', 'suilend', 'scallop', 'alphalend', 'bucket'],
       manualTrigger: 'curl -H "Authorization: Bearer $CRON_SECRET" /api/<protocol>/cron/collect-pools',
     },

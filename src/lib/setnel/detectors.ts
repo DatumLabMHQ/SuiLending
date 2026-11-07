@@ -6,9 +6,16 @@
 
 import { defineDetector } from './runtime';
 
+// Base URL to call this dashboard's own API routes from the cron runtime.
+// SETNEL_SELF_URL wins; otherwise the cron route passes in the origin it was
+// called on (the Worker's own URL on Cloudflare).
+let requestOrigin: string | undefined;
+export function setSelfUrl(origin: string): void {
+  requestOrigin = origin;
+}
 function baseUrl(): string {
   if (process.env.SETNEL_SELF_URL) return process.env.SETNEL_SELF_URL;
-  if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`;
+  if (requestOrigin) return requestOrigin;
   return 'http://localhost:3000';
 }
 

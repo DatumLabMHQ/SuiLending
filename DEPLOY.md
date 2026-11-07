@@ -1,55 +1,31 @@
-# Deploy — sui-lending-dashboard (static frontend)
+# Deploy — Sui Lending (Cloudflare Workers)
 
-This is a static HTML+JSX dashboard that fetches its data from
-**navi-dashboard's `/api/sui-lending` endpoint**. It needs:
+The Next.js app (API routes under `src/app/api`) and the static dashboard in `public/`
+(`Overview.html` etc., which fetch `/api/sui-lending` on the same origin) ship together as one
+Cloudflare Worker, built with [vinext](https://github.com/cloudflare/vinext).
 
-1. The navi-dashboard backend deployed (see that repo's `DEPLOY.md`)
-2. A separate Vercel static deployment for these HTML files
+- Worker: `suilending` on the Datum Labs account. Live: https://suilending.datumlabs.workers.dev
+- Config: `cloudflare.config.ts` (plain settings such as `DATA_SOURCE=platform` live there)
+- `npm run build` builds the Worker, `npm start` runs the built Worker locally in workerd,
+  `npm run deploy` builds and deploys. `npm run dev:next` / `npm run build:next` still run plain Next.js.
 
 ## One-time setup
 
-### 1. Initialize git (if not already)
+1. `npx cf auth login` (in CI, set `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`)
+2. Set the secrets with `./scripts/set-secrets.sh` (prompts for each value; Enter skips one):
+   `DATABASE_URL`, `PLATFORM_READ_URL`, `CRON_SECRET`, `SUI_GRPC_URL`, `SUI_GRPC_BEARER`,
+   `SUI_GRPC_API_KEY`, `BLOCKVISION_API_KEY`, `BEEHIIV_API_KEY`, `BEEHIIV_PUBLICATION_ID`,
+   `SETNEL_HUB_URL`, `SETNEL_SECRET`.
+3. `npm run deploy`
 
-```sh
-cd "<this folder>"
-git init
-git add -A
-git commit -m "Initial scaffold of sui-lending-dashboard"
-```
+## Scheduled jobs
 
-### 2. Point `data.js` at the live API
-
-Edit `data.js`, change the `DEFAULT_API` line:
-
-```js
-const DEFAULT_API =
-  (typeof window !== 'undefined' && window.SUI_LENDING_API_URL) ||
-  'https://<your-navi-dashboard-deploy>.vercel.app/api/sui-lending'; // ← change me
-```
-
-(Optional) Override per-environment by inlining a `<script>` tag BEFORE
-`data.js` in each HTML page:
-
-```html
-<script>window.SUI_LENDING_API_URL = "https://navi-dashboard-staging.vercel.app/api/sui-lending";</script>
-<script src="data.js"></script>
-```
-
-### 3. Deploy on Vercel
-
-```sh
-# Connect Vercel (one-time)
-vercel link
-
-# Deploy
-vercel deploy --prod
-```
-
-There's no build step — Vercel just serves the HTML/JS/CSS as-is.
+Workers do not read `vercel.json`. The daily `/api/<protocol>/cron/*`, `/api/cron/*` and
+`/api/setnel/cron` calls are made by `datum-scheduler` with `Authorization: Bearer $CRON_SECRET`.
 
 ## Post-deploy verification
 
-Open `https://<your-static-deploy>.vercel.app/Overview.html`. You should see:
+Open `https://suilending.datumlabs.workers.dev/Overview.html`. You should see:
 
 - Boot splash for ~3s while data fetches
 - KPI strip with real numbers (TVL, Supply, Borrow, Liquidations)
@@ -62,8 +38,8 @@ console — most likely a CORS issue or wrong API URL. Verify with:
 
 ```sh
 curl -i -X OPTIONS \
-  -H "Origin: https://<static-deploy>.vercel.app" \
-  https://<navi-dashboard>.vercel.app/api/sui-lending
+  -H "Origin: https://example.com" \
+  https://suilending.datumlabs.workers.dev/api/sui-lending
 ```
 
 Should return `HTTP 204` with `Access-Control-Allow-Origin: *`.
@@ -105,7 +81,7 @@ To revert to mock data for offline development, restore the original
 
 Sui JSON-RPC is gone: the Foundation disabled it on public fullnodes in late July 2026 and
 Alchemy retires it on 25 September 2026. Every on-chain read now goes through gRPC-Web via
-`src/lib/sui-client.ts`. Set these on the Vercel project (Production + Preview):
+`src/lib/sui-client.ts`. Set these as Worker secrets:
 
 | Variable | Value |
 |---|---|
@@ -131,6 +107,6 @@ price source in `src/protocols/suilend/adapter.ts`.
 through `PLATFORM_READ_URL` (the read-only `datum_reader` role). Unset, or `legacy`, keeps this app's own database.
 Rate-model parameters and wallet positions still come from the legacy database when it is configured.
 
-The Datum Labs copy (`sui-lending-datum`) runs on `platform`; the personal copy stays on `legacy` until the
+The Datum Labs copy (Worker `suilending`, formerly Vercel `sui-lending-datum`) runs on `platform`; the personal copy stays on `legacy` until the
 shadow period is over. `scripts/shadow-compare.mjs` (daily via the shadow-compare workflow) compares the two.
-Flip back: set `DATA_SOURCE=legacy` and redeploy.
+Flip back: set `DATA_SOURCE` to `legacy` in `cloudflare.config.ts` and redeploy.

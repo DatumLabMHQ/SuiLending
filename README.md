@@ -100,3 +100,13 @@ Same controls as the SDK — three body attributes:
 Persisted in `localStorage`. Tweaks panel from the SDK is wired but hidden by
 default; toggle by adding the TweaksPanel component to `PageShell` in
 `pages.jsx` if you want host-edit support.
+
+## Deploy (Cloudflare Workers)
+
+The app and the static dashboard in `public/` run as one Cloudflare Worker (`suilending`), built with
+[vinext](https://github.com/cloudflare/vinext). Live: https://suilending.datumlabs.workers.dev
+
+- `npm run dev` (Vite, port 3000), `npm run build`, `npm start` (built Worker in workerd), `npm run deploy`
+- `npm run dev:next` / `npm run build:next` still run plain Next.js
+- Plain settings live in `cloudflare.config.ts`; set secrets with `./scripts/set-secrets.sh`
+- Daily crons are called by `datum-scheduler`. See `DEPLOY.md`.

@@ -2,58 +2,57 @@
  * Database client.
  *
  * Uses Prisma when DATABASE_URL is set. Otherwise returns null
- * so the app can build and render without a database (API routes
+ * so the app can render without a database (API routes
  * return empty arrays until a DB is connected).
+ *
+ * Prisma runs without its Rust engine (`engineType = "client"`) and talks to Postgres
+ * through the `pg` driver adapter, which works on Cloudflare Workers and in Node scripts.
+ *
+ * On Workers a socket opened while serving one request cannot be used by another, so a
+ * client (and its connection pool) is created per call there and closed after the response. Routes call getDb() once per
+ * request. In Node (scripts, `next dev`) the client is cached as before.
  *
  * Run `npx prisma generate && npx prisma db push` after setting DATABASE_URL.
  */
+/* eslint-disable @typescript-eslint/no-explicit-any -- callers use the client untyped, as before */
+import { PrismaClient } from '@prisma/client';
+import { PrismaPg } from '@prisma/adapter-pg';
+import { after } from 'next/server';
 
+const onWorkers = typeof navigator !== 'undefined' && navigator.userAgent === 'Cloudflare-Workers';
 let prisma: any = null;
 
-export function getDb() {
-  if (prisma) return prisma;
-  if (!process.env.DATABASE_URL) return null;
+function createClient(url: string): any {
+  return new PrismaClient({
+    adapter: new PrismaPg({ connectionString: url, max: onWorkers ? 3 : 10 }),
+    log: process.env.NODE_ENV === 'development' ? ['warn', 'error'] : ['error'],
+  });
+}
 
-  try {
-    // Dynamic import so build succeeds without generated client
-    const { PrismaClient } = require('@prisma/client');
-    const globalForPrisma = globalThis as unknown as { __prisma: any };
-    if (!globalForPrisma.__prisma) {
-      globalForPrisma.__prisma = new PrismaClient({
-        datasources: { db: { url: poolerSafeUrl(process.env.DATABASE_URL!) } },
-        log: process.env.NODE_ENV === 'development' ? ['warn', 'error'] : ['error'],
-      });
+export function getDb(): any {
+  const url = process.env.DATABASE_URL;
+  if (!url) return null;
+  if (onWorkers) {
+    const client = createClient(url);
+    // Close this request's pool once the response is sent (waitUntil on Workers).
+    try {
+      after(() => client.$disconnect());
+    } catch {
+      // called outside a request scope; the pool is dropped with the isolate
     }
-    prisma = globalForPrisma.__prisma;
-    return prisma;
-  } catch {
-    return null;
+    return client;
   }
+  if (prisma) return prisma;
+
+  const globalForPrisma = globalThis as unknown as { __prisma: any };
+  if (!globalForPrisma.__prisma) globalForPrisma.__prisma = createClient(url);
+  prisma = globalForPrisma.__prisma;
+  return prisma;
 }
 
-/**
- * Append `pgbouncer=true` to the connection URL so Prisma disables prepared
- * statements on Neon's pooled (PgBouncer-in-transaction-mode) endpoint.
- *
- * Why this matters: our DATABASE_URL points at Neon's `-pooler` host. Without
- * `pgbouncer=true`, Prisma uses server-side prepared statements whose cached
- * query plans are pinned to the column types at prepare time. After any
- * `ALTER COLUMN` migration (e.g. widening symbol VarChar(24)→(64), or adding
- * the ltv/liquidationThreshold columns), the pooled connection keeps replaying
- * the stale plan and every `$queryRawUnsafe` fails with PG error 0A000:
- * "cached plan must not change result type" — which 500s the whole
- * /api/sui-lending endpoint until connections recycle (which, on a warm
- * pooler, can take a long time).
- *
- * Doing this in code (rather than editing the Vercel DATABASE_URL env var)
- * means we don't need to read the Sensitive secret value, it can't be
- * fat-fingered into breaking prod, and it's version-controlled. Idempotent —
- * leaves the URL alone if the caller already set pgbouncer.
- */
-function poolerSafeUrl(url: string): string {
-  if (!url || url.includes('pgbouncer=')) return url;
-  return url + (url.includes('?') ? '&' : '?') + 'pgbouncer=true';
-}
+// Note: the old `pgbouncer=true` URL rewrite is gone. It told Prisma's Rust engine not to
+// use named prepared statements on Neon's pooled endpoint. The pg driver adapter only sends
+// unnamed statements, so stale cached plans after ALTER COLUMN cannot happen.
 
 // ─── Type definitions matching the Prisma schema ────────────────────────────
 

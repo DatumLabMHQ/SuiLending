@@ -3,11 +3,11 @@
 // shadow-compare.json. Never fails the job: the divergence log in datum-context is where a
 // difference gets a cause and a status.
 //
-//   LEGACY_URL=https://sui-lending.vercel.app PLATFORM_URL=https://sui-lending-datum.vercel.app node scripts/shadow-compare.mjs
+//   LEGACY_URL=https://sui-lending.vercel.app PLATFORM_URL=https://suilending.datumlabs.workers.dev node scripts/shadow-compare.mjs
 import { writeFileSync, appendFileSync } from 'node:fs';
 
 const L = (process.env.LEGACY_URL || 'https://sui-lending.vercel.app').replace(/\/$/, '');
-const P = (process.env.PLATFORM_URL || 'https://sui-lending-datum.vercel.app').replace(/\/$/, '');
+const P = (process.env.PLATFORM_URL || 'https://suilending.datumlabs.workers.dev').replace(/\/$/, '');
 const TOL = Number(process.env.TOLERANCE_PCT || 2);
 
 async function get(base) {

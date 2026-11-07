@@ -75,8 +75,9 @@ async function main() {
     process.exit(1);
   }
 
-  const { PrismaClient } = await import('@prisma/client');
-  const db = new PrismaClient();
+  const { getDb } = await import('../src/lib/db');
+  const db = getDb();
+  if (!db) throw new Error('DATABASE_URL is not set');
 
   const total = await db.liquidationEvent.count({
     where: { protocol: 'navi', gasUsedMist: null },
