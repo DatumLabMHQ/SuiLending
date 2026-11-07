@@ -19,6 +19,7 @@ export default defineConfig({
     env: {
       ...cache.env,
       ASSETS: bindings.assets(),
+      SETNEL_HUB_URL: bindings.text("https://setnel-hub.datumlabs.workers.dev"),
       // Plain (non-secret) settings. Secrets (DATABASE_URL, PLATFORM_READ_URL, CRON_SECRET,
       // SUI_GRPC_*, BLOCKVISION_API_KEY, BEEHIIV_*, SETNEL_*) are Worker secrets, not here.
       // This copy (formerly Vercel `sui-lending-datum`) reads the Datum data platform.
