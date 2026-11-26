@@ -77,7 +77,9 @@ const CACHE_MS = 60_000;
 
 export async function fetchScallopMarket(): Promise<ScallopMarket> {
   if (_cache && Date.now() - _cache.at < CACHE_MS) return _cache.market;
-  const res = await fetch(`${SCALLOP_INDEXER_URL.replace(/\/+$/, '')}/api/market`, {
+  // `/api/market` now answers 429 with a bot challenge. `/api/market/migrate` is what Scallop's own
+  // SDK calls (v5.4.3): same fields, with pools and collaterals as arrays, which Object.values reads alike.
+  const res = await fetch(`${SCALLOP_INDEXER_URL.replace(/\/+$/, '')}/api/market/migrate`, {
     headers: { accept: 'application/json' },
     cache: 'no-store',
   });
